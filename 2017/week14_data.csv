@@ -1,0 +1,228 @@
+manager,team name,position,team_pos,player,points,last update time
+Danny,Mighty Wombats,QB,Mighty Wombats_QB,Marcus Mariota,5.46,2017-12-11 22:57:48.109445
+Danny,Mighty Wombats,WR1,Mighty Wombats_WR1,Antonio Brown,21.30,2017-12-11 22:57:48.109485
+Danny,Mighty Wombats,WR2,Mighty Wombats_WR2,Michael Crabtree,8.00,2017-12-11 22:57:48.109493
+Danny,Mighty Wombats,WR3,Mighty Wombats_WR3,T.Y. Hilton,2.00,2017-12-11 22:57:48.109500
+Danny,Mighty Wombats,RB1,Mighty Wombats_RB1,Mike Davis,6.50,2017-12-11 22:57:48.109507
+Danny,Mighty Wombats,RB2,Mighty Wombats_RB2,Kerwynn Williams,8.80,2017-12-11 22:57:48.109513
+Danny,Mighty Wombats,TE,Mighty Wombats_TE,Jack Doyle,6.40,2017-12-11 22:57:48.109519
+Danny,Mighty Wombats,W/R/T,Mighty Wombats_W/R/T,Orleans Darkwa,4.40,2017-12-11 22:57:48.109526
+Danny,Mighty Wombats,BN1,Mighty Wombats_BN1,Duke Johnson Jr.,10.90,2017-12-11 22:57:48.109533
+Danny,Mighty Wombats,BN2,Mighty Wombats_BN2,DeSean Jackson,6.40,2017-12-11 22:57:48.109539
+Danny,Mighty Wombats,BN3,Mighty Wombats_BN3,Jay Ajayi,8.00,2017-12-11 22:57:48.109545
+Danny,Mighty Wombats,BN4,Mighty Wombats_BN4,C.J. Anderson,7.30,2017-12-11 22:57:48.109552
+Danny,Mighty Wombats,BN5,Mighty Wombats_BN5,Greg Olsen,0.00,2017-12-11 22:57:48.109558
+Danny,Mighty Wombats,K,Mighty Wombats_K,Justin Tucker,9.00,2017-12-11 22:57:48.109564
+Danny,Mighty Wombats,DEF,Mighty Wombats_DEF,New York,2.00,2017-12-11 22:57:48.109570
+Danny,Mighty Wombats,BN6,Mighty Wombats_BN6,Washington,8.00,2017-12-11 22:57:48.109575
+Mike S,The Lyrical Miracle,QB,The Lyrical Miracle_QB,Case Keenum,21.20,2017-12-11 22:57:48.109582
+Mike S,The Lyrical Miracle,WR1,The Lyrical Miracle_WR1,Brandon Coleman,3.20,2017-12-11 22:57:48.109589
+Mike S,The Lyrical Miracle,WR2,The Lyrical Miracle_WR2,Adam Thielen,16.50,2017-12-11 22:57:48.109596
+Mike S,The Lyrical Miracle,WR3,The Lyrical Miracle_WR3,Travis Benjamin,4.30,2017-12-11 22:57:48.109602
+Mike S,The Lyrical Miracle,RB1,The Lyrical Miracle_RB1,Lamar Miller,6.00,2017-12-11 22:57:48.109609
+Mike S,The Lyrical Miracle,RB2,The Lyrical Miracle_RB2,Alex Collins,22.60,2017-12-11 22:57:48.109616
+Mike S,The Lyrical Miracle,TE,The Lyrical Miracle_TE,Jared Cook,13.50,2017-12-11 22:57:48.109622
+Mike S,The Lyrical Miracle,W/R/T,The Lyrical Miracle_W/R/T,Chris Hogan,0.10,2017-12-11 22:57:48.109629
+Mike S,The Lyrical Miracle,BN1,The Lyrical Miracle_BN1,Jason Witten,8.00,2017-12-11 22:57:48.109635
+Mike S,The Lyrical Miracle,BN2,The Lyrical Miracle_BN2,Adrian Peterson,0.00,2017-12-11 22:57:48.109642
+Mike S,The Lyrical Miracle,BN3,The Lyrical Miracle_BN3,Jaron Brown,1.50,2017-12-11 22:57:48.109648
+Mike S,The Lyrical Miracle,BN4,The Lyrical Miracle_BN4,Devonta Freeman,15.10,2017-12-11 22:57:48.109655
+Mike S,The Lyrical Miracle,BN5,The Lyrical Miracle_BN5,Allen Hurns,0.00,2017-12-11 22:57:48.109661
+Mike S,The Lyrical Miracle,BN6,The Lyrical Miracle_BN6,Jameis Winston,16.40,2017-12-11 22:57:48.109667
+Mike S,The Lyrical Miracle,K,The Lyrical Miracle_K,Kai Forbath,10.00,2017-12-11 22:57:48.109674
+Mike S,The Lyrical Miracle,DEF,The Lyrical Miracle_DEF,Cincinnati,0.00,2017-12-11 22:57:48.109680
+Will,Kaep Sue League,QB,Kaep Sue League_QB,Alex Smith,12.12,2017-12-11 22:57:48.109686
+Will,Kaep Sue League,WR1,Kaep Sue League_WR1,Jarvis Landry,16.60,2017-12-11 22:57:48.109692
+Will,Kaep Sue League,WR2,Kaep Sue League_WR2,Cooper Kupp,17.80,2017-12-11 22:57:48.109699
+Will,Kaep Sue League,WR3,Kaep Sue League_WR3,Dez Bryant,13.30,2017-12-11 22:57:48.109705
+Will,Kaep Sue League,RB1,Kaep Sue League_RB1,LeSean McCoy,21.60,2017-12-11 22:57:48.109712
+Will,Kaep Sue League,RB2,Kaep Sue League_RB2,Mark Ingram,9.20,2017-12-11 22:57:48.109717
+Will,Kaep Sue League,TE,Kaep Sue League_TE,Kyle Rudolph,10.10,2017-12-11 22:57:48.109724
+Will,Kaep Sue League,W/R/T,Kaep Sue League_W/R/T,Marqise Lee,6.50,2017-12-11 22:57:48.109729
+Will,Kaep Sue League,BN1,Kaep Sue League_BN1,Demaryius Thomas,15.30,2017-12-11 22:57:48.109735
+Will,Kaep Sue League,BN2,Kaep Sue League_BN2,Danny Woodhead,3.60,2017-12-11 22:57:48.109742
+Will,Kaep Sue League,BN3,Kaep Sue League_BN3,Dak Prescott,26.58,2017-12-11 22:57:48.109748
+Will,Kaep Sue League,BN4,Kaep Sue League_BN4,Tarik Cohen,8.50,2017-12-11 22:57:48.109754
+Will,Kaep Sue League,BN5,Kaep Sue League_BN5,Jimmy Garoppolo,16.06,2017-12-11 22:57:48.109759
+Will,Kaep Sue League,BN6,Kaep Sue League_BN6,Peyton Barber,6.30,2017-12-11 22:57:48.109765
+Will,Kaep Sue League,K,Kaep Sue League_K,Robbie Gould,17.00,2017-12-11 22:57:48.109772
+Will,Kaep Sue League,DEF,Kaep Sue League_DEF,Jacksonville,8.00,2017-12-11 22:57:48.109778
+Sean,Sean's Swell Team,QB,Sean's Swell Team_QB,Kirk Cousins,9.84,2017-12-11 22:57:48.109784
+Sean,Sean's Swell Team,WR1,Sean's Swell Team_WR1,Marvin Jones Jr.,6.40,2017-12-11 22:57:48.109790
+Sean,Sean's Swell Team,WR2,Sean's Swell Team_WR2,Mike Evans,2.50,2017-12-11 22:57:48.109796
+Sean,Sean's Swell Team,WR3,Sean's Swell Team_WR3,Nelson Agholor,6.40,2017-12-11 22:57:48.109802
+Sean,Sean's Swell Team,RB1,Sean's Swell Team_RB1,Doug Martin,9.00,2017-12-11 22:57:48.109808
+Sean,Sean's Swell Team,RB2,Sean's Swell Team_RB2,Leonard Fournette,17.90,2017-12-11 22:57:48.109814
+Sean,Sean's Swell Team,TE,Sean's Swell Team_TE,Evan Engram,5.40,2017-12-11 22:57:48.109821
+Sean,Sean's Swell Team,W/R/T,Sean's Swell Team_W/R/T,Jerick McKinnon,5.50,2017-12-11 22:57:48.109827
+Sean,Sean's Swell Team,BN1,Sean's Swell Team_BN1,JuJu Smith-Schuster,0.00,2017-12-11 22:57:48.109833
+Sean,Sean's Swell Team,BN2,Sean's Swell Team_BN2,Aaron Jones,-0.20,2017-12-11 22:57:48.109839
+Sean,Sean's Swell Team,BN3,Sean's Swell Team_BN3,Martavis Bryant,3.30,2017-12-11 22:57:48.109847
+Sean,Sean's Swell Team,BN4,Sean's Swell Team_BN4,Deonte Thompson,3.40,2017-12-11 22:57:48.109854
+Sean,Sean's Swell Team,BN5,Sean's Swell Team_BN5,Jacquizz Rodgers,0.00,2017-12-11 22:57:48.109860
+Sean,Sean's Swell Team,BN6,Sean's Swell Team_BN6,Zay Jones,0.00,2017-12-11 22:57:48.109866
+Sean,Sean's Swell Team,K,Sean's Swell Team_K,Brandon McManus,14.00,2017-12-11 22:57:48.109872
+Sean,Sean's Swell Team,DEF,Sean's Swell Team_DEF,Houston,4.00,2017-12-11 22:57:48.109878
+Siyang,Smittywerbenjagerman,QB,Smittywerbenjagerman_QB,Carson Wentz,28.24,2017-12-11 22:57:48.109884
+Siyang,Smittywerbenjagerman,WR1,Smittywerbenjagerman_WR1,Alshon Jeffery,11.20,2017-12-11 22:57:48.109890
+Siyang,Smittywerbenjagerman,WR2,Smittywerbenjagerman_WR2,Jermaine Kearse,0.40,2017-12-11 22:57:48.109897
+Siyang,Smittywerbenjagerman,WR3,Smittywerbenjagerman_WR3,Josh Gordon,12.90,2017-12-11 22:57:48.109904
+Siyang,Smittywerbenjagerman,RB1,Smittywerbenjagerman_RB1,Todd Gurley II,25.50,2017-12-11 22:57:48.109910
+Siyang,Smittywerbenjagerman,RB2,Smittywerbenjagerman_RB2,Melvin Gordon,14.30,2017-12-11 22:57:48.109917
+Siyang,Smittywerbenjagerman,TE,Smittywerbenjagerman_TE,Tyler Kroft,0.00,2017-12-11 22:57:48.109923
+Siyang,Smittywerbenjagerman,W/R/T,Smittywerbenjagerman_W/R/T,Kenyan Drake,19.30,2017-12-11 22:57:48.109929
+Siyang,Smittywerbenjagerman,BN1,Smittywerbenjagerman_BN1,Paul Richardson,13.20,2017-12-11 22:57:48.109937
+Siyang,Smittywerbenjagerman,BN2,Smittywerbenjagerman_BN2,Kareem Hunt,19.80,2017-12-11 22:57:48.109943
+Siyang,Smittywerbenjagerman,BN3,Smittywerbenjagerman_BN3,Bruce Ellington,0.00,2017-12-11 22:57:48.109950
+Siyang,Smittywerbenjagerman,BN4,Smittywerbenjagerman_BN4,Matthew Stafford,17.24,2017-12-11 22:57:48.109956
+Siyang,Smittywerbenjagerman,BN5,Smittywerbenjagerman_BN5,Eric Ebron,7.40,2017-12-11 22:57:48.109962
+Siyang,Smittywerbenjagerman,K,Smittywerbenjagerman_K,Dan Bailey,6.00,2017-12-11 22:57:48.109968
+Siyang,Smittywerbenjagerman,DEF,Smittywerbenjagerman_DEF,Los Angeles,8.00,2017-12-11 22:57:48.109975
+Siyang,Smittywerbenjagerman,BN6,Smittywerbenjagerman_BN6,Carolina,12.00,2017-12-11 22:57:48.109981
+Kate,Derpiest Draft,QB,Derpiest Draft_QB,Russell Wilson,24.84,2017-12-11 22:57:48.109987
+Kate,Derpiest Draft,WR1,Derpiest Draft_WR1,Davante Adams,20.40,2017-12-11 22:57:48.109993
+Kate,Derpiest Draft,WR2,Derpiest Draft_WR2,Robby Anderson,2.70,2017-12-11 22:57:48.110000
+Kate,Derpiest Draft,WR3,Derpiest Draft_WR3,Mike Wallace,7.20,2017-12-11 22:57:48.110006
+Kate,Derpiest Draft,RB1,Derpiest Draft_RB1,Tevin Coleman,3.20,2017-12-11 22:57:48.110012
+Kate,Derpiest Draft,RB2,Derpiest Draft_RB2,Theo Riddick,21.30,2017-12-11 22:57:48.110044
+Kate,Derpiest Draft,TE,Derpiest Draft_TE,Delanie Walker,4.20,2017-12-11 22:57:48.110051
+Kate,Derpiest Draft,W/R/T,Derpiest Draft_W/R/T,Marquise Goodwin,10.60,2017-12-11 22:57:48.110058
+Kate,Derpiest Draft,BN1,Derpiest Draft_BN1,Jeremy Maclin,2.70,2017-12-11 22:57:48.110065
+Kate,Derpiest Draft,BN2,Derpiest Draft_BN2,Ty Montgomery,0.00,2017-12-11 22:57:48.110071
+Kate,Derpiest Draft,BN3,Derpiest Draft_BN3,Terrance Williams,2.50,2017-12-11 22:57:48.110077
+Kate,Derpiest Draft,BN4,Derpiest Draft_BN4,Giovani Bernard,13.00,2017-12-11 22:57:48.110083
+Kate,Derpiest Draft,BN5,Derpiest Draft_BN5,Taylor Gabriel,1.90,2017-12-11 22:57:48.110090
+Kate,Derpiest Draft,IR,Derpiest Draft_IR,Odell Beckham Jr.,0.00,2017-12-11 22:57:48.110096
+Kate,Derpiest Draft,K,Derpiest Draft_K,Ryan Succop,1.00,2017-12-11 22:57:48.110102
+Kate,Derpiest Draft,DEF,Derpiest Draft_DEF,Green Bay,6.00,2017-12-11 22:57:48.110108
+Kate,Derpiest Draft,BN6,Derpiest Draft_BN6,Philadelphia,7.00,2017-12-11 22:57:48.110114
+Claire,It's Britney Bitch,QB,It's Britney Bitch_QB,Matt Ryan,9.84,2017-12-11 22:57:48.110120
+Claire,It's Britney Bitch,WR1,It's Britney Bitch_WR1,Emmanuel Sanders,1.60,2017-12-11 22:57:48.110126
+Claire,It's Britney Bitch,WR2,It's Britney Bitch_WR2,Keenan Allen,11.10,2017-12-11 22:57:48.110133
+Claire,It's Britney Bitch,WR3,It's Britney Bitch_WR3,Sterling Shepard,0.70,2017-12-11 22:57:48.110140
+Claire,It's Britney Bitch,RB1,It's Britney Bitch_RB1,Alvin Kamara,2.70,2017-12-11 22:57:48.110146
+Claire,It's Britney Bitch,RB2,It's Britney Bitch_RB2,LeGarrette Blount,2.30,2017-12-11 22:57:48.110152
+Claire,It's Britney Bitch,TE,It's Britney Bitch_TE,Dwayne Allen,1.00,2017-12-11 22:57:48.110159
+Claire,It's Britney Bitch,W/R/T,It's Britney Bitch_W/R/T,Marshawn Lynch,12.40,2017-12-11 22:57:48.110165
+Claire,It's Britney Bitch,BN1,It's Britney Bitch_BN1,Latavius Murray,2.00,2017-12-11 22:57:48.110172
+Claire,It's Britney Bitch,BN2,It's Britney Bitch_BN2,Amari Cooper,0.00,2017-12-11 22:57:48.110178
+Claire,It's Britney Bitch,BN3,It's Britney Bitch_BN3,Blake Bortles,18.62,2017-12-11 22:57:48.110185
+Claire,It's Britney Bitch,BN4,It's Britney Bitch_BN4,Adam Humphries,2.50,2017-12-11 22:57:48.110191
+Claire,It's Britney Bitch,BN5,It's Britney Bitch_BN5,Randall Cobb,3.90,2017-12-11 22:57:48.110197
+Claire,It's Britney Bitch,IR,It's Britney Bitch_IR,Chris Conley,0.00,2017-12-11 22:57:48.110204
+Claire,It's Britney Bitch,K,It's Britney Bitch_K,Josh Lambo,14.00,2017-12-11 22:57:48.110210
+Claire,It's Britney Bitch,DEF,It's Britney Bitch_DEF,Buffalo,5.00,2017-12-11 22:57:48.110216
+Claire,It's Britney Bitch,BN6,It's Britney Bitch_BN6,Dallas,8.00,2017-12-11 22:57:48.110222
+Mike Y,Dixon Butts,QB,Dixon Butts_QB,Jared Goff,14.16,2017-12-11 22:57:48.110229
+Mike Y,Dixon Butts,WR1,Dixon Butts_WR1,DeAndre Hopkins,24.90,2017-12-11 22:57:48.110235
+Mike Y,Dixon Butts,WR2,Dixon Butts_WR2,Larry Fitzgerald,4.40,2017-12-11 22:57:48.110242
+Mike Y,Dixon Butts,WR3,Dixon Butts_WR3,Corey Coleman,12.20,2017-12-11 22:57:48.110248
+Mike Y,Dixon Butts,RB1,Dixon Butts_RB1,Alfred Morris,8.50,2017-12-11 22:57:48.110254
+Mike Y,Dixon Butts,RB2,Dixon Butts_RB2,Jamaal Williams,23.80,2017-12-11 22:57:48.110260
+Mike Y,Dixon Butts,TE,Dixon Butts_TE,Jimmy Graham,0.00,2017-12-11 22:57:48.110266
+Mike Y,Dixon Butts,W/R/T,Dixon Butts_W/R/T,Ricky Seals-Jones,2.00,2017-12-11 22:57:48.110272
+Mike Y,Dixon Butts,BN1,Dixon Butts_BN1,Dontrelle Inman,0.00,2017-12-11 22:57:48.110278
+Mike Y,Dixon Butts,BN2,Dixon Butts_BN2,Ben Roethlisberger,28.74,2017-12-11 22:57:48.110284
+Mike Y,Dixon Butts,BN3,Dixon Butts_BN3,Corey Clement,5.20,2017-12-11 22:57:48.110290
+Mike Y,Dixon Butts,BN4,Dixon Butts_BN4,Marlon Mack,4.40,2017-12-11 22:57:48.110295
+Mike Y,Dixon Butts,BN5,Dixon Butts_BN5,Ezekiel Elliott,0.00,2017-12-11 22:57:48.110301
+Mike Y,Dixon Butts,K,Dixon Butts_K,Jake Elliott,14.00,2017-12-11 22:57:48.110307
+Mike Y,Dixon Butts,DEF,Dixon Butts_DEF,Baltimore,-2.00,2017-12-11 22:57:48.110313
+Mike Y,Dixon Butts,BN6,Dixon Butts_BN6,Kansas City,10.00,2017-12-11 22:57:48.110318
+Ben,Humongous Melonheads,QB,Humongous Melonheads_QB,Derek Carr,12.44,2017-12-11 22:57:48.110324
+Ben,Humongous Melonheads,WR1,Humongous Melonheads_WR1,Brandin Cooks,3.80,2017-12-11 22:57:48.110331
+Ben,Humongous Melonheads,WR2,Humongous Melonheads_WR2,Mohamed Sanu,14.30,2017-12-11 22:57:48.110337
+Ben,Humongous Melonheads,WR3,Humongous Melonheads_WR3,Sammy Watkins,8.10,2017-12-11 22:57:48.110344
+Ben,Humongous Melonheads,RB1,Humongous Melonheads_RB1,Isaiah Crowell,13.10,2017-12-11 22:57:48.110351
+Ben,Humongous Melonheads,RB2,Humongous Melonheads_RB2,Samaje Perine,5.20,2017-12-11 22:57:48.110357
+Ben,Humongous Melonheads,TE,Humongous Melonheads_TE,Vernon Davis,8.60,2017-12-11 22:57:48.110364
+Ben,Humongous Melonheads,W/R/T,Humongous Melonheads_W/R/T,Josh Doctson,3.40,2017-12-11 22:57:48.110370
+Ben,Humongous Melonheads,BN1,Humongous Melonheads_BN1,Austin Ekeler,4.90,2017-12-11 22:57:48.110377
+Ben,Humongous Melonheads,BN2,Humongous Melonheads_BN2,Jordy Nelson,3.30,2017-12-11 22:57:48.110383
+Ben,Humongous Melonheads,BN3,Humongous Melonheads_BN3,Damien Williams,0.00,2017-12-11 22:57:48.110389
+Ben,Humongous Melonheads,BN4,Humongous Melonheads_BN4,Jordan Reed,0.00,2017-12-11 22:57:48.110395
+Ben,Humongous Melonheads,BN5,Humongous Melonheads_BN5,Dede Westbrook,14.10,2017-12-11 22:57:48.110402
+Ben,Humongous Melonheads,BN6,Humongous Melonheads_BN6,T.J. Yeldon,0.90,2017-12-11 22:57:48.110408
+Ben,Humongous Melonheads,IR,Humongous Melonheads_IR,David Johnson,0.00,2017-12-11 22:57:48.110414
+Ben,Humongous Melonheads,K,Humongous Melonheads_K,Wil Lutz,5.00,2017-12-11 22:57:48.110420
+Ben,Humongous Melonheads,DEF,Humongous Melonheads_DEF,Detroit,13.00,2017-12-11 22:57:48.110426
+Amelia,So I have this rash,QB,So I have this rash_QB,Joe Flacco,17.76,2017-12-11 22:57:48.110433
+Amelia,So I have this rash,WR1,So I have this rash_WR1,Golden Tate,14.50,2017-12-11 22:57:48.110439
+Amelia,So I have this rash,WR2,So I have this rash_WR2,John Brown,0.00,2017-12-11 22:57:48.110446
+Amelia,So I have this rash,WR3,So I have this rash_WR3,Cole Beasley,5.90,2017-12-11 22:57:48.110452
+Amelia,So I have this rash,RB1,So I have this rash_RB1,Mike Gillislee,0.00,2017-12-11 22:57:48.110459
+Amelia,So I have this rash,RB2,So I have this rash_RB2,Jamaal Charles,1.20,2017-12-11 22:57:48.110465
+Amelia,So I have this rash,TE,So I have this rash_TE,Zach Ertz,0.00,2017-12-11 22:57:48.110472
+Amelia,So I have this rash,W/R/T,So I have this rash_W/R/T,Jamison Crowder,3.40,2017-12-11 22:57:48.110478
+Amelia,So I have this rash,BN1,So I have this rash_BN1,Frank Gore,14.00,2017-12-11 22:57:48.110485
+Amelia,So I have this rash,BN2,So I have this rash_BN2,Carlos Hyde,13.80,2017-12-11 22:57:48.110491
+Amelia,So I have this rash,BN3,So I have this rash_BN3,Aaron Rodgers,0.00,2017-12-11 22:57:48.110497
+Amelia,So I have this rash,BN4,So I have this rash_BN4,Matt Forte,3.40,2017-12-11 22:57:48.110504
+Amelia,So I have this rash,BN5,So I have this rash_BN5,O.J. Howard,9.40,2017-12-11 22:57:48.110510
+Amelia,So I have this rash,K,So I have this rash_K,Phil Dawson,13.00,2017-12-11 22:57:48.110516
+Amelia,So I have this rash,BN6,So I have this rash_BN6,Adam Vinatieri,1.00,2017-12-11 22:57:48.110523
+Amelia,So I have this rash,DEF,So I have this rash_DEF,Pittsburgh,-2.00,2017-12-11 22:57:48.110529
+Sierra,Slurpy,QB,Slurpy_QB,Philip Rivers,20.76,2017-12-11 22:57:48.110535
+Sierra,Slurpy,WR1,Slurpy_WR1,Stefon Diggs,6.40,2017-12-11 22:57:48.110541
+Sierra,Slurpy,WR2,Slurpy_WR2,J.J. Nelson,2.60,2017-12-11 22:57:48.110547
+Sierra,Slurpy,WR3,Slurpy_WR3,Tyreek Hill,7.50,2017-12-11 22:57:48.110552
+Sierra,Slurpy,RB1,Slurpy_RB1,Jordan Howard,27.50,2017-12-11 22:57:48.110558
+Sierra,Slurpy,RB2,Slurpy_RB2,Joe Mixon,0.00,2017-12-11 22:57:48.110563
+Sierra,Slurpy,TE,Slurpy_TE,Austin Hooper,2.30,2017-12-11 22:57:48.110569
+Sierra,Slurpy,W/R/T,Slurpy_W/R/T,DeMarco Murray,4.70,2017-12-11 22:57:48.110574
+Sierra,Slurpy,BN1,Slurpy_BN1,Hunter Henry,11.00,2017-12-11 22:57:48.110580
+Sierra,Slurpy,BN2,Slurpy_BN2,Kenny Stills,1.80,2017-12-11 22:57:48.110586
+Sierra,Slurpy,BN3,Slurpy_BN3,Pierre Garcon,0.00,2017-12-11 22:57:48.110601
+Sierra,Slurpy,BN4,Slurpy_BN4,Charles Sims,2.70,2017-12-11 22:57:48.110608
+Sierra,Slurpy,BN5,Slurpy_BN5,Charles Clay,1.10,2017-12-11 22:57:48.110613
+Sierra,Slurpy,BN6,Slurpy_BN6,Josh McCown,-0.46,2017-12-11 22:57:48.110619
+Sierra,Slurpy,K,Slurpy_K,Matt Bryant,10.00,2017-12-11 22:57:48.110625
+Sierra,Slurpy,DEF,Slurpy_DEF,Minnesota,2.00,2017-12-11 22:57:48.110630
+Griffin,Griffin's Team,QB,Griffin's Team_QB,Tom Brady,11.32,2017-12-11 22:57:48.110636
+Griffin,Griffin's Team,WR1,Griffin's Team_WR1,Will Fuller V,2.60,2017-12-11 22:57:48.110642
+Griffin,Griffin's Team,WR2,Griffin's Team_WR2,Michael Thomas,17.70,2017-12-11 22:57:48.110649
+Griffin,Griffin's Team,WR3,Griffin's Team_WR3,A.J. Green,4.40,2017-12-11 22:57:48.110656
+Griffin,Griffin's Team,RB1,Griffin's Team_RB1,Derrick Henry,8.00,2017-12-11 22:57:48.110662
+Griffin,Griffin's Team,RB2,Griffin's Team_RB2,Elijah McGuire,-0.30,2017-12-11 22:57:48.110668
+Griffin,Griffin's Team,TE,Griffin's Team_TE,Austin Seferian-Jenkins,0.10,2017-12-11 22:57:48.110674
+Griffin,Griffin's Team,W/R/T,Griffin's Team_W/R/T,Donte Moncrief,0.00,2017-12-11 22:57:48.110681
+Griffin,Griffin's Team,BN1,Griffin's Team_BN1,Jalen Richard,0.00,2017-12-11 22:57:48.110687
+Griffin,Griffin's Team,BN2,Griffin's Team_BN2,Tyrod Taylor,0.00,2017-12-11 22:57:48.110693
+Griffin,Griffin's Team,BN3,Griffin's Team_BN3,Cameron Brate,1.10,2017-12-11 22:57:48.110699
+Griffin,Griffin's Team,BN4,Griffin's Team_BN4,Torrey Smith,10.00,2017-12-11 22:57:48.110705
+Griffin,Griffin's Team,K,Griffin's Team_K,Stephen Gostkowski,9.00,2017-12-11 22:57:48.110711
+Griffin,Griffin's Team,BN5,Griffin's Team_BN5,Chandler Catanzaro,0.00,2017-12-11 22:57:48.110717
+Griffin,Griffin's Team,DEF,Griffin's Team_DEF,Los Angeles,7.00,2017-12-11 22:57:48.110723
+Griffin,Griffin's Team,BN6,Griffin's Team_BN6,Denver,18.00,2017-12-11 22:57:48.110729
+Bennett,butt stuff,QB,butt stuff_QB,Cam Newton,15.48,2017-12-11 22:57:48.110735
+Bennett,butt stuff,WR1,butt stuff_WR1,Ted Ginn Jr.,0.70,2017-12-11 22:57:48.110741
+Bennett,butt stuff,WR2,butt stuff_WR2,DeVante Parker,4.00,2017-12-11 22:57:48.110747
+Bennett,butt stuff,WR3,butt stuff_WR3,Eric Decker,5.60,2017-12-11 22:57:48.110753
+Bennett,butt stuff,RB1,butt stuff_RB1,Le'Veon Bell,30.50,2017-12-11 22:57:48.110759
+Bennett,butt stuff,RB2,butt stuff_RB2,Christian McCaffrey,5.30,2017-12-11 22:57:48.110765
+Bennett,butt stuff,TE,butt stuff_TE,David Njoku,0.30,2017-12-11 22:57:48.110771
+Bennett,butt stuff,W/R/T,butt stuff_W/R/T,James White,7.10,2017-12-11 22:57:48.110777
+Bennett,butt stuff,BN1,butt stuff_BN1,Rob Gronkowski,0.00,2017-12-11 22:57:48.110783
+Bennett,butt stuff,BN2,butt stuff_BN2,Kelvin Benjamin,9.80,2017-12-11 22:57:48.110789
+Bennett,butt stuff,BN3,butt stuff_BN3,Robert Woods,0.00,2017-12-11 22:57:48.110795
+Bennett,butt stuff,BN4,butt stuff_BN4,Eli Manning,11.12,2017-12-11 22:57:48.110801
+Bennett,butt stuff,BN5,butt stuff_BN5,Andre Ellington,2.20,2017-12-11 22:57:48.110806
+Bennett,butt stuff,BN6,butt stuff_BN6,Zach Miller,0.00,2017-12-11 22:57:48.110812
+Bennett,butt stuff,K,butt stuff_K,Greg Zuerlein,5.00,2017-12-11 22:57:48.110818
+Bennett,butt stuff,DEF,butt stuff_DEF,New England,2.00,2017-12-11 22:57:48.110824
+Eliot,My w'a is the Dont'a,QB,My w'a is the Dont'a_QB,Drew Brees,18.04,2017-12-11 22:57:48.110829
+Eliot,My w'a is the Dont'a,WR1,My w'a is the Dont'a_WR1,Julio Jones,9.80,2017-12-11 22:57:48.110836
+Eliot,My w'a is the Dont'a,WR2,My w'a is the Dont'a_WR2,Doug Baldwin,13.80,2017-12-11 22:57:48.110842
+Eliot,My w'a is the Dont'a,WR3,My w'a is the Dont'a_WR3,Rishard Matthews,1.90,2017-12-11 22:57:48.110848
+Eliot,My w'a is the Dont'a,RB1,My w'a is the Dont'a_RB1,Dion Lewis,6.70,2017-12-11 22:57:48.110855
+Eliot,My w'a is the Dont'a,RB2,My w'a is the Dont'a_RB2,Rex Burkhead,11.30,2017-12-11 22:57:48.110861
+Eliot,My w'a is the Dont'a,TE,My w'a is the Dont'a_TE,Travis Kelce,7.40,2017-12-11 22:57:48.110867
+Eliot,My w'a is the Dont'a,W/R/T,My w'a is the Dont'a_W/R/T,Ameer Abdullah,0.00,2017-12-11 22:57:48.110873
+Eliot,My w'a is the Dont'a,BN1,My w'a is the Dont'a_BN1,Devin Funchess,11.90,2017-12-11 22:57:48.110880
+Eliot,My w'a is the Dont'a,BN2,My w'a is the Dont'a_BN2,Jonathan Stewart,28.30,2017-12-11 22:57:48.110886
+Eliot,My w'a is the Dont'a,BN3,My w'a is the Dont'a_BN3,J.D. McKissic,3.50,2017-12-11 22:57:48.110893
+Eliot,My w'a is the Dont'a,BN4,My w'a is the Dont'a_BN4,Danny Amendola,7.60,2017-12-11 22:57:48.110899
+Eliot,My w'a is the Dont'a,K,My w'a is the Dont'a_K,Chris Boswell,19.00,2017-12-11 22:57:48.110905
+Eliot,My w'a is the Dont'a,BN5,My w'a is the Dont'a_BN5,Harrison Butker,17.00,2017-12-11 22:57:48.110911
+Eliot,My w'a is the Dont'a,DEF,My w'a is the Dont'a_DEF,Seattle,0.00,2017-12-11 22:57:48.110918
+Eliot,My w'a is the Dont'a,BN6,My w'a is the Dont'a_BN6,New Orleans,8.00,2017-12-11 22:57:48.110924
