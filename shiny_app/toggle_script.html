@@ -1,0 +1,38 @@
+<script charset="utf-8" type="text/javascript">
+// expand / collapse functionality for the bench (should be moved to separate file)
+YSF.use('node', 'event', function(Y) {
+  // setup nodes
+  var arrow = Y.one('#arrow'),
+      bench_toggle_container = Y.one('#bench-toggle-container'),
+      bench_toggle = Y.one('#bench-toggle'),
+      bench_table   = Y.one('#bench-table'),
+      visible = false;
+
+  var toggleBenchView = function() {
+    //alert("in toggle");
+    if(visible) {
+      bench_toggle.set('text', 'Show Bench Players');
+      bench_table.addClass('Hidden');
+      visible = false;
+    }
+    else {
+      bench_toggle.set('text', 'Hide Bench Players');
+      bench_table.removeClass('Hidden');
+      visible = true;
+    }
+  }
+
+  // capture toggle link click
+  Y.one(bench_toggle_container).on('click', function(e) {
+    e.preventDefault();
+    toggleBenchView();
+  });
+});
+</script>
+<!-- also need this one -->
+<script>
+if(YSF && YSF.exec) {
+  YFB = YMedia = YSF.getInstance();
+  YSF.exec();
+}
+</script>

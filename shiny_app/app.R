@@ -200,8 +200,10 @@ get_matchup_df <- function(roster1=NULL, roster2=NULL, team1=NULL, team2=NULL,
     mutate_at(c("fan_pts.1", "fan_pts.2", "proj_pts.1", "proj_pts.2"), as.numeric)
   
   df <- active.df %>% 
-    bind_rows(data.frame(name.1="", proj_pts.1=sum(active.df$proj_pts.1), fan_pts.1=sum(active.df$fan_pts.1), pos="Total",
-                         name.2="", proj_pts.2=sum(active.df$proj_pts.2), fan_pts.2=sum(active.df$fan_pts.2),
+    bind_rows(data.frame(name.1="", proj_pts.1=sum(active.df$proj_pts.1, na.rm=TRUE), 
+                         fan_pts.1=sum(active.df$fan_pts.1, na.rm=TRUE), pos="Total",
+                         name.2="", proj_pts.2=sum(active.df$proj_pts.2, na.rm=TRUE), 
+                         fan_pts.2=sum(active.df$fan_pts.2, na.rm=TRUE),
                          stringsAsFactors=FALSE)) %>% 
     bind_rows(bench.df)
   
@@ -211,6 +213,54 @@ get_matchup_df <- function(roster1=NULL, roster2=NULL, team1=NULL, team2=NULL,
 result <- function(team_vec, team1=team_vec[1], team2=team_vec[2],
                    week, outcome) {
   return("")  # TODO: write this function
+}
+
+generate_html <- function(url, output_dir) {
+  html <- url %>% read_html()
+  
+  # write relevant parts of HTML to temporary files
+  html %>%
+    html_nodes("head") %>%
+    write_html(paste0(output_dir, "/head.html"))
+  
+  divs <- html %>%
+    html_nodes("div")
+  
+  sections <- html %>%
+    html_nodes("section")
+  
+  which.div <- which(html_attr(divs, "id") == "matchup")
+  which.section <- which(html_attr(sections, "id") == "matchup-header")
+  
+  divs[which.div] %>%
+    write_html(paste0(output_dir, "/div.html"))
+  
+  sections[which.section] %>%
+    write_html(paste0(output_dir, "/section.html"))
+  
+  '<html id="Stencil" class="NoJs template-html5 Sticky-off Desktop" lang="en-US" xmlns:fb="https://www.facebook.com/2008/fbml">' %>% 
+  # "<!DOCTYPE html>" %>%
+    # paste('<html id="Stencil" class="NoJs template-html5 Sticky-off Desktop" lang="en-US" xmlns:fb="https://www.facebook.com/2008/fbml">', sep="\n") %>%
+    paste(read_file(paste0(output_dir, "/head.html")), sep="\n") %>%
+    paste(read_file(paste0(output_dir, "/section.html")), sep="\n") %>%
+    paste(read_file(paste0(output_dir, "/div.html")), sep="\n") %>%
+    # add the script that makes the "show bench" button work
+    paste(read_file("./toggle_script.html"), sep="\n") %>%
+    # this line messes up the format of everything in the app (I've included some lines in a separate CSS file)
+    str_replace('<link href="https://sp.yimg.com/ua/assets/css/icingv2.cGopRQV4VIw1I.css" type="text/css" rel="stylesheet">', "") %>%
+    # remove the player notes
+    # remove "compare managers"
+    str_replace(">Compare Managers<", "><") %>%
+    # center "orig proj"
+    # remove "--hidden--" manager names
+    str_replace_all('<div>--hidden--</div>', "") %>%
+    # add </html> at end of file
+    paste("</html>", sep="\n") %>%
+    # TODO: remove the favorite/underdog bars and percentages
+    
+    # write the file
+    write_file(paste0(output_dir, "/out.html"))
+  # write_file("./out.html")
 }
 
 # preprocessing -----------------------------------------------------------
@@ -254,13 +304,20 @@ consolation <- list(
   eleventh = c(result(semi1, week=15, outcome="L"), result(semi2, week=15, outcome="L"))
 )
 
-roster.list <- list(week14=list(), week15=list(), week16=list())
-for (i in 1:14) {
-  roster.list$week14[[i]] <- scrape_team_from_roster(team_id=i, week=14, season=season)
-}
+# do something like this if you want to preload the rosters
+# roster.list <- list(week14=list(), week15=list(), week16=list())
+# for (i in 1:14) {
+#   roster.list$week14[[i]] <- scrape_team_from_roster(team_id=i, week=14, season=season)
+# }
+
+# create the file HTML file that will be displayed
+temp.dir <- tempdir()
+# write_file("", path=paste0(temp.dir, "/out.html"))
 
 
 # variables for ui and server ---------------------------------------------
+
+league.id <- get_league_id(season)
 
 matchup.choices <- c()
 for (i in paste0("quarter", 1:4)) {
@@ -282,48 +339,78 @@ for (i in paste0("quarter", 1:4)) {
 matchup.choices <- matchup.choices %>% 
   str_replace("#0 ", "")
 
+week.choices <- c("14 - Quarterfinal"
+                  # ,"15 - Semifinal"
+                  # ,"16 - Final"
+)
+                  
+
+
 
 # ui ----------------------------------------------------------------------
-ui <- dashboardPage(
-  dashboardHeader(title="Statcast-Enhanced Batting Projections",
+ui <- dashboardPage(skin="purple",
+  dashboardHeader(title="2018 Playoffs and Consolation Bracket",
                   titleWidth=400)
   
   ,dashboardSidebar(
     sidebarMenu(
       id="tabs"
-      ,menuItem("Team Page", tabName="team")
-      ,menuItem("Playoff Seeding", tabName="seeding")
-      ,menuItem("Matchup", tabName="matchup")
+      ,menuItem("Matchups", tabName="matchup")
+      # ,menuItem("Team Page", tabName="team")
+      # ,menuItem("Playoff Seeding", tabName="seeding")
+      # ,menuItem("Matchup (simple)", tabName="simplematchup")
     )
   )
   
   ,dashboardBody(
     
+    includeCSS("./styling.css"),
+    
     tabItems(
       tabItem(
-        tabName="team"
-        ,h2("Team Roster")
-        
-        ,selectInput("team", "Team", choices=team.df$name)
-        ,selectInput("week", "Week", choices=1:16)
-        
-        ,dataTableOutput("team")
-      ) # end tabItem
-      
-      ,tabItem(
-        tabName="seeding"
-        
-        ,dataTableOutput("team.df")
-      ) # end tabItem
-      
-      ,tabItem(
         tabName="matchup"
         
-        ,selectInput("matchupweek", "Week", choices=14)
-        ,selectInput("matchup", "Matchup", choices=matchup.choices)
+        ,div(style="display:inline-block", 
+             selectInput("week", "Week", choices=week.choices, width="150px"))
+        ,div(style="display:inline-block",
+             # selectInput("matchup", "Matchup", choices=matchup.choices, width="400px"))
+             selectizeInput("matchup", "Matchup", choices=matchup.choices, width="400px",
+                            options = list(
+                              placeholder = 'Select a matchup',
+                              onInitialize = I('function() { this.setValue(""); }'))))
         
-        ,tableOutput("matchup")
+        # not sure why this needs to be included since it's in the HTML file, but it fixes the format
+        # (something weird happens when using includeHTML inside renderUI)
+        ,tags$html(id="Stencil", class="NoJs template-html5 Sticky-off Desktop")
+        
+        # ,includeHTML(paste0(temp.dir, "/out.html"))
+        ,htmlOutput("html")
       )
+      
+      # ,tabItem(
+      #   tabName="team"
+      #   ,h2("Team Roster")
+      #   
+      #   ,selectInput("team", "Team", choices=team.df$name)
+      #   ,selectInput("teamweek", "Week", choices=1:16)
+      #   
+      #   ,dataTableOutput("team")
+      # ) # end tabItem
+      # 
+      # ,tabItem(
+      #   tabName="seeding"
+      #   
+      #   ,dataTableOutput("team.df")
+      # ) # end tabItem
+      # 
+      # ,tabItem(
+      #   tabName="simplematchup"
+      # 
+      #   ,selectInput("weeksimple", "Week", choices=14)
+      #   ,selectInput("matchupsimple", "Matchup", choices=matchup.choices)
+      # 
+      #   ,tableOutput("matchup")
+      # )
       
     ) # end tabItems
   ) # end dashboardBody
@@ -332,17 +419,23 @@ ui <- dashboardPage(
 
 # server ------------------------------------------------------------------
 server <- function(input, output, session) {
-  output$team <- renderDataTable({
-    scrape_team_from_roster(team_id=team_name_to_id(name=input$team), week=input$week, season=season)
-  })
   
-  output$team.df <- renderDataTable({
-    team.df %>% 
-      arrange(seed)
-  })
-  
-  output$matchup <- function (){
-    i <- which(matchup.choices == input$matchup)
+  # show Yahoo matchup page for selected teams
+  # TODO: try to make it work so it doesn't show a blank screen at the default selectInput value
+  output$html <- renderUI({
+    progress <- Progress$new()
+    on.exit(progress$close())
+    progress$set(message = "Loading...")
+    
+    week <- input$week %>% 
+      str_extract("[0-9]+") %>% 
+      as.numeric()
+    matchup <- input$matchup
+    
+    # this is necessary so it shows something the first time you select a matchup
+    if (matchup == "") { matchup <- matchup.choices[1] }
+    
+    i <- which(matchup.choices == matchup)
     if (i <= 4) {
       team.ids <- playoffs[[paste0("quarter", i)]]
     } else {
@@ -352,15 +445,57 @@ server <- function(input, output, session) {
     team1 <- team.ids[1]
     team2 <- team.ids[2]
     
-    roster1 <- roster.list$week14[[team1]]  # TODO: change so it's not hard coded to week 14
-    roster2 <- roster.list$week14[[team2]]
+    # week=0 works for the current week
+    # TODO: make this work for past weeks as well
+    url <- paste0("https://football.fantasysports.yahoo.com/f1/", league.id,
+                  "/matchup?week=0&mid1=", team1, "&mid2=", team2)
     
-    matchup.df <- get_matchup_df(roster1=roster1, roster2=roster2)
-    matchup.df %>% 
-      kable() %>% 
-      kable_styling()
-      
-  }
+    html <- url %>% read_html()
+    
+    # write relevant parts of HTML to temporary files
+    generate_html(url=url, output_dir=temp.dir)
+    
+    includeHTML(paste0(temp.dir, "/out.html"))
+  })
+  
+  # output$team <- renderDataTable({
+  #   scrape_team_from_roster(team_id=team_name_to_id(name=input$team), week=input$teamweek, season=season)
+  # })
+  
+  # output$team.df <- renderDataTable({
+  #   team.df %>% 
+  #     arrange(seed)
+  # })
+  
+  # output$matchup <- function () {
+  #   
+  #   progress <- Progress$new()
+  #   on.exit(progress$close())
+  #   progress$set(message = "Loading...")
+  #   
+  #   options(knitr.kable.NA = '')
+  #   
+  #   week <- input$weeksimple
+  #   
+  #   i <- which(matchup.choices == input$matchupsimple)
+  #   if (i <= 4) {
+  #     team.ids <- playoffs[[paste0("quarter", i)]]
+  #   } else {
+  #     team.ids <- consolation[[paste0("quarter", i-4)]]
+  #   }
+  #   
+  #   team1 <- team.ids[1]
+  #   team2 <- team.ids[2]
+  #   
+  #   roster1 <- scrape_team_from_roster(team_id=team1, week=week, season=season)  # TODO: change so it's not hard coded to week 14
+  #   roster2 <- scrape_team_from_roster(team_id=team2, week=week, season=season)
+  #   
+  #   matchup.df <- get_matchup_df(roster1=roster1, roster2=roster2)
+  #   matchup.df %>% 
+  #     kable() %>% 
+  #     kable_styling()
+  #     
+  # }
   
 }
 

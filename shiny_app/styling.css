@@ -1,0 +1,4322 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'yahoo';
+  src: url("https://s.yimg.com/xe/fantasy-assethub/f/c558734/yahoo-fantasy-icons-7c9d76bbf1b43eacc1be051ebd2ca9f0.eot");
+  src: url("https://s.yimg.com/xe/fantasy-assethub/f/c558734/yahoo-fantasy-icons-7c9d76bbf1b43eacc1be051ebd2ca9f0.eot") format("embedded-opentype"), url("https://s.yimg.com/xe/fantasy-assethub/f/c558734/yahoo-fantasy-icons-7c9d76bbf1b43eacc1be051ebd2ca9f0.woff") format("woff"), url("https://s.yimg.com/xe/fantasy-assethub/f/c558734/yahoo-fantasy-icons-7c9d76bbf1b43eacc1be051ebd2ca9f0.ttf") format("truetype"), url("https://s.yimg.com/xe/fantasy-assethub/f/c558734/yahoo-fantasy-icons-7c9d76bbf1b43eacc1be051ebd2ca9f0.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.yui3-js-enabled .Js-hidden,
+.Js-inlineblock,
+.Js-block,
+.Js-inline {
+  display: none !important;
+}
+
+.yui3-js-enabled .Js-inlineblock {
+  display: inline-block !important;
+  *display: inline !important;
+  zoom: 1 !important;
+}
+
+.yui3-js-enabled .Js-block {
+  display: block !important;
+}
+
+.yui3-js-enabled .Js-inline {
+  display: inline !important;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0px;
+}
+
+/*
+body {
+  text-align: center;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+ */
+
+
+
+input, select, button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.IE8-show:not(.💩) {
+  display: none;
+}
+
+.Page {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  text-align: left;
+  *width: 1000px;
+}
+
+.Page-wrap {
+  width: 100%;
+}
+
+.Page * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.Page .RedZone * {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.Page-hd,
+.Page-bd,
+.Page-ft {
+  position: relative;
+}
+
+.Page-hd {
+  z-index: 10003;
+}
+
+#yspmh {
+  position: relative;
+}
+
+.Page-ft {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.Page-maincontent {
+  padding: 20px 20px 0px;
+}
+
+.Phone .Page-maincontent {
+  padding: 8px 8px 0px;
+}
+
+.Masthead {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.Page-wrap-lg,
+.Page-wrap-left {
+  min-width: 1260px;
+}
+
+.Page-wrap-lg {
+  margin: 0 auto;
+}
+
+.Page-wrap-sm {
+  min-width: 1000px;
+  margin: 0 auto;
+}
+
+.RailWrap {
+  display: table;
+  *display: inline;
+  zoom: 1;
+  width: 100%;
+}
+
+.RailWrap > .Rail {
+  vertical-align: top;
+  display: table-cell;
+  *display: inline;
+  zoom: 1;
+}
+
+.Rail {
+  position: relative;
+}
+
+.Page-noexpand .RailFull {
+  width: 1020px;
+}
+
+.RailFull {
+  min-width: 1000px;
+}
+
+.Page-noexpand .RailMain {
+  width: 650px;
+}
+
+.RailMain {
+  min-width: 650px;
+}
+
+.Page-noexpand .RailSub {
+  width: 310px;
+}
+
+.RailSub {
+  width: 310px;
+  margin-left: 20px;
+}
+
+.Page-herocontentwrap .RailFull {
+  width: 100%;
+}
+
+.Page-noexpand .RailSkyContent {
+  width: 810px;
+}
+
+.RailSkyContent {
+  min-width: 810px;
+}
+
+.Page-noexpand .RailSkyAd {
+  width: 170px;
+}
+
+.RailSkyAd {
+  width: 170px;
+  padding-top: 20px;
+  margin-left: 20px;
+}
+
+html .yui-sv-hd {
+  z-index: 200000;
+}
+
+html #yucsHead {
+  position: relative;
+  z-index: 200000;
+}
+
+:lang(de-DE) .yuhead-logo h2 {
+  height: 75px;
+}
+
+.Page-wrap-lg #yucs.yucs-b2,
+.Page-wrap-lg #yucs-top-inner {
+  width: 1260px;
+}
+
+.yucs-menu_nav, #yucs-nav_outer, #yucs-ylogo, #yucs-search, #yucs-profile, .yucs-mail_link, #yucs-search_button_wrapper, #yucs-satray, #yucs .yucs-menu {
+  z-index: 10006 !important;
+}
+
+.ct-reveal .yui3-sidebar, .ct-reveal-android .yui3-sidebar, .yui3-sidebar {
+  z-index: 220000;
+}
+
+html #yucs.yucs-mc {
+  width: 980px !important;
+  margin: 0 auto !important;
+}
+
+html #yucs-search {
+  position: static !important;
+}
+
+html.Desktop #yucsHead {
+  min-width: 1000px;
+}
+
+.Mod {
+  position: relative;
+  margin-bottom: 30px;
+  zoom: 1;
+}
+
+.Hd, .Bd, .Ft {
+  *position: relative;
+  zoom: 1;
+}
+
+.Hd {
+  padding: 0px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid;
+}
+.Hd p {
+  font-size: 11px;
+  padding: 8px 0px 8px;
+}
+.Hd .Nav-h {
+  border-bottom: none !important;
+}
+
+.Bd {
+  padding: 10px;
+}
+
+.Ft {
+  font-size: 11px;
+  padding: 6px 0px;
+}
+
+.Hd h1,
+.Hd h2 {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.Phone .Mod {
+  margin: 0;
+}
+
+.RailSub .Ad {
+  margin-bottom: 10px;
+}
+
+.Avatar-xs {
+  width: 16px;
+  height: 16px;
+}
+
+.Avatar-sm {
+  width: 20px;
+  height: 20px;
+}
+
+.Avatar-med {
+  width: 40px;
+  height: 40px;
+}
+
+.Avatar-lg {
+  width: 80px;
+  height: 80px;
+}
+
+.Badge {
+  -moz-border-radius: 35%;
+  -webkit-border-radius: 35%;
+  border-radius: 35%;
+  border: 1px solid;
+  background-clip: padding-box;
+}
+
+/**
+ * New BFC via overflow:hidden
+ */
+.Bfc {
+  overflow: hidden;
+  zoom: 1;
+}
+
+/**
+ * New BFC via table-cell
+ * 1. this is a hack, it does not make the box grow up to 1600px, just enough to fill the container
+ */
+.Nbfc {
+  display: table-cell;
+  width: 1600px;
+  /* 1 */
+  *width: auto;
+  zoom: 1;
+}
+
+.Checkbox input {
+  display: inline;
+}
+
+.Checkbox input:not(.💩) {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.Checkbox .Checked {
+  border-radius: 3px;
+  border: solid 1px;
+  cursor: pointer;
+  font-family: "yahoo";
+  font-size: 13px;
+  margin-right: 10px;
+  width: 1.4em;
+  line-height: 1.4em;
+  text-align: center;
+  text-indent: -9999px;
+  vertical-align: middle;
+  display: none;
+}
+
+.Checkbox,
+.Checkbox label,
+.Checkbox:not(.💩) .Checked,
+.Checkbox .Checkbox-text {
+  letter-spacing: normal;
+  display: inline-block;
+  *display: inline;
+  vertical-align: middle;
+  zoom: 1;
+}
+
+.Checkbox label:not(.💩) {
+  cursor: pointer;
+  white-space: nowrap;
+  letter-spacing: -0.31em;
+}
+
+.Checkbox input:checked + label .Checked {
+  text-indent: 0;
+}
+
+select {
+  height: 31px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-transition: linear 0.2s border, linear 0.2s box-shadow;
+  -o-transition: linear 0.2s border, linear 0.2s box-shadow;
+  -webkit-transition: linear 0.2s border, linear 0.2s box-shadow;
+  transition: linear 0.2s border, linear 0.2s box-shadow;
+  border: 1px solid;
+  display: inline-block;
+  vertical-align: middle;
+  padding: .3em;
+  border-radius: 3px;
+  margin: 5px 0;
+}
+
+select[size],
+select[multiple] {
+  height: auto;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select {
+    -webkit-appearance: menulist-button;
+    height: 30px;
+  }
+}
+.Input-xs {
+  width: 70px;
+}
+
+.Input-sm {
+  width: 140px;
+}
+
+.Input-med {
+  width: 270px;
+}
+
+.Input-full {
+  width: 100%;
+  *width: 98%;
+}
+
+.Input {
+  border: solid 1px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  line-height: 1.3;
+  margin: 0;
+  padding: 3px 0px;
+  -moz-transition: linear 0.3s border;
+  -o-transition: linear 0.3s border;
+  -webkit-transition: linear 0.3s border;
+  transition: linear 0.3s border;
+  text-indent: 5px;
+  vertical-align: middle;
+}
+
+.Input:focus {
+  outline: thin dotted;
+}
+
+.Input:focus:not(.💩) {
+  outline: 0;
+}
+
+.Input:not(.💩) {
+  padding: 6px;
+  text-indent: 0;
+}
+
+.Phone .Input-xs,
+.Phone .Input-sm,
+.Phone .Input-med {
+  width: 100%;
+}
+
+.Phone .Phone-input-sm,
+.Tablet .Tablet-input-sm {
+  width: 140px;
+}
+
+.Phone .Phone-input-med,
+.Tablet .Tablet-input-med {
+  width: 270px;
+}
+
+.Btn,
+.Btn-primary,
+.Btn.Primary,
+.Btn-secondary {
+  border-width: 0px;
+  cursor: pointer;
+  display: inline-block;
+  *display: inline;
+  font-weight: 400;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  line-height: 31px;
+  margin: 0;
+  padding: 0 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+  zoom: 1;
+}
+
+.Btn:hover,
+.Btn.Primary:hover,
+.Btn-primary:hover,
+.Btn-secondary:hover {
+  text-decoration: none;
+}
+
+.Btn-tall {
+  height: auto;
+  line-height: normal;
+  font-size: 15px;
+  padding: 18px;
+}
+
+.Phone .Btn-tall {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.Btn-short {
+  line-height: normal;
+  padding: 8px;
+  font-size: 11px;
+}
+
+.Btn-sm,
+.Btn-med,
+.Btn-lg,
+.Btn-xl,
+.Btn-xxl {
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+}
+
+.Btn-xs {
+  width: 100px;
+}
+
+.Btn-sm {
+  width: 140px;
+}
+
+.Btn-med {
+  width: 185px;
+}
+
+.Btn-lg {
+  width: 300px;
+}
+
+.Blocklink {
+  display: block;
+  height: 100%;
+}
+
+.List {
+  padding: 0;
+  list-style-type: disc;
+}
+
+ol.List {
+  list-style-type: decimal;
+}
+
+.List > .Listitem {
+  list-style-type: none;
+  padding: 3px 0;
+}
+
+.List-plain,
+ol.List-plain {
+  padding: 0;
+  list-style-type: none;
+}
+
+.List-rich > .Listitem {
+  border-top: solid 1px;
+  padding: 10px 0px;
+  position: relative;
+}
+
+.List-rich > .Listitem:first-child {
+  border-top-width: 0px;
+}
+
+.List-rich-plain > .Listitem {
+  border-top-width: 0;
+}
+
+.yui3-js-enabled .yfa-js-hidden {
+  display: none !important;
+}
+
+.Nav-h {
+  display: block;
+  position: relative;
+}
+.Nav-h:not(.Nav-main) {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+}
+
+.Nav-h > .Navitem {
+  display: inline-block;
+  *display: inline;
+  position: relative;
+  vertical-align: middle;
+  letter-spacing: normal;
+  word-spacing: normal;
+  zoom: 1;
+}
+
+.Navitem > .Navtarget,
+.Navitem-main > .Navtarget {
+  display: block;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+.Navitem:hover > .Navtarget,
+.Navitem-tabbed:hover > .Navtarget {
+  text-decoration: none;
+  color: #000;
+}
+
+.Nav-h > .Selected > .Navtarget {
+  color: #333;
+}
+
+.Nav-h:not(.Nav-main) > .Navitem:first-child > .Navtarget {
+  padding-left: 0px;
+}
+
+.Nav-bordered-south {
+  border-bottom: 0px;
+}
+
+.Nav-bordered-south > .Navitem:first-child > .Navtarget {
+  padding-left: 0px;
+}
+
+.Nav-tabbed {
+  overflow: visible;
+  overflow-x: hidden;
+}
+.Nav-tabbed > .Navitem {
+  border-bottom: 1px solid;
+}
+
+.Nav-tabbed > .Selected {
+  background: none;
+}
+
+.Nav-tabbed > .Navitem:first-child > .Navtarget {
+  padding-left: 10px;
+}
+
+.Nav-tabbed > .Selected > .Navtarget:before,
+.Nav-tabbed > .Selected > .Navtarget:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  width: 5000px;
+}
+
+.Nav-tabbed > .Selected > .Navtarget:before {
+  right: 100%;
+}
+
+.Nav-tabbed > .Selected > .Navtarget:after {
+  left: 100%;
+}
+
+#hd,
+.Nav-main-wrap {
+  position: relative;
+  border-bottom: 1px solid;
+  z-index: 10004;
+}
+
+.Nav-main > .Navitem > .Navtarget {
+  padding: 6px;
+  text-decoration: none;
+}
+
+.Nav-main > .Selected > .Navtarget,
+.Nav-main > .Selected:hover > .Navtarget {
+  font-weight: 400;
+}
+
+.Nav-h.Nav-main > .Navitem > .Navtarget {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.Navitem-main > .Dropdown {
+  margin-top: 0px;
+}
+
+.Nav-main-phone > .Navitem {
+  padding-bottom: 1px;
+  color: #5f5f5f;
+}
+
+.Nav-main-phone > .Selected {
+  border-bottom: solid 1px #3775DD;
+  padding-bottom: 0px;
+  color: #000;
+}
+
+.Dropdown {
+  border: solid 1px;
+  position: absolute;
+  min-width: 100%;
+  margin-top: -1px;
+  z-index: 10004;
+}
+
+.Nav-pointers-north,
+.Nav-pointers-south {
+  overflow: hidden;
+}
+
+.Nav-pointers-north {
+  padding-top: 10px;
+}
+
+.Nav-pointers-south {
+  padding-bottom: 10px;
+}
+
+.Nav-pointers-south > .Navitem {
+  vertical-align: bottom;
+}
+
+.Nav-pointers-north .Navpointer,
+.Nav-pointers-south .Navpointer {
+  display: none;
+}
+
+.Nav-pointers-north .Navpointer {
+  top: -10px;
+}
+
+.Nav-pointers-south .Navpointer {
+  bottom: -10px;
+}
+
+.Nav-pointers-north > .Selected .Navpointer,
+.Nav-pointers-south > .Selected .Navpointer {
+  display: block;
+  font-family: "yahoo";
+  font-size: 10px;
+  position: absolute;
+  left: 50%;
+  margin-left: -9px;
+}
+
+.Nav-pointers-north > .Selected .Navpointer:before,
+.Nav-pointers-north > .Selected .Navpointer:after,
+.Nav-pointers-south > .Selected .Navpointer:before,
+.Nav-pointers-south > .Selected .Navpointer:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  width: 5000px;
+}
+
+.Nav-pointers-north > .Selected .Navpointer:before,
+.Nav-pointers-north > .Selected .Navpointer:after {
+  border-top: solid 1px;
+}
+
+.Nav-pointers-south > .Selected .Navpointer:before,
+.Nav-pointers-south > .Selected .Navpointer:after {
+  border-bottom: solid 1px;
+}
+
+.Nav-pointers-north > .Selected .Navpointer:before,
+.Nav-pointers-south > .Selected .Navpointer:before {
+  right: 50%;
+  margin-right: 7px;
+}
+
+.Nav-pointers-north > .Selected .Navpointer:after,
+.Nav-pointers-south > .Selected .Navpointer:after {
+  left: 50%;
+  margin-left: 7px;
+}
+
+.Navitem-disabled > .Navtarget,
+.Navitem-disabled:hover > .Navtarget,
+.Navitem > .Navtarget-disabled {
+  font-weight: 400;
+  cursor: text;
+}
+
+.Table,
+.Table-plain {
+  border-collapse: collapse;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  vertical-align: middle;
+  overflow: auto;
+  clear: left;
+  width: 100%;
+  zoom: 1;
+  font-size: 13px;
+}
+
+.Table th,
+.Table-plain th {
+  padding: 8px 10px;
+  vertical-align: top;
+}
+
+.Table th {
+  font-weight: 500;
+  border-bottom: solid 1px #E2E2E6;
+  font-size: 11px;
+}
+
+.Table-mid th {
+  vertical-align: middle;
+}
+
+.Table-bot th {
+  vertical-align: bottom;
+}
+
+.Table-base th {
+  vertical-align: baseline;
+}
+
+.Table td {
+  border-top: solid 1px #E2E2E6;
+}
+
+.Table td,
+.Table-plain td {
+  padding: 6px 10px;
+  vertical-align: top;
+}
+
+.Table-mid td {
+  vertical-align: middle;
+}
+
+.Table-bot td {
+  vertical-align: bottom;
+}
+
+.Table-base td {
+  vertical-align: baseline;
+}
+
+.Table tr:first-child {
+  border-top: none;
+}
+
+.Datatable th {
+  text-align: right;
+}
+
+.Datatable th[colspan] {
+  text-align: center;
+}
+
+.Datatable td {
+  width: 28px;
+}
+
+.Datatable td.Spacer {
+  width: auto;
+}
+
+.Table-py-xxs th,
+.Table-py-xxs td {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.Table-py-xs th,
+.Table-py-xs td {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.Table-py-sm th,
+.Table-py-sm td {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.Table-py-med th,
+.Table-py-med td {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.Table-py-lg th,
+.Table-py-lg td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.Table-py-xl th,
+.Table-py-xl td {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.Table-py-xxl th,
+.Table-py-xxl td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.Table-px-xxs th,
+.Table-px-xxs td {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+.Table-px-xs th,
+.Table-px-xs td {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.Table-px-sm th,
+.Table-px-sm td {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.Table-px-med th,
+.Table-px-med td {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.Table-px-lg th,
+.Table-px-lg td {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.Table-px-xl th,
+.Table-px-xl td {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.Table-px-xxl th,
+.Table-px-xxl td {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.Table-interactive tr:hover > td {
+  background: #e7edf8;
+}
+
+.Table-interactive tr:hover > td.Selected {
+  background: #d8effd;
+}
+
+.Submod {
+  display: none;
+  clear: left;
+  position: relative;
+}
+
+.Submod.Selected {
+  display: block;
+}
+
+.Control {
+  padding-top: 10px;
+}
+
+.Control-label, .Tablet .Tablet-control-label, .Phone .Phone-control-label {
+  display: block;
+  font-weight: bold;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-right: 10px;
+}
+
+.Phone .Control-label {
+  display: block;
+}
+
+.Subnav-main {
+  background: #e7e7e7;
+  border-bottom: #E2E2E6;
+  border-bottom: transparent;
+  padding-bottom: 1px;
+  float: none;
+  font-size: 11px;
+}
+
+.Subnav-main > .Navitem:first-child {
+  padding-left: 0px;
+}
+
+.Subnav-main > .Navitem > .Navtarget:hover {
+  text-decoration: none;
+  color: #e99f00;
+}
+
+.Alert {
+  background: white;
+  border: solid 1px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #FFFFFF;
+  line-height: normal;
+  position: relative;
+  z-index: 10002;
+  zoom: 1;
+  margin-bottom: 10px;
+}
+.Alert a:not(.Close) {
+  color: white;
+  text-decoration: underline;
+}
+
+.Alert .Message {
+  max-width: 550px;
+}
+
+.Alert-critical,
+.Alert-critical .Close {
+  background-color: #e7252e;
+  color: white;
+}
+
+.Alert-confirmation,
+.Alert-confirmation .Close {
+  background-color: #00c073;
+  color: white;
+}
+
+.Alert-warning,
+.Alert-warning .Close {
+  background-color: #ff8b12;
+  color: white;
+}
+
+.Alert-info,
+.Alert-info .Close {
+  background-color: #0078FF;
+  color: white;
+}
+
+.Follow-icon {
+  height: 30px;
+  width: 30px;
+  font-family: "yahoo";
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.Follow-icon span {
+  color: #fff;
+}
+
+.Follow-facebook {
+  background-color: #3C5799;
+  border-color: #3C5799;
+}
+
+.Follow-facebook:hover {
+  background-color: #30467A;
+}
+
+.Follow-twitter {
+  background-color: #2CA9E1;
+  border-color: #2CA9E1;
+}
+
+.Follow-twitter:hover {
+  background-color: #2387B4;
+}
+
+.Follow-pinterest {
+  background-color: #C81E2A;
+  border-color: #C81E2A;
+}
+
+.Follow-pinterest:hover {
+  background-color: #A4111B;
+}
+
+.Follow-tumblr {
+  background-color: #3C5572;
+  border-color: #3C5572;
+}
+
+.Follow-tumblr:hover {
+  background-color: #2D4460;
+}
+
+.Follow-gplus {
+  background-color: #DB4935;
+  border-color: #DB4935;
+}
+
+.Follow-gplus:hover {
+  background-color: #BE2E1B;
+}
+
+.Follow-flickr {
+  background-color: #EBEBEB;
+  border-color: #EBEBEB;
+}
+
+.Follow-flickr:hover {
+  background-color: #DFDFDF;
+}
+
+.Follow-linkedin {
+  background-color: #007BB5;
+  border-color: #007BB5;
+}
+
+.Follow-linkedin:hover {
+  background-color: #006290;
+}
+
+.Follow-instagram {
+  background-color: #49779D;
+  border-color: #49779D;
+}
+
+.Follow-instagram:hover {
+  background-color: #3A5F7E;
+}
+
+.yfa-next-steps {
+  font-size: 11px;
+  color: #111;
+  text-align: center;
+  height: 85px;
+  border-left: 1px solid #9a9a9a;
+}
+
+.yfa-next-steps > li {
+  border-left: groove #ddd 2px;
+  padding: 8px 0;
+  min-height: 65px;
+  margin-top: 1px;
+}
+
+.yfa-next-steps > li:first-child {
+  border-left: 0;
+}
+
+.yfa-fb {
+  height: 11px !important;
+  line-height: 11px !important;
+}
+.yfa-fb i {
+  top: 0px !important;
+}
+
+.headshot {
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: 150px 100px;
+  display: block;
+  height: 100px;
+  width: 120px;
+  text-indent: -999em;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .headshot {
+    background-size: 150px 100px;
+  }
+}
+.headshot.team {
+  width: 100px;
+  background-size: 100px 100px;
+}
+
+.cfb .headshot.team {
+  width: 80px;
+  height: 80px;
+  background-size: 80px 80px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .headshot.team {
+    background-size: 100px 100px;
+  }
+
+  .cfb .headshot.team {
+    background-size: 80px 80px;
+  }
+}
+.headshot.blank {
+  width: 60px;
+  background-position: center top;
+  background-size: 60px 78px;
+  margin: 0 10px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .headshot.blank {
+    background-size: 60px 78px;
+  }
+}
+.yfa-wrap {
+  white-space: normal;
+}
+
+.yfa-nowrap {
+  white-space: nowrap;
+}
+
+.yfa-block-link {
+  display: block;
+  color: #fff;
+}
+
+.yfa-reg-error-text {
+  color: #ff3232;
+  display: block;
+}
+
+.Input.yfa-reg-error {
+  border-color: #ff3232;
+}
+
+select.yfa-reg-error {
+  color: red;
+}
+
+.yfa-caption {
+  display: block;
+  line-height: 1.25;
+  padding: 6% 5%;
+  width: 92%;
+}
+
+.yfa-caption.media {
+  background: #000;
+  background: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  color: #fff;
+  position: absolute;
+  left: 0;
+}
+
+.yfa-media-livearea {
+  cursor: pointer;
+  display: inline-block;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  overflow: hidden;
+  position: relative;
+}
+
+.yfa-media-livearea:hover .yfa-caption,
+.yfa-media-livearea:hover figcaption {
+  color: #fdc000;
+}
+
+.yfa-media-livearea .yfa-thumb {
+  display: block;
+}
+
+.yfa-media-trigger {
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  text-indent: -9999px;
+  top: 0;
+  width: 100%;
+  z-index: 10002;
+}
+
+.yfa-headshot,
+.yfa-avatar,
+.yfa-thumb,
+img.yfa-figure
+.yfa-figure img {
+  margin-top: .2em;
+  display: inline-block;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+
+span.tooltip {
+  cursor: pointer;
+}
+
+.Overlay,
+.yfa-overlay {
+  display: none;
+}
+.Overlay.yui3-overlay-content,
+.yfa-overlay.yui3-overlay-content {
+  background: white;
+  display: block;
+}
+.Overlay.yui3-overlay-content-dark,
+.yfa-overlay.yui3-overlay-content-dark {
+  background: #232429;
+}
+
+.Overlay {
+  border-color: none;
+  -moz-border-radius: 5px / 5px;
+  -webkit-border-radius: 5px 5px;
+  border-radius: 5px / 5px;
+}
+.Overlay .Hd {
+  padding: 10px;
+}
+.Overlay .Bd {
+  padding: 10px;
+}
+
+.yui3-overlay-mask {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+}
+
+.yui3-overlay:focus,
+.yui3-overlay:active {
+  outline-width: 0px;
+  *outline-width: 2px;
+  *outline-color: #000;
+  -moz-box-shadow: 5px 5px 30px #000;
+  -webkit-box-shadow: 5px 5px 30px #000;
+  box-shadow: 5px 5px 30px #000;
+}
+
+.Overlay.yui3-overlay-content,
+.Overlay.Overlay-static {
+  display: block;
+  margin: 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.Phone .Overlay {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  margin-top: 40px;
+}
+
+.Phone .Overlay-h-a {
+  height: auto;
+}
+
+.Webview .Overlay {
+  margin-top: 0px;
+}
+
+.Pointer {
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.Pointer:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+.Pointer.Pointer-top {
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom-width: 15px;
+  border-bottom-style: solid;
+}
+.Pointer.Pointer-top:after {
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom-width: 15px;
+  border-bottom-style: solid;
+  left: -15px;
+  top: -16px;
+}
+.Pointer.Pointer-bottom {
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top-width: 15px;
+  border-top-style: solid;
+}
+.Pointer.Pointer-bottom:after {
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top-width: 15px;
+  border-top-style: solid;
+  left: -15px;
+  top: -16px;
+}
+.Pointer.Pointer-start {
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right-width: 15px;
+  border-right-style: solid;
+}
+.Pointer.Pointer-start:after {
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right-width: 15px;
+  border-right-style: solid;
+  left: -15px;
+  top: -16px;
+}
+.Pointer.Pointer-end {
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left-width: 15px;
+  border-left-style: solid;
+}
+.Pointer.Pointer-end:after {
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-bottom-width: 15px;
+  border-bottom-style: solid;
+  left: -15px;
+  top: -16px;
+}
+
+.Nav-main > li > a > em,
+.Subnav-main > li > a > em {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  display: inline-block;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  background: #ab0907;
+  color: #fff;
+  font-style: normal;
+  margin-right: 2px;
+  padding: 0 4px;
+}
+
+.Navitem-smacktalk.Smacktalk-on > a.F-icon {
+  color: #4992eb;
+  -webkit-animation: pulsate 1.2s ease-in-out 5;
+  -moz-animation: pulsate 1.2s ease-in-out 5;
+  animation: pulsate 1.2s ease-in-out 5;
+}
+
+.Navitem-smacktalk.Smacktalk-on.Hover #Nav-smacktalk,
+.Navitem-smacktalk.Smacktalk-on #Nav-smacktalk:hover {
+  color: #4992eb;
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+
+.smack-window header.Smacktalk-on .game-icon {
+  color: #4992eb !important;
+  -webkit-animation: pulsate 1.0s ease-in-out infinite;
+  -moz-animation: pulsate 1.0s ease-in-out infinite;
+  animation: pulsate 1.0s ease-in-out infinite;
+}
+
+.Navitem-smacktalk .Dropdown li a {
+  text-decoration: none;
+}
+
+.Navitem-smacktalk .Dropdown .Smacktalk-on:before {
+  content: '\2022';
+  color: #4992eb;
+  float: right;
+  font-size: 38px;
+  line-height: 14px;
+  position: absolute;
+  right: 0;
+  margin: 15px;
+}
+
+.messages .message-body.Smacktalk-on {
+  border-left: 1px solid #4992eb;
+}
+
+#smacktalk-chat-lists .Linkable:hover {
+  background-color: #4d4d4d !important;
+}
+
+.Nav-plain {
+  font-size: 11px;
+  z-index: 10001;
+}
+
+.Nav-plain > ul > li > a {
+  text-decoration: none;
+}
+
+.Nav-plain > ul > li > .Arrow-container {
+  bottom: 8px;
+  left: 0;
+  width: 100%;
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+.Flyoutselectbox {
+  display: block;
+  white-space: nowrap;
+  position: relative;
+}
+
+.Flyoutselectbox .Dropdown {
+  position: relative;
+}
+
+.Flyoutselectbox .Btn {
+  background: none;
+  font-weight: 700;
+}
+
+.Nav-flyout {
+  min-width: 100%;
+  top: 60%;
+  text-align: center;
+  position: absolute;
+}
+
+.Nav-flyout > .Nav-v {
+  top: -5px;
+  background: white;
+}
+
+.Nav-flyout > .pointer-top {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #5f5f5f;
+  font-size: 0;
+  line-height: 0;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.Nav-bot-pointers-north > .Hovered > .Navpointer {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #d5d5d5;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  bottom: -9px;
+  margin-left: -5px;
+}
+
+.flyout_trigger:hover,
+.Js-next:hover,
+.Js-prev:hover {
+  background: none !important;
+  color: #324FE1;
+}
+
+.Dropdown-med {
+  width: 300px;
+}
+
+.Page-hd #yspadLDRB,
+.Page-hd #yspadMAST {
+  position: relative;
+  z-index: 100000;
+}
+
+#yspadMAST {
+  max-width: 970px;
+  max-height: 250px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.Page-hd #yspadNT1,
+#yspadLDRB,
+#yspadLDRB2,
+#yspadMAST {
+  text-align: center;
+}
+
+.Page-ft #yspadLDRB {
+  margin-top: 15px;
+}
+
+#yspadWPS {
+  margin: 5px auto;
+  width: 300px;
+}
+
+.Page-masthead {
+  padding-bottom: 6px;
+  min-height: 115px;
+}
+
+.Phone .Page-masthead {
+  min-height: 0px;
+  padding-bottom: 0px;
+}
+
+#yspadLDRB2.H-fixed {
+  min-height: 90px;
+}
+
+#yspadLREC.H-fixed,
+#yspadLREC2.H-fixed {
+  height: 250px;
+}
+
+html #yspadNT1 {
+  background: transparent !important;
+}
+
+#sdarla_closed_yspadMASTDest {
+  box-sizing: content-box;
+}
+
+#UH {
+  width: 100% !important;
+  z-index: 10005;
+}
+#UH #uhWrapper {
+  width: 1040px !important;
+  text-align: left !important;
+}
+#UH #masterNav {
+  text-align: left !important;
+}
+
+.template-html5 #UH, #Stencil.ysf-html #UH {
+  position: relative !important;
+}
+
+#Stencil #UH .UHCol1, #Stencil #UH .UHCol2 {
+  position: relative;
+  float: left;
+}
+#Stencil #UH .UHCol1 {
+  width: auto;
+  margin-right: 20px;
+}
+#Stencil #UH .UHCol2 {
+  width: 55%;
+}
+#Stencil #UH .UHCol3 {
+  width: 25%;
+  position: absolute;
+  right: 0;
+}
+#Stencil #UH .YLogoMY {
+  margin: 0px !important;
+}
+
+html#Stencil .Fz-xs {
+  font-size: 13px;
+}
+
+#Stencil .StencilRoot .Fz-xs {
+  font-size: 11px;
+}
+
+.Thm-snow .Thm-inherit.td-override .App-Title,
+.Thm-snow.Thm-override.td-override .App-Title,
+.Thm-snow .td-override .App-Title,
+.Thm-snow .transparent.td-override .App-Title {
+  font-weight: 400;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 18px;
+}
+.Thm-snow .Thm-inherit.td-override .App-Hd,
+.Thm-snow.Thm-override.td-override .App-Hd,
+.Thm-snow .td-override .App-Hd,
+.Thm-snow .transparent.td-override .App-Hd {
+  border-bottom: 1px solid;
+}
+.Thm-snow .Thm-inherit.td-override .SimpleTabs,
+.Thm-snow.Thm-override.td-override .SimpleTabs,
+.Thm-snow .td-override .SimpleTabs,
+.Thm-snow .transparent.td-override .SimpleTabs {
+  border-bottom: 1px solid;
+}
+.Thm-snow .Thm-inherit.td-override .SimpleTabs .Selected a,
+.Thm-snow.Thm-override.td-override .SimpleTabs .Selected a,
+.Thm-snow .td-override .SimpleTabs .Selected a,
+.Thm-snow .transparent.td-override .SimpleTabs .Selected a {
+  border-width: 0;
+  font-weight: 700;
+}
+.Thm-snow .Thm-inherit.td-override select,
+.Thm-snow.Thm-override.td-override select,
+.Thm-snow .td-override select,
+.Thm-snow .transparent.td-override select {
+  font-size: 13px;
+}
+.Thm-snow .Thm-inherit.td-override .dfPromo,
+.Thm-snow.Thm-override.td-override .dfPromo,
+.Thm-snow .td-override .dfPromo,
+.Thm-snow .transparent.td-override .dfPromo {
+  border-top: 1px solid #f3f3f3;
+  border-bottom: 1px solid #f3f3f3;
+  padding: 10px 0px;
+}
+.Thm-snow .Thm-inherit.td-override .channel-applet-wrap .splash-screen .title,
+.Thm-snow .Thm-inherit.td-override .channel-applet-wrap .pause-screen .title,
+.Thm-snow.Thm-override.td-override .channel-applet-wrap .splash-screen .title,
+.Thm-snow.Thm-override.td-override .channel-applet-wrap .pause-screen .title,
+.Thm-snow .td-override .channel-applet-wrap .splash-screen .title,
+.Thm-snow .td-override .channel-applet-wrap .pause-screen .title,
+.Thm-snow .transparent.td-override .channel-applet-wrap .splash-screen .title,
+.Thm-snow .transparent.td-override .channel-applet-wrap .pause-screen .title {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+  font-size: 26px !important;
+  font-weight: 300 !important;
+}
+.Thm-snow .Thm-inherit.td-override .channel-applet-wrap .pause-screen .ps-elm,
+.Thm-snow.Thm-override.td-override .channel-applet-wrap .pause-screen .ps-elm,
+.Thm-snow .td-override .channel-applet-wrap .pause-screen .ps-elm,
+.Thm-snow .transparent.td-override .channel-applet-wrap .pause-screen .ps-elm {
+  font-weight: normal !important;
+}
+.Thm-snow .Thm-inherit.td-override .channel-applet-wrap .intermezzo .pause-countdown,
+.Thm-snow.Thm-override.td-override .channel-applet-wrap .intermezzo .pause-countdown,
+.Thm-snow .td-override .channel-applet-wrap .intermezzo .pause-countdown,
+.Thm-snow .transparent.td-override .channel-applet-wrap .intermezzo .pause-countdown {
+  padding-top: 0 !important;
+}
+.Thm-snow .Thm-inherit.td-override .strip-wrap .channel-name,
+.Thm-snow .Thm-inherit.td-override .vp-overlay .title-wrap h2,
+.Thm-snow.Thm-override.td-override .strip-wrap .channel-name,
+.Thm-snow.Thm-override.td-override .vp-overlay .title-wrap h2,
+.Thm-snow .td-override .strip-wrap .channel-name,
+.Thm-snow .td-override .vp-overlay .title-wrap h2,
+.Thm-snow .transparent.td-override .strip-wrap .channel-name,
+.Thm-snow .transparent.td-override .vp-overlay .title-wrap h2 {
+  font-size: 18px !important;
+}
+.Thm-snow .Thm-inherit.td-override .mode-cinematron.channel-applet-wrap .vp-overlay,
+.Thm-snow.Thm-override.td-override .mode-cinematron.channel-applet-wrap .vp-overlay,
+.Thm-snow .td-override .mode-cinematron.channel-applet-wrap .vp-overlay,
+.Thm-snow .transparent.td-override .mode-cinematron.channel-applet-wrap .vp-overlay {
+  background-color: transparent !important;
+}
+.Thm-snow .Thm-inherit.td-override .vp-overlay .attribution-tags,
+.Thm-snow.Thm-override.td-override .vp-overlay .attribution-tags,
+.Thm-snow .td-override .vp-overlay .attribution-tags,
+.Thm-snow .transparent.td-override .vp-overlay .attribution-tags {
+  display: none;
+}
+.Thm-snow .Thm-inherit.td-override .channel-applet-wrap.mode-cinematron .tumblr-social,
+.Thm-snow.Thm-override.td-override .channel-applet-wrap.mode-cinematron .tumblr-social,
+.Thm-snow .td-override .channel-applet-wrap.mode-cinematron .tumblr-social,
+.Thm-snow .transparent.td-override .channel-applet-wrap.mode-cinematron .tumblr-social {
+  display: none;
+}
+.Thm-snow .Thm-inherit.td-override .channel-applet-wrap.mode-cinematron .show a,
+.Thm-snow.Thm-override.td-override .channel-applet-wrap.mode-cinematron .show a,
+.Thm-snow .td-override .channel-applet-wrap.mode-cinematron .show a,
+.Thm-snow .transparent.td-override .channel-applet-wrap.mode-cinematron .show a {
+  color: #fff;
+}
+
+.yui3-ysplayernote .yui3-ysplayernote-indicator {
+  background-image: url(https://s.yimg.com/dh/ap/fantasy/img/playernote_sprite_v2.png) !important;
+}
+
+#tooltip:after {
+  border-right-color: #bebebe;
+}
+
+.Btn.Bg-facebook,
+.Btn.Bg-twitter,
+.Btn.Bg-tumblr {
+  line-height: normal;
+}
+
+.Tout-wrap {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 20px;
+  z-index: 210001;
+  text-align: center;
+}
+
+.Tout {
+  background-color: #00c073;
+  color: white;
+  padding: 12px 20px;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+}
+
+.Tout-error .Tout {
+  background-color: #e7252e;
+  border: none;
+}
+
+#ysf-mockdraft_intro_container .Nav-bordered-south .Navitem.Selected {
+  border-bottom: 5px solid #0078FF;
+}
+
+div.popupwrap {
+  position: absolute;
+  text-align: left;
+  width: 200px;
+  zoom: 1;
+  z-index: 9005;
+}
+
+div.popupwrap .shadow {
+  background: #999;
+  filter: alpha(opacity=50);
+  opacity: .5;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  _display: none;
+}
+
+div.popupwrap div.content {
+  border: 1px solid #999;
+  position: relative;
+  padding: 5px;
+  background: #fff;
+  z-index: 9000;
+  font: 77% Verdana;
+}
+
+div.popupwrap span {
+  display: block;
+  color: #666;
+  margin-top: 10px;
+}
+
+#image-list .Selected img {
+  border: 3px solid #007eff;
+}
+
+.Table th,
+.Table-plain th {
+  text-align: left;
+}
+
+[class*="Grid-u"], .Tablet [class*="Tablet-grid-u"], .Phone [class*="Phone-grid-u"] {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  *border-left: none !important;
+  *border-right: none !important;
+  *padding-left: 0 !important;
+  *padding-right: 0 !important;
+}
+
+th[class*="Grid-u"], .Tablet th[class*="Tablet-grid-u"], .Phone th[class*="Phone-grid-u"],
+td[class*="Grid-u"], .Tablet td[class*="Tablet-grid-u"], .Phone td[class*="Phone-grid-u"] {
+  display: table-cell;
+}
+
+.Grid-2col > .Grid-u, .Tablet .Tablet-grid-2col > .Grid-u, .Phone .Phone-grid-2col > .Grid-u {
+  width: 50%;
+}
+
+.Grid-3col > .Grid-u, .Tablet .Tablet-grid-3col > .Grid-u, .Phone .Phone-grid-3col > .Grid-u {
+  width: 33.33%;
+}
+
+.Grid-4col > .Grid-u, .Tablet .Tablet-grid-4col > .Grid-u, .Phone .Phone-grid-4col > .Grid-u {
+  width: 25%;
+}
+
+.Grid-5col > .Grid-u, .Tablet .Tablet-grid-5col > .Grid-u, .Phone .Phone-grid-5col > .Grid-u {
+  width: 20%;
+}
+
+.Grid-6col > .Grid-u, .Tablet .Tablet-grid-6col > .Grid-u, .Phone .Phone-grid-6col > .Grid-u {
+  width: 16.66%;
+}
+
+.Grid-7col > .Grid-u, .Tablet .Tablet-grid-7col > .Grid-u, .Phone .Phone-grid-7col > .Grid-u {
+  width: 14.28%;
+}
+
+.Grid-8col > .Grid-u, .Tablet .Tablet-grid-8col > .Grid-u, .Phone .Phone-grid-8col > .Grid-u {
+  width: 12.5%;
+}
+
+.Grid-9col > .Grid-u, .Tablet .Tablet-grid-9col > .Grid-u, .Phone .Phone-grid-9col > .Grid-u {
+  width: 11.11%;
+}
+
+.Grid-10col > .Grid-u, .Tablet .Tablet-grid-10col > .Grid-u, .Phone .Phone-grid-10col > .Grid-u {
+  width: 10%;
+}
+
+.Grid-h-top > [class*="Grid-u"], .Tablet .Tablet-grid-h-top > [class*="Tablet-grid-u"], .Phone .Phone-grid-h-top > [class*="Phone-grid-u"] {
+  vertical-align: top;
+  text-align: center;
+}
+
+.Grid-h-mid > [class*="Grid-u"], .Tablet .Tablet-grid-h-mid > [class*="Tablet-grid-u"], .Phone .Phone-grid-h-mid > [class*="Phone-grid-u"] {
+  vertical-align: middle;
+}
+
+.Grid-h-bot > [class*="Grid-u"], .Tablet .Tablet-grid-h-bot > [class*="Tablet-grid-u"], .Phone .Phone-grid-h-bot > [class*="Phone-grid-u"] {
+  vertical-align: bottom;
+}
+
+.Grid-h-base > [class*="Grid-u"], .Tablet .Tablet-grid-h-base > [class*="Tablet-grid-u"], .Phone .Phone-grid-h-base > [class*="Phone-grid-u"] {
+  vertical-align: baseline;
+}
+
+.Grid-spread-mid, .Tablet .Tablet-grid-spread-mid, .Phone .Phone-grid-spread-mid,
+.Grid-spread-top, .Tablet .Tablet-grid-spread-top, .Phone .Phone-grid-spread-top,
+.Grid-spread-bot, .Tablet .Tablet-grid-spread-bot, .Phone .Phone-grid-spread-bot,
+.Grid-spread-base, .Tablet .Tablet-grid-spread-base, .Phone .Phone-grid-spread-base {
+  display: block;
+  line-height: 0;
+  *line-height: 1.25;
+  *margin-bottom: 10px;
+  text-align: justify;
+}
+
+.Grid-spread-top:after,
+.Grid-spread-mid:after,
+.Grid-spread-bot:after,
+.Grid-spread-base:after {
+  content: "";
+  display: inline-block;
+  text-align: justify;
+  width: 100%;
+}
+
+.Grid-spread-top > [class*="Grid-u"], .Tablet .Tablet-grid-spread-top > [class*="Tablet-grid-u"], .Phone .Phone-grid-spread-top > [class*="Phone-grid-u"] {
+  text-rendering: auto;
+  line-height: 1.25;
+  vertical-align: top;
+}
+
+.Grid-spread-mid > [class*="Grid-u"], .Tablet .Tablet-grid-spread-mid > [class*="Tablet-grid-u"], .Phone .Phone-grid-spread-mid > [class*="Phone-grid-u"] {
+  text-rendering: auto;
+  line-height: 1.25;
+  vertical-align: middle;
+}
+
+.Grid-spread-bot > [class*="Grid-u"], .Tablet .Tablet-grid-spread-bot > [class*="Tablet-grid-u"], .Phone .Phone-grid-spread-bot > [class*="Phone-grid-u"] {
+  text-rendering: auto;
+  line-height: 1.25;
+  vertical-align: bottom;
+}
+
+.Grid-spread-base > [class*="Grid-u"], .Tablet .Tablet-grid-spread-base > [class*="Tablet-grid-u"], .Phone .Phone-grid-spread-base > [class*="Phone-grid-u"] {
+  text-rendering: auto;
+  line-height: 1.25;
+  vertical-align: baseline;
+}
+
+.Grid-u-1-14, .Tablet .Tablet-grid-u-1-14, .Phone .Phone-grid-u-1-14 {
+  width: 7.14%;
+  max-width: 7.14%;
+}
+
+.Grid-u-1-13, .Tablet .Tablet-grid-u-1-13, .Phone .Phone-grid-u-1-13 {
+  width: 7.69%;
+  max-width: 7.69%;
+}
+
+.Grid-u-1-12, .Tablet .Tablet-grid-u-1-12, .Phone .Phone-grid-u-1-12 {
+  width: 8.33%;
+  max-width: 8.33%;
+}
+
+.Grid-u-1-11, .Tablet .Tablet-grid-u-1-11, .Phone .Phone-grid-u-1-11 {
+  width: 9.09%;
+  max-width: 9.09%;
+}
+
+.Grid-u-1-10, .Tablet .Tablet-grid-u-1-10, .Phone .Phone-grid-u-1-10 {
+  width: 10%;
+  max-width: 10%;
+}
+
+.Grid-u-1-9, .Tablet .Tablet-grid-u-1-9, .Phone .Phone-grid-u-1-9 {
+  width: 11.11%;
+  max-width: 11.11%;
+}
+
+.Grid-u-1-8, .Tablet .Tablet-grid-u-1-8, .Phone .Phone-grid-u-1-8 {
+  width: 12.5%;
+  max-width: 12.5%;
+}
+
+.Grid-u-1-7, .Tablet .Tablet-grid-u-1-7, .Phone .Phone-grid-u-1-7 {
+  width: 14.28%;
+  max-width: 14.28%;
+}
+
+.Grid-u-1-6, .Tablet .Tablet-grid-u-1-6, .Phone .Phone-grid-u-1-6 {
+  width: 16.66%;
+  max-width: 16.66%;
+}
+
+.Grid-u-1-5, .Tablet .Tablet-grid-u-1-5, .Phone .Phone-grid-u-1-5 {
+  width: 20%;
+  max-width: 20%;
+}
+
+.Grid-u-2-9, .Tablet .Tablet-grid-u-2-9, .Phone .Phone-grid-u-2-9 {
+  width: 22.22%;
+  max-width: 22.22%;
+}
+
+.Grid-u-1-4, .Tablet .Tablet-grid-u-1-4, .Phone .Phone-grid-u-1-4 {
+  width: 25%;
+  max-width: 25%;
+}
+
+.Grid-u-2-7, .Tablet .Tablet-grid-u-2-7, .Phone .Phone-grid-u-2-7 {
+  width: 28.57%;
+  max-width: 28.57%;
+}
+
+.Grid-u-3-10, .Tablet .Tablet-grid-u-3-10, .Phone .Phone-grid-u-3-10 {
+  width: 30%;
+  max-width: 30%;
+}
+
+.Grid-u-1-3, .Tablet .Tablet-grid-u-1-3, .Phone .Phone-grid-u-1-3 {
+  width: 33.33%;
+  max-width: 33.33%;
+  /* DJC added */
+/*   text-align: center; */
+}
+
+/* DJC added */
+.Grid-u-1-6, .Tablet .Tablet-grid-u-1-3, .Phone .Phone-grid-u-1-3 {
+  width: 16.66%;
+  max-width: 16.66%;
+}
+
+.Grid-u-3-8, .Tablet .Tablet-grid-u-3-8, .Phone .Phone-grid-u-3-8 {
+  width: 37.5%;
+  max-width: 37.5%;
+}
+
+.Grid-u-2-5, .Tablet .Tablet-grid-u-2-5, .Phone .Phone-grid-u-2-5 {
+  width: 40%;
+  max-width: 40%;
+}
+
+.Grid-u-5-12, .Tablet .Tablet-grid-u-5-12, .Phone .Phone-grid-u-5-12 {
+  width: 41.66%;
+  max-width: 41.66%;
+}
+
+.Grid-u-3-7, .Tablet .Tablet-grid-u-3-7, .Phone .Phone-grid-u-3-7 {
+  width: 42.85%;
+  max-width: 42.85%;
+}
+
+.Grid-u-4-9, .Tablet .Tablet-grid-u-4-9, .Phone .Phone-grid-u-4-9 {
+  width: 44.44%;
+  max-width: 44.44%;
+}
+
+.Grid-u-1-2, .Tablet .Tablet-grid-u-1-2, .Phone .Phone-grid-u-1-2 {
+  width: 50%;
+  max-width: 50%;
+}
+
+.Grid-u-5-9, .Tablet .Tablet-grid-u-5-9, .Phone .Phone-grid-u-5-9 {
+  width: 55.55%;
+  max-width: 55.55%;
+}
+
+.Grid-u-4-7, .Tablet .Tablet-grid-u-4-7, .Phone .Phone-grid-u-4-7 {
+  width: 57.14%;
+  max-width: 57.14%;
+}
+
+.Grid-u-7-12, .Tablet .Tablet-grid-u-7-12, .Phone .Phone-grid-u-7-12 {
+  width: 58.33%;
+  max-width: 58.33%;
+}
+
+.Grid-u-3-5, .Tablet .Tablet-grid-u-3-5, .Phone .Phone-grid-u-3-5 {
+  width: 60%;
+  max-width: 60%;
+}
+
+.Grid-u-5-8, .Tablet .Tablet-grid-u-5-8, .Phone .Phone-grid-u-5-8 {
+  width: 62.5%;
+  max-width: 62.5%;
+}
+
+.Grid-u-2-3, .Tablet .Tablet-grid-u-2-3, .Phone .Phone-grid-u-2-3 {
+  width: 66.66%;
+  max-width: 66.66%;
+}
+
+.Grid-u-7-10, .Tablet .Tablet-grid-u-7-10, .Phone .Phone-grid-u-7-10 {
+  width: 70%;
+  max-width: 70%;
+}
+
+.Grid-u-5-7, .Tablet .Tablet-grid-u-5-7, .Phone .Phone-grid-u-5-7 {
+  width: 71.42%;
+  max-width: 71.42%;
+}
+
+.Grid-u-3-4, .Tablet .Tablet-grid-u-3-4, .Phone .Phone-grid-u-3-4 {
+  width: 75%;
+  max-width: 75%;
+}
+
+.Grid-u-7-9, .Tablet .Tablet-grid-u-7-9, .Phone .Phone-grid-u-7-9 {
+  width: 77.77%;
+  max-width: 77.77%;
+}
+
+.Grid-u-4-5, .Tablet .Tablet-grid-u-4-5, .Phone .Phone-grid-u-4-5 {
+  width: 80%;
+  max-width: 80%;
+}
+
+.Grid-u-5-6, .Tablet .Tablet-grid-u-5-6, .Phone .Phone-grid-u-5-6 {
+  width: 83.33%;
+  max-width: 83.33%;
+}
+
+.Grid-u-6-7, .Tablet .Tablet-grid-u-6-7, .Phone .Phone-grid-u-6-7 {
+  width: 85.71%;
+  max-width: 85.71%;
+}
+
+.Grid-u-7-8, .Tablet .Tablet-grid-u-7-8, .Phone .Phone-grid-u-7-8 {
+  width: 87.5%;
+  max-width: 87.5%;
+}
+
+.Grid-u-8-9, .Tablet .Tablet-grid-u-8-9, .Phone .Phone-grid-u-8-9 {
+  width: 88.88%;
+  max-width: 88.88%;
+}
+
+.Grid-u-9-10, .Tablet .Tablet-grid-u-9-10, .Phone .Phone-grid-u-9-10 {
+  width: 90%;
+  max-width: 90%;
+}
+
+.Grid-u-11-12, .Tablet .Tablet-grid-u-11-1, .Phone .Phone-grid-u-11-1 {
+  width: 91.66%;
+  max-width: 91.66%;
+}
+
+.Grid-full, .Tablet .Tablet-grid-full, .Phone .Phone-grid-full {
+  width: 100%;
+  max-width: 100%;
+}
+
+.Grid-h-mid, .Tablet .Tablet-grid-h-mid, .Phone .Phone-grid-h-mid,
+.Grid-h-top, .Tablet .Tablet-grid-h-top, .Phone .Phone-grid-h-top,
+.Grid-h-bot, .Tablet .Tablet-grid-h-bot, .Phone .Phone-grid-h-bot,
+.Grid-h-base, .Tablet .Tablet-grid-h-base, .Phone .Phone-grid-h-base,
+.Grid-spread-mid, .Tablet .Tablet-grid-spread-mid, .Phone .Phone-grid-spread-mid,
+.Grid-spread-top, .Tablet .Tablet-grid-spread-top, .Phone .Phone-grid-spread-top,
+.Grid-spread-bot, .Tablet .Tablet-grid-spread-bot, .Phone .Phone-grid-spread-bot,
+.Grid-spread-base, .Tablet .Tablet-grid-spread-base, .Phone .Phone-grid-spread-base,
+.Nav-h, .Phone .Phone-nav-h {
+  letter-spacing: -0.31em;
+  *letter-spacing: normal;
+  *word-spacing: -0.43em;
+}
+
+.Grid-bind-start, .Tablet .Tablet-grid-bind-start, .Phone .Phone-grid-bind-start,
+.Grid-bind-end, .Tablet .Tablet-grid-bind-end, .Phone .Phone-grid-bind-end {
+  display: block;
+  *zoom: 1;
+}
+.Grid-bind-start:after, .Tablet .Tablet-grid-bind-start:after, .Phone .Phone-grid-bind-start:after,
+.Grid-bind-end:after, .Tablet .Tablet-grid-bind-end:after, .Phone .Phone-grid-bind-end:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.Grid-bind-start > [class*="Grid-u"], .Tablet .Tablet-grid-bind-start > [class*="Tablet-grid-u"], .Phone .Phone-grid-bind-start > [class*="Phone-grid-u"],
+.Grid-bind-end > [class*="Grid-u"], .Tablet .Tablet-grid-bind-end > [class*="Tablet-grid-u"], .Phone .Phone-grid-bind-end > [class*="Phone-grid-u"] {
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.Grid-table, .Tablet .Tablet-grid-table, .Phone .Phone-grid-table {
+  display: table;
+  *display: inline;
+  zoom: 1;
+  width: 100%;
+}
+
+.Grid-table-row, .Tablet .Tablet-grid-table-row, .Phone .Phone-grid-table-row {
+  display: table-row;
+  *display: inline;
+  zoom: 1;
+  width: 100%;
+}
+
+.Grid-table > [class*="Grid-u"], .Tablet-grid-table > [class*="Tablet-grid-u"], .Phone-grid-table > [class*="Phone-grid-u"],
+.Grid-table-row > [class*="Grid-u"], .Tablet-grid-table-row > [class*="Tablet-grid-u"], .Phone-grid-table-row > [class*="Phone-grid-u"] {
+  vertical-align: top;
+  display: table-cell;
+  *display: inline;
+  zoom: 1;
+}
+
+.Grid-bind-start > [class*="Grid-u"]:first-child, .Tablet .Tablet-grid-bind-start > [class*="Tablet-grid-u"]:first-child, .Phone .Phone-grid-bind-start > [class*="Phone-grid-u"]:first-child {
+  float: left;
+}
+
+.Grid-bind-end > [class*="Grid-u"]:first-child, .Tablet .Tablet-grid-bind-end > [class*="Tablet-grid-u"]:first-child, .Phone .Phone-grid-bind-end > [class*="Phone-grid-u"]:first-child {
+  float: right;
+}
+
+/* DJC added*/
+/*
+.Ta-c {
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+}
+ */
+
+#Stencil {
+  /* 2 */
+  /**
+   * CSS table
+   */
+}
+#Stencil .Bg-white {
+  background: #fff;
+}
+#Stencil .Bg-black {
+  background: #000;
+}
+#Stencil .Bg-facebook {
+  background: #3B5998;
+}
+#Stencil .Bg-twitter {
+  background: #00ACED;
+}
+#Stencil .Bg-tumblr {
+  background: #2D4460;
+}
+#Stencil .Bg-transparent {
+  background: transparent;
+}
+#Stencil .Bgo-50 {
+  background: rgba(0, 0, 0, 0.5);
+}
+#Stencil .Bdr {
+  border-style: solid;
+  border-width: 1px;
+}
+#Stencil .Bdrx {
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-style: solid;
+  border-right-width: 1px;
+}
+#Stencil .Bdry {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+#Stencil .Bdrtop {
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+#Stencil .Bdrbot {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+#Stencil .Bdr-radius {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+#Stencil .Bdr-radius-start {
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+#Stencil .Bdr-radius-end {
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+#Stencil .Bdr-radius-top {
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+#Stencil .Bdr-radius-bot {
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+#Stencil .Bdr-radius-topstart {
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+#Stencil .Bdr-radius-topend {
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+#Stencil .Bdr-radius-botstart {
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+#Stencil .Bdr-radius-botend {
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+#Stencil .Bdr-radius-50 {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+#Stencil .Linkable {
+  cursor: pointer;
+}
+#Stencil .F-page-header {
+  font-size: 24px;
+}
+#Stencil .F-banner-lg {
+  font-size: 40px;
+}
+#Stencil .F-banner-med {
+  font-size: 35px;
+}
+#Stencil .F-icon {
+  font-family: "yahoo";
+  font-size: 28px;
+  vertical-align: middle;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+}
+#Stencil .F-twitter {
+  color: #00ACED;
+}
+#Stencil .F-facebook {
+  color: #3B5998;
+}
+#Stencil .F-headline {
+  font-weight: normal;
+}
+#Stencil .F-football {
+  color: #790000;
+}
+#Stencil .F-baseball {
+  color: #2fab87;
+}
+#Stencil .F-hockey {
+  color: #2c77d1;
+}
+#Stencil .F-basketball {
+  color: #b8551f;
+}
+#Stencil .F-timestamp {
+  font-size: 11px;
+}
+#Stencil .Fz-3xs, #Stencil.Tablet .Tablet-fz-3xs, #Stencil.Phone .Phone-fz-3xs {
+  font-size: 11px;
+}
+#Stencil .Fz-xxs, #Stencil.Tablet .Tablet-fz-xxs, #Stencil.Phone .Phone-fz-xxs {
+  font-size: 11px;
+}
+#Stencil .Fz-xs, #Stencil.Tablet .Tablet-fz-xs, #Stencil.Phone .Phone-fz-xs {
+  font-size: 13px;
+}
+#Stencil .Fz-sm, #Stencil.Tablet .Tablet-fz-sm, #Stencil.Phone .Phone-fz-sm {
+  font-size: 15px;
+}
+#Stencil .Fz-med, #Stencil.Tablet .Tablet-fz-med, #Stencil.Phone .Phone-fz-med {
+  font-size: 16px;
+}
+#Stencil .Fz-lg, #Stencil.Tablet .Tablet-fz-lg, #Stencil.Phone .Phone-fz-lg {
+  font-size: 18px;
+}
+#Stencil .Fz-xl, #Stencil.Tablet .Tablet-fz-xl, #Stencil.Phone .Phone-fz-xl {
+  font-size: 22px;
+}
+#Stencil .Fz-xxl, #Stencil.Tablet .Tablet-fz-xxl, #Stencil.Phone .Phone-fz-xxl {
+  font-size: 26px;
+}
+#Stencil .Fz-35, #Stencil.Tablet .Tablet-fz-35, #Stencil.Phone .Phone-fz-35 {
+  font-size: 35px;
+}
+#Stencil .Fz-40, #Stencil.Tablet .Tablet-fz-40, #Stencil.Phone .Phone-fz-40 {
+  font-size: 40px;
+}
+#Stencil .Fw-b, #Stencil.Tablet .Tablet-fw-b, #Stencil.Phone .Phone-fw-b {
+  font-weight: bold;
+}
+#Stencil .Fw-sm, #Stencil.Tablet .Tablet-fw-sm, #Stencil.Phone .Phone-fw-sm {
+  font-weight: 100;
+}
+#Stencil .Fw-med, #Stencil.Tablet .Tablet-fw-med, #Stencil.Phone .Phone-fw-med {
+  font-weight: 200;
+}
+#Stencil .Fw-l, #Stencil.Tablet .Tablet-fw-l, #Stencil.Phone .Phone-fw-l {
+  font-weight: 300;
+}
+#Stencil .Fw-n, #Stencil.Tablet .Tablet-fw-n, #Stencil.Phone .Phone-fw-n {
+  font-weight: normal;
+}
+#Stencil .Fw-xl, #Stencil.Tablet .Tablet-fw-xl, #Stencil.Phone .Phone-fw-xl {
+  font-weight: 500;
+}
+#Stencil .Italic {
+  font-style: italic;
+}
+#Stencil .No-italic {
+  font-style: normal;
+}
+#Stencil .Uppercase {
+  text-transform: uppercase;
+}
+#Stencil .Lowercase {
+  text-transform: lowercase;
+}
+#Stencil .Capitalize {
+  text-transform: capitalize;
+}
+#Stencil .No-case {
+  text-transform: none;
+}
+#Stencil .D-n, #Stencil.Phone .Phone-D-n, #Stencil.Tablet .Tablet-D-n {
+  display: none;
+}
+#Stencil .D-b, #Stencil.Phone .Phone-D-b, #Stencil.Tablet .Tablet-D-b {
+  display: block;
+}
+#Stencil .D-i, #Stencil.Phone .Phone-D-i, #Stencil.Tablet .Tablet-D-i {
+  display: inline;
+}
+#Stencil .D-ib, #Stencil.Phone .Phone-D-ib, #Stencil.Tablet .Tablet-D-ib {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+#Stencil .D-tb, #Stencil.Phone .Phone-D-tb, #Stencil.Tablet .Tablet-D-tb {
+  display: table;
+}
+#Stencil .D-tbr, #Stencil.Phone .Phone-D-tbr, #Stencil.Tablet .Tablet-D-tbr {
+  display: table-row;
+}
+#Stencil .D-tbc, #Stencil.Phone .Phone-D-tbc, #Stencil.Tablet .Tablet-D-tbc {
+  display: table-cell;
+}
+#Stencil .D-li, #Stencil.Phone .Phone-D-li, #Stencil.Tablet .Tablet-D-li {
+  display: list-item;
+}
+#Stencil .D-ri, #Stencil.Phone .Phone-D-ri, #Stencil.Tablet .Tablet-D-ri {
+  display: run-in;
+}
+#Stencil .D-cp, #Stencil.Phone .Phone-D-cp, #Stencil.Tablet .Tablet-D-cp {
+  display: compact;
+}
+#Stencil .D-itb, #Stencil.Phone .Phone-D-itb, #Stencil.Tablet .Tablet-D-itb {
+  display: inline-table;
+}
+#Stencil .D-tbcl, #Stencil.Phone .Phone-D-tbcl, #Stencil.Tablet .Tablet-D-tbcl {
+  display: table-column;
+}
+#Stencil .D-tbclg, #Stencil.Phone .Phone-D-tbclg, #Stencil.Tablet .Tablet-D-tbclg {
+  display: table-column-group;
+}
+#Stencil .D-tbhg, #Stencil.Phone .Phone-D-tbhg, #Stencil.Tablet .Tablet-D-tbhg {
+  display: table-header-group;
+}
+#Stencil .D-tbfg, #Stencil.Phone .Phone-D-tbfg, #Stencil.Tablet .Tablet-D-tbfg {
+  display: table-footer-group;
+}
+#Stencil .D-tbrg, #Stencil.Phone .Phone-D-tbrg, #Stencil.Tablet .Tablet-D-tbrg {
+  display: table-row-group;
+}
+#Stencil .Tbl-f {
+  table-layout: fixed;
+}
+#Stencil .Tbl-a {
+  table-layout: auto;
+}
+#Stencil .Hpx-2, #Stencil.Tablet .Tablet-hpx-2, #Stencil.Phone .Phone-hpx-2 {
+  height: 2px;
+}
+#Stencil .Hpx-4, #Stencil.Tablet .Tablet-hpx-4, #Stencil.Phone .Phone-hpx-4 {
+  height: 4px;
+}
+#Stencil .Hpx-6, #Stencil.Tablet .Tablet-hpx-6, #Stencil.Phone .Phone-hpx-6 {
+  height: 6px;
+}
+#Stencil .Hpx-8, #Stencil.Tablet .Tablet-hpx-8, #Stencil.Phone .Phone-hpx-8 {
+  height: 8px;
+}
+#Stencil .Hpx-10, #Stencil.Tablet .Tablet-hpx-10, #Stencil.Phone .Phone-hpx-10 {
+  height: 10px;
+}
+#Stencil .Hpx-12, #Stencil.Tablet .Tablet-hpx-12, #Stencil.Phone .Phone-hpx-12 {
+  height: 12px;
+}
+#Stencil .Hpx-14, #Stencil.Tablet .Tablet-hpx-14, #Stencil.Phone .Phone-hpx-14 {
+  height: 14px;
+}
+#Stencil .Hpx-16, #Stencil.Tablet .Tablet-hpx-16, #Stencil.Phone .Phone-hpx-16 {
+  height: 16px;
+}
+#Stencil .Hpx-18, #Stencil.Tablet .Tablet-hpx-18, #Stencil.Phone .Phone-hpx-18 {
+  height: 18px;
+}
+#Stencil .Hpx-20, #Stencil.Tablet .Tablet-hpx-20, #Stencil.Phone .Phone-hpx-20 {
+  height: 20px;
+}
+#Stencil .Hpx-20, #Stencil.Tablet .Tablet-hpx-20, #Stencil.Phone .Phone-hpx-20 {
+  height: 20px;
+}
+#Stencil .Hpx-30, #Stencil.Tablet .Tablet-hpx-30, #Stencil.Phone .Phone-hpx-30 {
+  height: 30px;
+}
+#Stencil .Hpx-40, #Stencil.Tablet .Tablet-hpx-40, #Stencil.Phone .Phone-hpx-40 {
+  height: 40px;
+}
+#Stencil .Hpx-50, #Stencil.Tablet .Tablet-hpx-50, #Stencil.Phone .Phone-hpx-50 {
+  height: 50px;
+}
+#Stencil .Hpx-60, #Stencil.Tablet .Tablet-hpx-60, #Stencil.Phone .Phone-hpx-60 {
+  height: 60px;
+}
+#Stencil .Hpx-70, #Stencil.Tablet .Tablet-hpx-70, #Stencil.Phone .Phone-hpx-70 {
+  height: 70px;
+}
+#Stencil .Hpx-80, #Stencil.Tablet .Tablet-hpx-80, #Stencil.Phone .Phone-hpx-80 {
+  height: 80px;
+}
+#Stencil .Hpx-90, #Stencil.Tablet .Tablet-hpx-90, #Stencil.Phone .Phone-hpx-90 {
+  height: 90px;
+}
+#Stencil .Hpx-100, #Stencil.Tablet .Tablet-hpx-100, #Stencil.Phone .Phone-hpx-100 {
+  height: 100px;
+}
+#Stencil .Hpx-125, #Stencil.Tablet .Tablet-hpx-125, #Stencil.Phone .Phone-hpx-125 {
+  height: 125px;
+}
+#Stencil .Hpx-150, #Stencil.Tablet .Tablet-hpx-150, #Stencil.Phone .Phone-hpx-150 {
+  height: 150px;
+}
+#Stencil .Hpx-175, #Stencil.Tablet .Tablet-hpx-175, #Stencil.Phone .Phone-hpx-175 {
+  height: 175px;
+}
+#Stencil .Hpx-200, #Stencil.Tablet .Tablet-hpx-200, #Stencil.Phone .Phone-hpx-200 {
+  height: 200px;
+}
+#Stencil .Hpx-225, #Stencil.Tablet .Tablet-hpx-225, #Stencil.Phone .Phone-hpx-225 {
+  height: 225px;
+}
+#Stencil .Hpx-250, #Stencil.Tablet .Tablet-hpx-250, #Stencil.Phone .Phone-hpx-250 {
+  height: 250px;
+}
+#Stencil .Hpx-275, #Stencil.Tablet .Tablet-hpx-275, #Stencil.Phone .Phone-hpx-275 {
+  height: 275px;
+}
+#Stencil .Hpx-300, #Stencil.Tablet .Tablet-hpx-300, #Stencil.Phone .Phone-hpx-300 {
+  height: 300px;
+}
+#Stencil .Hpx-325, #Stencil.Tablet .Tablet-hpx-325, #Stencil.Phone .Phone-hpx-325 {
+  height: 325px;
+}
+#Stencil .Hpx-350, #Stencil.Tablet .Tablet-hpx-350, #Stencil.Phone .Phone-hpx-350 {
+  height: 350px;
+}
+#Stencil .Hpx-375, #Stencil.Tablet .Tablet-hpx-375, #Stencil.Phone .Phone-hpx-375 {
+  height: 375px;
+}
+#Stencil .Hpx-400, #Stencil.Tablet .Tablet-hpx-400, #Stencil.Phone .Phone-hpx-400 {
+  height: 400px;
+}
+#Stencil .Hpx-425, #Stencil.Tablet .Tablet-hpx-425, #Stencil.Phone .Phone-hpx-425 {
+  height: 425px;
+}
+#Stencil .Hpx-450, #Stencil.Tablet .Tablet-hpx-450, #Stencil.Phone .Phone-hpx-450 {
+  height: 450px;
+}
+#Stencil .Hpx-475, #Stencil.Tablet .Tablet-hpx-475, #Stencil.Phone .Phone-hpx-475 {
+  height: 475px;
+}
+#Stencil .Hpx-500, #Stencil.Tablet .Tablet-hpx-500, #Stencil.Phone .Phone-hpx-500 {
+  height: 500px;
+}
+#Stencil .Mihpx-2, #Stencil.Tablet .Tablet-Mihpx-2, #Stencil.Phone .Phone-Mihpx-2 {
+  min-height: 2px;
+}
+#Stencil .Mihpx-4, #Stencil.Tablet .Tablet-Mihpx-4, #Stencil.Phone .Phone-Mihpx-4 {
+  min-height: 4px;
+}
+#Stencil .Mihpx-6, #Stencil.Tablet .Tablet-Mihpx-6, #Stencil.Phone .Phone-Mihpx-6 {
+  min-height: 6px;
+}
+#Stencil .Mihpx-8, #Stencil.Tablet .Tablet-Mihpx-8, #Stencil.Phone .Phone-Mihpx-8 {
+  min-height: 8px;
+}
+#Stencil .Mihpx-10, #Stencil.Tablet .Tablet-Mihpx-10, #Stencil.Phone .Phone-Mihpx-10 {
+  min-height: 10px;
+}
+#Stencil .Mihpx-12, #Stencil.Tablet .Tablet-Mihpx-12, #Stencil.Phone .Phone-Mihpx-12 {
+  min-height: 12px;
+}
+#Stencil .Mihpx-14, #Stencil.Tablet .Tablet-Mihpx-14, #Stencil.Phone .Phone-Mihpx-14 {
+  min-height: 14px;
+}
+#Stencil .Mihpx-16, #Stencil.Tablet .Tablet-Mihpx-16, #Stencil.Phone .Phone-Mihpx-16 {
+  min-height: 16px;
+}
+#Stencil .Mihpx-18, #Stencil.Tablet .Tablet-Mihpx-18, #Stencil.Phone .Phone-Mihpx-18 {
+  min-height: 18px;
+}
+#Stencil .Mihpx-20, #Stencil.Tablet .Tablet-Mihpx-20, #Stencil.Phone .Phone-Mihpx-20 {
+  min-height: 20px;
+}
+#Stencil .Mihpx-20, #Stencil.Tablet .Tablet-Mihpx-20, #Stencil.Phone .Phone-Mihpx-20 {
+  min-height: 20px;
+}
+#Stencil .Mihpx-30, #Stencil.Tablet .Tablet-Mihpx-30, #Stencil.Phone .Phone-Mihpx-30 {
+  min-height: 30px;
+}
+#Stencil .Mihpx-40, #Stencil.Tablet .Tablet-Mihpx-40, #Stencil.Phone .Phone-Mihpx-40 {
+  min-height: 40px;
+}
+#Stencil .Mihpx-50, #Stencil.Tablet .Tablet-Mihpx-50, #Stencil.Phone .Phone-Mihpx-50 {
+  min-height: 50px;
+}
+#Stencil .Mihpx-60, #Stencil.Tablet .Tablet-Mihpx-60, #Stencil.Phone .Phone-Mihpx-60 {
+  min-height: 60px;
+}
+#Stencil .Mihpx-70, #Stencil.Tablet .Tablet-Mihpx-70, #Stencil.Phone .Phone-Mihpx-70 {
+  min-height: 70px;
+}
+#Stencil .Mihpx-80, #Stencil.Tablet .Tablet-Mihpx-80, #Stencil.Phone .Phone-Mihpx-80 {
+  min-height: 80px;
+}
+#Stencil .Mihpx-90, #Stencil.Tablet .Tablet-Mihpx-90, #Stencil.Phone .Phone-Mihpx-90 {
+  min-height: 90px;
+}
+#Stencil .Mihpx-100, #Stencil.Tablet .Tablet-Mihpx-100, #Stencil.Phone .Phone-Mihpx-100 {
+  min-height: 100px;
+}
+#Stencil .Mihpx-125, #Stencil.Tablet .Tablet-Mihpx-125, #Stencil.Phone .Phone-Mihpx-125 {
+  min-height: 125px;
+}
+#Stencil .Mihpx-150, #Stencil.Tablet .Tablet-Mihpx-150, #Stencil.Phone .Phone-Mihpx-150 {
+  min-height: 150px;
+}
+#Stencil .Mihpx-175, #Stencil.Tablet .Tablet-Mihpx-175, #Stencil.Phone .Phone-Mihpx-175 {
+  min-height: 175px;
+}
+#Stencil .Mihpx-200, #Stencil.Tablet .Tablet-Mihpx-200, #Stencil.Phone .Phone-Mihpx-200 {
+  min-height: 200px;
+}
+#Stencil .Mihpx-225, #Stencil.Tablet .Tablet-Mihpx-225, #Stencil.Phone .Phone-Mihpx-225 {
+  min-height: 225px;
+}
+#Stencil .Mihpx-250, #Stencil.Tablet .Tablet-Mihpx-250, #Stencil.Phone .Phone-Mihpx-250 {
+  min-height: 250px;
+}
+#Stencil .Mihpx-275, #Stencil.Tablet .Tablet-Mihpx-275, #Stencil.Phone .Phone-Mihpx-275 {
+  min-height: 275px;
+}
+#Stencil .Mihpx-300, #Stencil.Tablet .Tablet-Mihpx-300, #Stencil.Phone .Phone-Mihpx-300 {
+  min-height: 300px;
+}
+#Stencil .Mihpx-325, #Stencil.Tablet .Tablet-Mihpx-325, #Stencil.Phone .Phone-Mihpx-325 {
+  min-height: 325px;
+}
+#Stencil .Mihpx-350, #Stencil.Tablet .Tablet-Mihpx-350, #Stencil.Phone .Phone-Mihpx-350 {
+  min-height: 350px;
+}
+#Stencil .Mihpx-375, #Stencil.Tablet .Tablet-Mihpx-375, #Stencil.Phone .Phone-Mihpx-375 {
+  min-height: 375px;
+}
+#Stencil .Mihpx-400, #Stencil.Tablet .Tablet-Mihpx-400, #Stencil.Phone .Phone-Mihpx-400 {
+  min-height: 400px;
+}
+#Stencil .Mihpx-425, #Stencil.Tablet .Tablet-Mihpx-425, #Stencil.Phone .Phone-Mihpx-425 {
+  min-height: 425px;
+}
+#Stencil .Mihpx-450, #Stencil.Tablet .Tablet-Mihpx-450, #Stencil.Phone .Phone-Mihpx-450 {
+  min-height: 450px;
+}
+#Stencil .Mihpx-475, #Stencil.Tablet .Tablet-Mihpx-475, #Stencil.Phone .Phone-Mihpx-475 {
+  min-height: 475px;
+}
+#Stencil .Mihpx-500, #Stencil.Tablet .Tablet-Mihpx-500, #Stencil.Phone .Phone-Mihpx-500 {
+  min-height: 500px;
+}
+#Stencil .H-avatar-xs, #Stencil.Phone .Phone-h-avatar-xs, #Stencil.Tablet .Tablet-h-avatar-xs {
+  height: 16px;
+}
+#Stencil .H-avatar-sm, #Stencil.Phone .Phone-h-avatar-sm, #Stencil.Tablet .Tablet-h-avatar-sm {
+  height: 20px;
+}
+#Stencil .H-avatar-med, #Stencil.Phone .Phone-h-avatar-med, #Stencil.Tablet .Tablet-h-avatar-med {
+  height: 40px;
+}
+#Stencil .H-avatar-lg, #Stencil.Phone .Phone-h-avatar-lg, #Stencil.Tablet .Tablet-h-avatar-med {
+  height: 80px;
+}
+#Stencil .Lh-1, #Stencil.Tablet .Tablet-lh-1, #Stencil.Phone .Phone-lh-1 {
+  line-height: 1;
+}
+#Stencil .Lh-3xs, #Stencil.Tablet .Tablet-lh-3xs, #Stencil.Phone .Phone-lh-3xs {
+  line-height: 8px;
+}
+#Stencil .Lh-xxs, #Stencil.Tablet .Tablet-lh-xxs, #Stencil.Phone .Phone-lh-xxs {
+  line-height: 13.75px;
+}
+#Stencil .Lh-xs, #Stencil.Tablet .Tablet-lh-xs, #Stencil.Phone .Phone-lh-xs {
+  line-height: 16.25px;
+}
+#Stencil .Lh-med, #Stencil.Tablet .Tablet-lh-med, #Stencil.Phone .Phone-lh-med {
+  line-height: 20px;
+}
+#Stencil .Lh-lg, #Stencil.Tablet .Tablet-lh-lg, #Stencil.Phone .Phone-lh-lg {
+  line-height: 22.5px;
+}
+#Stencil .Lh-xl, #Stencil.Tablet .Tablet-lh-xl, #Stencil.Phone .Phone-lh-xl {
+  line-height: 27.5px;
+}
+#Stencil .Lh-xxl, #Stencil.Tablet .Tablet-lh-xxl, #Stencil.Phone .Phone-lh-xxl {
+  line-height: 32.5px;
+}
+#Stencil .Lh-page-header, #Stencil.Tablet .Tablet-lh-page-header, #Stencil.Phone .Phone-lh-page-header {
+  line-height: 30px;
+}
+#Stencil .Lh-header, #Stencil.Tablet .Tablet-lh-header, #Stencil.Phone .Phone-lh-header {
+  line-height: 22.5px;
+}
+#Stencil .Lh-btn, #Stencil.Tablet .Tablet-lh-btn, #Stencil.Phone .Phone-lh-btn {
+  line-height: 31px;
+}
+#Stencil .Lh-btn-short, #Stencil.Tablet .Tablet-lh-btn-short, #Stencil.Phone .Phone-lh-btn-short {
+  line-height: 25px;
+}
+#Stencil .Lh-btn-tall, #Stencil.Tablet .Tablet-lh-btn-tall, #Stencil.Phone .Phone-lh-btn-tall {
+  line-height: 55px;
+}
+#Stencil .Td-n {
+  text-decoration: none;
+}
+#Stencil .Td-u {
+  text-decoration: underline;
+}
+#Stencil .Td-o {
+  text-decoration: overline;
+}
+#Stencil .Td-t {
+  text-decoration: line-through;
+}
+#Stencil .Cur-d {
+  cursor: default;
+}
+#Stencil .Cur-h {
+  cursor: help;
+}
+#Stencil .Cur-m {
+  cursor: move;
+}
+#Stencil .Cur-p {
+  cursor: pointer;
+}
+#Stencil .Cur-a {
+  cursor: auto;
+}
+#Stencil .Absolute, #Stencil.Tablet .Tablet-absolute, #Stencil.Phone .Phone-absolute {
+  position: absolute;
+}
+#Stencil .Relative, #Stencil.Tablet .Tablet-relative, #Stencil.Phone .Phone-relative {
+  position: relative;
+}
+#Stencil .Fixed, #Stencil.Tablet .Tablet-fixed, #Stencil.Phone .Phone-fixed {
+  position: fixed;
+}
+#Stencil .Static, #Stencil.Tablet .Tablet-static, #Stencil.Phone .Phone-static {
+  position: static;
+}
+#Stencil .Top, #Stencil.Tablet .Tablet-top, #Stencil.Phone .Phone-top {
+  top: 0;
+}
+#Stencil .Bot, #Stencil.Tablet .Tablet-bot, #Stencil.Phone .Phone-bot {
+  bottom: 0;
+}
+#Stencil .Inlineblock, #Stencil.Tablet .Tablet-inlineblock, #Stencil.Phone .Phone-inline-block {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+#Stencil .Block, #Stencil.Tablet .Tablet-block, #Stencil.Phone .Phone-block {
+  display: block;
+}
+#Stencil .Clearfix, #Stencil.Tablet .Tablet-clearfix, #Stencil.Phone .Phone-clearfix {
+  *zoom: 1;
+}
+#Stencil .Clearfix:after, #Stencil.Tablet .Tablet-clearfix:after, #Stencil.Phone .Phone-clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#Stencil .Hidden {
+  display: none !important;
+}
+#Stencil .Hidden-accessible {
+  clip: rect(1px, 1px, 1px, 1px);
+  *clip: rect(1px 1px 1px 1px);
+  position: absolute !important;
+}
+#Stencil .Truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#Stencil .Nowrap, #Stencil.Tablet .Tablet-nowrap, #Stencil.Phone .Phone-nowrap {
+  white-space: nowrap;
+}
+#Stencil .Wrap, #Stencil.Tablet .Tablet-wrap, #Stencil.Phone .Phone-wrap {
+  white-space: normal;
+}
+#Stencil .Prewrap, #Stencil.Tablet .Tablet-prewrap, #Stencil.Phone .Phone-prewrap {
+  white-space: pre;
+}
+#Stencil .Wordwrap-bw, #Stencil.Tablet .Tablet-.Wordwrap-bw, #Stencil.Phone .Phone-.Wordwrap-bw {
+  word-wrap: break-word;
+}
+#Stencil .Ov-h {
+  overflow: hidden;
+  zoom: 1;
+}
+#Stencil .Ov-v {
+  overflow: visible;
+}
+#Stencil .Ov-s {
+  overflow: scroll;
+}
+#Stencil .Ov-a {
+  overflow: auto;
+}
+#Stencil .Ovx-v {
+  overflow-x: visible;
+}
+#Stencil .Ovx-h {
+  overflow-x: hidden;
+}
+#Stencil .Ovx-s {
+  overflow-x: scroll;
+}
+#Stencil .Ovx-a {
+  overflow-x: auto;
+}
+#Stencil .Ovy-v {
+  overflow-y: visible;
+}
+#Stencil .Ovy-h {
+  overflow-y: hidden;
+}
+#Stencil .Ovy-s {
+  overflow-y: scroll;
+}
+#Stencil .Ovy-a {
+  overflow-y: auto;
+}
+#Stencil .M-xxs, #Stencil.Tablet .Tablet-m-xxs, #Stencil.Phone .Phone-m-xxs {
+  margin: 1px;
+}
+#Stencil .M-xs, #Stencil.Tablet .Tablet-m-xs, #Stencil.Phone .Phone-m-xs {
+  margin: 2px;
+}
+#Stencil .M-sm, #Stencil.Tablet .Tablet-m-sm, #Stencil.Phone .Phone-m-sm {
+  margin: 4px;
+}
+#Stencil .M-med, #Stencil.Tablet .Tablet-m-med, #Stencil.Phone .Phone-m-med {
+  margin: 6px;
+}
+#Stencil .M-lg, #Stencil.Tablet .Tablet-m-lg, #Stencil.Phone .Phone-m-lg {
+  margin: 10px;
+}
+#Stencil .M-xl, #Stencil.Tablet .Tablet-m-xl, #Stencil.Phone .Phone-m-xl {
+  margin: 15px;
+}
+#Stencil .M-xxl, #Stencil.Tablet .Tablet-m-xxl, #Stencil.Phone .Phone-m-xxl {
+  margin: 20px;
+}
+#Stencil .Mtop-xxs, #Stencil.Tablet .Tablet-mtop-xxs, #Stencil.Phone .Phone-mtop-xxs {
+  margin-top: 1px;
+}
+#Stencil .Mtop-xs, #Stencil.Tablet .Tablet-mtop-xs, #Stencil.Phone .Phone-mtop-xs {
+  margin-top: 2px;
+}
+#Stencil .Mtop-sm, #Stencil.Tablet .Tablet-mtop-sm, #Stencil.Phone .Phone-mtop-sm {
+  margin-top: 4px;
+}
+#Stencil .Mtop-med, #Stencil.Tablet .Tablet-mtop-med, #Stencil.Phone .Phone-mtop-med {
+  margin-top: 6px;
+}
+#Stencil .Mtop-lg, #Stencil.Tablet .Tablet-mtop-lg, #Stencil.Phone .Phone-mtop-lg {
+  margin-top: 10px;
+}
+#Stencil .Mtop-xl, #Stencil.Tablet .Tablet-mtop-xl, #Stencil.Phone .Phone-mtop-xl {
+  margin-top: 15px;
+}
+#Stencil .Mtop-xxl, #Stencil.Tablet .Tablet-mtop-xxl, #Stencil.Phone .Phone-mtop-xxl {
+  margin-top: 20px;
+}
+#Stencil .Mbot-xxs, #Stencil.Tablet .Tablet-mbot-xxs, #Stencil.Phone .Phone-mbot-xxs {
+  margin-bottom: 1px;
+}
+#Stencil .Mbot-xs, #Stencil.Tablet .Tablet-mbot-xs, #Stencil.Phone .Phone-mbot-xs {
+  margin-bottom: 2px;
+}
+#Stencil .Mbot-sm, #Stencil.Tablet .Tablet-mbot-sm, #Stencil.Phone .Phone-mbot-sm {
+  margin-bottom: 4px;
+}
+#Stencil .Mbot-med, #Stencil.Tablet .Tablet-mbot-med, #Stencil.Phone .Phone-mbot-med {
+  margin-bottom: 6px;
+}
+#Stencil .Mbot-lg, #Stencil.Tablet .Tablet-mbot-lg, #Stencil.Phone .Phone-mbot-lg {
+  margin-bottom: 10px;
+}
+#Stencil .Mbot-xl, #Stencil.Tablet .Tablet-mbot-xl, #Stencil.Phone .Phone-mbot-xl {
+  margin-bottom: 15px;
+}
+#Stencil .Mbot-xxl, #Stencil.Tablet .Tablet-mbot-xxl, #Stencil.Phone .Phone-mbot-xxl {
+  margin-bottom: 20px;
+}
+#Stencil .My-xxs, #Stencil.Tablet .Tablet-my-xxs, #Stencil.Phone .Phone-my-xxs {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+#Stencil .My-xs, #Stencil.Tablet .Tablet-my-xs, #Stencil.Phone .Phone-my-xs {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+#Stencil .My-sm, #Stencil.Tablet .Tablet-my-sm, #Stencil.Phone .Phone-my-sm {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+#Stencil .My-med, #Stencil.Tablet .Tablet-my-med, #Stencil.Phone .Phone-my-med {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+#Stencil .My-lg, #Stencil.Tablet .Tablet-my-lg, #Stencil.Phone .Phone-my-lg {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#Stencil .My-xl, #Stencil.Tablet .Tablet-my-xl, #Stencil.Phone .Phone-my-xl {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#Stencil .My-xxl, #Stencil.Tablet .Tablet-my-xxl, #Stencil.Phone .Phone-my-xxl {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#Stencil .Mx-xxs, #Stencil.Tablet .Tablet-mx-xxs, #Stencil.Phone .Phone-mx-xxs {
+  margin-left: 1px;
+  margin-right: 1px;
+}
+#Stencil .Mx-xs, #Stencil.Tablet .Tablet-mx-xs, #Stencil.Phone .Phone-mx-xs {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+#Stencil .Mx-sm, #Stencil.Tablet .Tablet-mx-sm, #Stencil.Phone .Phone-mx-sm {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+#Stencil .Mx-med, #Stencil.Tablet .Tablet-mx-med, #Stencil.Phone .Phone-mx-med {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+#Stencil .Mx-lg, #Stencil.Tablet .Tablet-mx-lg, #Stencil.Phone .Phone-mx-lg {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#Stencil .Mx-xl, #Stencil.Tablet .Tablet-mx-xl, #Stencil.Phone .Phone-mx-xl {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#Stencil .Mx-xxl, #Stencil.Tablet .Tablet-mx-xxl, #Stencil.Phone .Phone-mx-xxl {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#Stencil .M-a, #Stencil.Tablet .Tablet-m-a, #Stencil.Phone .Phone-m-a {
+/*   margin: auto; */
+/* DJC */
+  margin: 0 auto;
+/*   vertical-align: middle; */
+/*   position: relative; */
+}
+#Stencil .Opac-0, #Stencil.Tablet .Tablet-opac-0, #Stencil.Phone .Phone-opac-0 {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+#Stencil .Opac-10, #Stencil.Tablet .Tablet-opac-10, #Stencil.Phone .Phone-opac-10 {
+  opacity: 0.1;
+  filter: alpha(opacity=10);
+}
+#Stencil .Opac-20, #Stencil.Tablet .Tablet-opac-20, #Stencil.Phone .Phone-opac-20 {
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+#Stencil .Opac-30, #Stencil.Tablet .Tablet-opac-30, #Stencil.Phone .Phone-opac-30 {
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+#Stencil .Opac-40, #Stencil.Tablet .Tablet-opac-40, #Stencil.Phone .Phone-opac-40 {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+#Stencil .Opac-50, #Stencil.Tablet .Tablet-opac-50, #Stencil.Phone .Phone-opac-50 {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+#Stencil .Opac-60, #Stencil.Tablet .Tablet-opac-60, #Stencil.Phone .Phone-opac-60 {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+#Stencil .Opac-70, #Stencil.Tablet .Tablet-opac-70, #Stencil.Phone .Phone-opac-70 {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+#Stencil .Opac-80, #Stencil.Tablet .Tablet-opac-80, #Stencil.Phone .Phone-opac-80 {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+#Stencil .Opac-90, #Stencil.Tablet .Tablet-opac-90, #Stencil.Phone .Phone-opac-90 {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+#Stencil .DarkOverlayGradient {
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC42NSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.95) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(100%, rgba(0, 0, 0, 0.95)));
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.95) 100%);
+  background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.95) 100%);
+  background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.95) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.95) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+}
+#Stencil .P-xxs, #Stencil.Tablet .Tablet-p-xxs, #Stencil.Phone .Phone-p-xxs {
+  padding: 1px;
+}
+#Stencil .P-xs, #Stencil.Tablet .Tablet-p-xs, #Stencil.Phone .Phone-p-xs {
+  padding: 2px;
+}
+#Stencil .P-sm, #Stencil.Tablet .Tablet-p-sm, #Stencil.Phone .Phone-p-sm {
+  padding: 4px;
+}
+#Stencil .P-med, #Stencil.Tablet .Tablet-p-med, #Stencil.Phone .Phone-p-med {
+  padding: 6px;
+}
+#Stencil .P-lg, #Stencil.Tablet .Tablet-p-lg, #Stencil.Phone .Phone-p-lg {
+  padding: 10px;
+}
+#Stencil .P-xl, #Stencil.Tablet .Tablet-p-xl, #Stencil.Phone .Phone-p-xl {
+  padding: 15px;
+}
+#Stencil .P-xxl, #Stencil.Tablet .Tablet-p-xxl, #Stencil.Phone .Phone-p-xxl {
+  padding: 20px;
+}
+#Stencil .Ptop-xxs, #Stencil.Tablet .Tablet-ptop-xxs, #Stencil.Phone .Phone-ptop-xxs {
+  padding-top: 1px;
+}
+#Stencil .Ptop-xs, #Stencil.Tablet .Tablet-ptop-xs, #Stencil.Phone .Phone-ptop-xs {
+  padding-top: 2px;
+}
+#Stencil .Ptop-sm, #Stencil.Tablet .Tablet-ptop-sm, #Stencil.Phone .Phone-ptop-sm {
+  padding-top: 4px;
+}
+#Stencil .Ptop-med, #Stencil.Tablet .Tablet-ptop-med, #Stencil.Phone .Phone-ptop-med {
+  padding-top: 6px;
+}
+#Stencil .Ptop-lg, #Stencil.Tablet .Tablet-ptop-lg, #Stencil.Phone .Phone-ptop-lg {
+  padding-top: 10px;
+}
+#Stencil .Ptop-xl, #Stencil.Tablet .Tablet-ptop-xl, #Stencil.Phone .Phone-ptop-xl {
+  padding-top: 15px;
+}
+#Stencil .Ptop-xxl, #Stencil.Tablet .Tablet-ptop-xxl, #Stencil.Phone .Phone-ptop-xxl {
+  padding-top: 20px;
+}
+#Stencil .Pbot-xxs, #Stencil.Tablet .Tablet-pbot-xxs, #Stencil.Phone .Phone-pbot-xxs {
+  padding-bottom: 1px;
+}
+#Stencil .Pbot-xs, #Stencil.Tablet .Tablet-pbot-xs, #Stencil.Phone .Phone-pbot-xs {
+  padding-bottom: 2px;
+}
+#Stencil .Pbot-sm, #Stencil.Tablet .Tablet-pbot-sm, #Stencil.Phone .Phone-pbot-sm {
+  padding-bottom: 4px;
+}
+#Stencil .Pbot-med, #Stencil.Tablet .Tablet-pbot-med, #Stencil.Phone .Phone-pbot-med {
+  padding-bottom: 6px;
+}
+#Stencil .Pbot-lg, #Stencil.Tablet .Tablet-pbot-lg, #Stencil.Phone .Phone-pbot-lg {
+  padding-bottom: 10px;
+}
+#Stencil .Pbot-xl, #Stencil.Tablet .Tablet-pbot-xl, #Stencil.Phone .Phone-pbot-xl {
+  padding-bottom: 15px;
+}
+#Stencil .Pbot-xxl, #Stencil.Tablet .Tablet-pbot-xxl, #Stencil.Phone .Phone-pbot-xxl {
+  padding-bottom: 20px;
+}
+#Stencil .Py-xxs, #Stencil.Tablet .Tablet-py-xxs, #Stencil.Phone .Phone-py-xxs {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+#Stencil .Py-xs, #Stencil.Tablet .Tablet-py-xs, #Stencil.Phone .Phone-py-xs {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+#Stencil .Py-sm, #Stencil.Tablet .Tablet-py-sm, #Stencil.Phone .Phone-py-sm {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+#Stencil .Py-med, #Stencil.Tablet .Tablet-py-med, #Stencil.Phone .Phone-py-med {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+#Stencil .Py-lg, #Stencil.Tablet .Tablet-py-lg, #Stencil.Phone .Phone-py-lg {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#Stencil .Py-xl, #Stencil.Tablet .Tablet-py-xl, #Stencil.Phone .Phone-py-xl {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#Stencil .Py-xxl, #Stencil.Tablet .Tablet-py-xxl, #Stencil.Phone .Phone-py-xxl {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#Stencil .Px-xxs, #Stencil .Sm-px-xxs, #Stencil.Tablet .Tablet-px-xxs, #Stencil.Phone .Phone-px-xxs {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+#Stencil .Px-xs, #Stencil .Sm-px-xs, #Stencil.Tablet .Tablet-px-xs, #Stencil.Phone .Phone-px-xs {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+#Stencil .Px-sm, #Stencil .Sm-px-sm, #Stencil.Tablet .Tablet-px-sm, #Stencil.Phone .Phone-px-sm {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+#Stencil .Px-med, #Stencil .Sm-px-med, #Stencil.Tablet .Tablet-px-med, #Stencil.Phone .Phone-px-med {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+#Stencil .Px-lg, #Stencil .Sm-px-lg, #Stencil.Tablet .Tablet-px-lg, #Stencil.Phone .Phone-px-lg {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#Stencil .Px-xl, #Stencil .Sm-px-xl, #Stencil.Tablet .Tablet-px-xl, #Stencil.Phone .Phone-px-xl {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#Stencil .Px-xxl, #Stencil .Sm-px-xxl, #Stencil.Tablet .Tablet-px-xxl, #Stencil.Phone .Phone-px-xxl {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#Stencil .Ta-c, #Stencil .Sm-ta-c, #Stencil .Med-ta-c, #Stencil.Phone .Phone-ta-c {
+  text-align: center;
+}
+#Stencil .T-hidden, #Stencil .Sm-ta-hidden, #Stencil .Med-t-hidden, #Stencil.Phone .Phone-t-hidden {
+  text-indent: -9999px;
+  overflow: hidden;
+  text-align: left;
+}
+#Stencil .Ell {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#Stencil .Fill-x, #Stencil .Sm-fill-x, #Stencil .Med-fill-x, #Stencil.Tablet .Tablet-fill-x, #Stencil.Phone .Phone-fill-x {
+  width: 100%;
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  *padding-left: 0 !important;
+  *padding-right: 0 !important;
+  *border-left: none !important;
+  *border-right: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+#Stencil .Fill-y, #Stencil .Sm-fill-y, #Stencil .Med-fill-y, #Stencil.Tablet .Tablet-fill-y, #Stencil.Phone .Phone-fill-y {
+  height: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  *padding-top: 0 !important;
+  *padding-bottom: 0 !important;
+  *border-top: none !important;
+  *border-bottom: none !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+#Stencil .Fill, #Stencil .Sm-fill, #Stencil .Med-fill, #Stencil.Tablet .Tablet-fill, #Stencil.Phone .Phone-fill {
+  height: 100%;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  *padding-top: 0 !important;
+  *padding-bottom: 0 !important;
+  *padding-left: 0 !important;
+  *padding-right: 0 !important;
+  *border-left: none !important;
+  *border-right: none !important;
+  *border-top: none !important;
+  *border-bottom: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+#Stencil .Wpx-2, #Stencil.Tablet .Tablet-wpx-2, #Stencil.Phone .Phone-wpx-2 {
+  width: 2px;
+}
+#Stencil .Wpx-4, #Stencil.Tablet .Tablet-wpx-4, #Stencil.Phone .Phone-wpx-4 {
+  width: 4px;
+}
+#Stencil .Wpx-6, #Stencil.Tablet .Tablet-wpx-6, #Stencil.Phone .Phone-wpx-6 {
+  width: 6px;
+}
+#Stencil .Wpx-8, #Stencil.Tablet .Tablet-wpx-8, #Stencil.Phone .Phone-wpx-8 {
+  width: 8px;
+}
+#Stencil .Wpx-10, #Stencil.Tablet .Tablet-wpx-10, #Stencil.Phone .Phone-wpx-10 {
+  width: 10px;
+}
+#Stencil .Wpx-12, #Stencil.Tablet .Tablet-wpx-12, #Stencil.Phone .Phone-wpx-12 {
+  width: 12px;
+}
+#Stencil .Wpx-14, #Stencil.Tablet .Tablet-wpx-14, #Stencil.Phone .Phone-wpx-14 {
+  width: 14px;
+}
+#Stencil .Wpx-16, #Stencil.Tablet .Tablet-wpx-16, #Stencil.Phone .Phone-wpx-16 {
+  width: 16px;
+}
+#Stencil .Wpx-18, #Stencil.Tablet .Tablet-wpx-18, #Stencil.Phone .Phone-wpx-18 {
+  width: 18px;
+}
+#Stencil .Wpx-20, #Stencil.Tablet .Tablet-wpx-20, #Stencil.Phone .Phone-wpx-20 {
+  width: 20px;
+}
+#Stencil .Wpx-20, #Stencil.Tablet .Tablet-wpx-20, #Stencil.Phone .Phone-wpx-20 {
+  width: 20px;
+}
+#Stencil .Wpx-30, #Stencil.Tablet .Tablet-wpx-30, #Stencil.Phone .Phone-wpx-30 {
+  width: 30px;
+}
+#Stencil .Wpx-40, #Stencil.Tablet .Tablet-wpx-40, #Stencil.Phone .Phone-wpx-40 {
+  width: 40px;
+}
+#Stencil .Wpx-50, #Stencil.Tablet .Tablet-wpx-50, #Stencil.Phone .Phone-wpx-50 {
+  width: 50px;
+}
+#Stencil .Wpx-60, #Stencil.Tablet .Tablet-wpx-60, #Stencil.Phone .Phone-wpx-60 {
+  width: 60px;
+}
+#Stencil .Wpx-70, #Stencil.Tablet .Tablet-wpx-70, #Stencil.Phone .Phone-wpx-70 {
+  width: 70px;
+}
+#Stencil .Wpx-80, #Stencil.Tablet .Tablet-wpx-80, #Stencil.Phone .Phone-wpx-80 {
+  width: 80px;
+}
+#Stencil .Wpx-90, #Stencil.Tablet .Tablet-wpx-90, #Stencil.Phone .Phone-wpx-90 {
+  width: 90px;
+}
+#Stencil .Wpx-100, #Stencil.Tablet .Tablet-wpx-100, #Stencil.Phone .Phone-wpx-100 {
+  width: 100px;
+}
+#Stencil .Wpx-125, #Stencil.Tablet .Tablet-wpx-125, #Stencil.Phone .Phone-wpx-125 {
+  width: 125px;
+}
+#Stencil .Wpx-150, #Stencil.Tablet .Tablet-wpx-150, #Stencil.Phone .Phone-wpx-150 {
+  width: 150px;
+}
+#Stencil .Wpx-175, #Stencil.Tablet .Tablet-wpx-175, #Stencil.Phone .Phone-wpx-175 {
+  width: 175px;
+}
+#Stencil .Wpx-200, #Stencil.Tablet .Tablet-wpx-200, #Stencil.Phone .Phone-wpx-200 {
+  width: 200px;
+}
+#Stencil .Wpx-225, #Stencil.Tablet .Tablet-wpx-225, #Stencil.Phone .Phone-wpx-225 {
+  width: 225px;
+}
+#Stencil .Wpx-250, #Stencil.Tablet .Tablet-wpx-250, #Stencil.Phone .Phone-wpx-250 {
+  width: 250px;
+}
+#Stencil .Wpx-275, #Stencil.Tablet .Tablet-wpx-275, #Stencil.Phone .Phone-wpx-275 {
+  width: 275px;
+}
+#Stencil .Wpx-300, #Stencil.Tablet .Tablet-wpx-300, #Stencil.Phone .Phone-wpx-300 {
+  width: 300px;
+}
+#Stencil .Wpx-325, #Stencil.Tablet .Tablet-wpx-325, #Stencil.Phone .Phone-wpx-325 {
+  width: 325px;
+}
+#Stencil .Wpx-350, #Stencil.Tablet .Tablet-wpx-350, #Stencil.Phone .Phone-wpx-350 {
+  width: 350px;
+}
+#Stencil .Wpx-375, #Stencil.Tablet .Tablet-wpx-375, #Stencil.Phone .Phone-wpx-375 {
+  width: 375px;
+}
+#Stencil .Wpx-400, #Stencil.Tablet .Tablet-wpx-400, #Stencil.Phone .Phone-wpx-400 {
+  width: 400px;
+}
+#Stencil .Wpx-425, #Stencil.Tablet .Tablet-wpx-425, #Stencil.Phone .Phone-wpx-425 {
+  width: 425px;
+}
+#Stencil .Wpx-450, #Stencil.Tablet .Tablet-wpx-450, #Stencil.Phone .Phone-wpx-450 {
+  width: 450px;
+}
+#Stencil .Wpx-475, #Stencil.Tablet .Tablet-wpx-475, #Stencil.Phone .Phone-wpx-475 {
+  width: 475px;
+}
+#Stencil .Wpx-500, #Stencil.Tablet .Tablet-wpx-500, #Stencil.Phone .Phone-wpx-500 {
+  width: 500px;
+}
+#Stencil .Mawpx-2, #Stencil.Tablet .Tablet-Mawpx-2, #Stencil.Phone .Phone-Mawpx-2 {
+  max-width: 2px;
+}
+#Stencil .Mawpx-4, #Stencil.Tablet .Tablet-Mawpx-4, #Stencil.Phone .Phone-Mawpx-4 {
+  max-width: 4px;
+}
+#Stencil .Mawpx-6, #Stencil.Tablet .Tablet-Mawpx-6, #Stencil.Phone .Phone-Mawpx-6 {
+  max-width: 6px;
+}
+#Stencil .Mawpx-8, #Stencil.Tablet .Tablet-Mawpx-8, #Stencil.Phone .Phone-Mawpx-8 {
+  max-width: 8px;
+}
+#Stencil .Mawpx-10, #Stencil.Tablet .Tablet-Mawpx-10, #Stencil.Phone .Phone-Mawpx-10 {
+  max-width: 10px;
+}
+#Stencil .Mawpx-12, #Stencil.Tablet .Tablet-Mawpx-12, #Stencil.Phone .Phone-Mawpx-12 {
+  max-width: 12px;
+}
+#Stencil .Mawpx-14, #Stencil.Tablet .Tablet-Mawpx-14, #Stencil.Phone .Phone-Mawpx-14 {
+  max-width: 14px;
+}
+#Stencil .Mawpx-16, #Stencil.Tablet .Tablet-Mawpx-16, #Stencil.Phone .Phone-Mawpx-16 {
+  max-width: 16px;
+}
+#Stencil .Mawpx-18, #Stencil.Tablet .Tablet-Mawpx-18, #Stencil.Phone .Phone-Mawpx-18 {
+  max-width: 18px;
+}
+#Stencil .Mawpx-20, #Stencil.Tablet .Tablet-Mawpx-20, #Stencil.Phone .Phone-Mawpx-20 {
+  max-width: 20px;
+}
+#Stencil .Mawpx-20, #Stencil.Tablet .Tablet-Mawpx-20, #Stencil.Phone .Phone-Mawpx-20 {
+  max-width: 20px;
+}
+#Stencil .Mawpx-30, #Stencil.Tablet .Tablet-Mawpx-30, #Stencil.Phone .Phone-Mawpx-30 {
+  max-width: 30px;
+}
+#Stencil .Mawpx-40, #Stencil.Tablet .Tablet-Mawpx-40, #Stencil.Phone .Phone-Mawpx-40 {
+  max-width: 40px;
+}
+#Stencil .Mawpx-50, #Stencil.Tablet .Tablet-Mawpx-50, #Stencil.Phone .Phone-Mawpx-50 {
+  max-width: 50px;
+}
+#Stencil .Mawpx-60, #Stencil.Tablet .Tablet-Mawpx-60, #Stencil.Phone .Phone-Mawpx-60 {
+  max-width: 60px;
+}
+#Stencil .Mawpx-70, #Stencil.Tablet .Tablet-Mawpx-70, #Stencil.Phone .Phone-Mawpx-70 {
+  max-width: 70px;
+}
+#Stencil .Mawpx-80, #Stencil.Tablet .Tablet-Mawpx-80, #Stencil.Phone .Phone-Mawpx-80 {
+  max-width: 80px;
+}
+#Stencil .Mawpx-90, #Stencil.Tablet .Tablet-Mawpx-90, #Stencil.Phone .Phone-Mawpx-90 {
+  max-width: 90px;
+}
+#Stencil .Mawpx-100, #Stencil.Tablet .Tablet-Mawpx-100, #Stencil.Phone .Phone-Mawpx-100 {
+  max-width: 100px;
+}
+#Stencil .Mawpx-125, #Stencil.Tablet .Tablet-Mawpx-125, #Stencil.Phone .Phone-Mawpx-125 {
+  max-width: 125px;
+}
+#Stencil .Mawpx-150, #Stencil.Tablet .Tablet-Mawpx-150, #Stencil.Phone .Phone-Mawpx-150 {
+  max-width: 150px;
+}
+#Stencil .Mawpx-175, #Stencil.Tablet .Tablet-Mawpx-175, #Stencil.Phone .Phone-Mawpx-175 {
+  max-width: 175px;
+}
+#Stencil .Mawpx-200, #Stencil.Tablet .Tablet-Mawpx-200, #Stencil.Phone .Phone-Mawpx-200 {
+  max-width: 200px;
+}
+#Stencil .Mawpx-225, #Stencil.Tablet .Tablet-Mawpx-225, #Stencil.Phone .Phone-Mawpx-225 {
+  max-width: 225px;
+}
+#Stencil .Mawpx-250, #Stencil.Tablet .Tablet-Mawpx-250, #Stencil.Phone .Phone-Mawpx-250 {
+  max-width: 250px;
+}
+#Stencil .Mawpx-275, #Stencil.Tablet .Tablet-Mawpx-275, #Stencil.Phone .Phone-Mawpx-275 {
+  max-width: 275px;
+}
+#Stencil .Mawpx-300, #Stencil.Tablet .Tablet-Mawpx-300, #Stencil.Phone .Phone-Mawpx-300 {
+  max-width: 300px;
+}
+#Stencil .Mawpx-325, #Stencil.Tablet .Tablet-Mawpx-325, #Stencil.Phone .Phone-Mawpx-325 {
+  max-width: 325px;
+}
+#Stencil .Mawpx-350, #Stencil.Tablet .Tablet-Mawpx-350, #Stencil.Phone .Phone-Mawpx-350 {
+  max-width: 350px;
+}
+#Stencil .Mawpx-375, #Stencil.Tablet .Tablet-Mawpx-375, #Stencil.Phone .Phone-Mawpx-375 {
+  max-width: 375px;
+}
+#Stencil .Mawpx-400, #Stencil.Tablet .Tablet-Mawpx-400, #Stencil.Phone .Phone-Mawpx-400 {
+  max-width: 400px;
+}
+#Stencil .Mawpx-425, #Stencil.Tablet .Tablet-Mawpx-425, #Stencil.Phone .Phone-Mawpx-425 {
+  max-width: 425px;
+}
+#Stencil .Mawpx-450, #Stencil.Tablet .Tablet-Mawpx-450, #Stencil.Phone .Phone-Mawpx-450 {
+  max-width: 450px;
+}
+#Stencil .Mawpx-475, #Stencil.Tablet .Tablet-Mawpx-475, #Stencil.Phone .Phone-Mawpx-475 {
+  max-width: 475px;
+}
+#Stencil .Mawpx-500, #Stencil.Tablet .Tablet-Mawpx-500, #Stencil.Phone .Phone-Mawpx-500 {
+  max-width: 500px;
+}
+#Stencil .Mawpx-600, #Stencil.Tablet .Tablet-Mawpx-600, #Stencil.Phone .Phone-Mawpx-600 {
+  max-width: 600px;
+}
+#Stencil .Mawpx-700, #Stencil.Tablet .Tablet-Mawpx-700, #Stencil.Phone .Phone-Mawpx-700 {
+  max-width: 700px;
+}
+#Stencil .Mawpx-800, #Stencil.Tablet .Tablet-Mawpx-800, #Stencil.Phone .Phone-Mawpx-800 {
+  max-width: 800px;
+}
+#Stencil .Mawpx-900, #Stencil.Tablet .Tablet-Mawpx-900, #Stencil.Phone .Phone-Mawpx-900 {
+  max-width: 900px;
+}
+#Stencil .Mawpx-1000, #Stencil.Tablet .Tablet-Mawpx-1000, #Stencil.Phone .Phone-Mawpx-1000 {
+  max-width: 1000px;
+}
+#Stencil .Miwpx-2, #Stencil.Tablet .Tablet-Miwpx-2, #Stencil.Phone .Phone-Miwpx-2 {
+  min-width: 2px;
+}
+#Stencil .Miwpx-4, #Stencil.Tablet .Tablet-Miwpx-4, #Stencil.Phone .Phone-Miwpx-4 {
+  min-width: 4px;
+}
+#Stencil .Miwpx-6, #Stencil.Tablet .Tablet-Miwpx-6, #Stencil.Phone .Phone-Miwpx-6 {
+  min-width: 6px;
+}
+#Stencil .Miwpx-8, #Stencil.Tablet .Tablet-Miwpx-8, #Stencil.Phone .Phone-Miwpx-8 {
+  min-width: 8px;
+}
+#Stencil .Miwpx-10, #Stencil.Tablet .Tablet-Miwpx-10, #Stencil.Phone .Phone-Miwpx-10 {
+  min-width: 10px;
+}
+#Stencil .Miwpx-12, #Stencil.Tablet .Tablet-Miwpx-12, #Stencil.Phone .Phone-Miwpx-12 {
+  min-width: 12px;
+}
+#Stencil .Miwpx-14, #Stencil.Tablet .Tablet-Miwpx-14, #Stencil.Phone .Phone-Miwpx-14 {
+  min-width: 14px;
+}
+#Stencil .Miwpx-16, #Stencil.Tablet .Tablet-Miwpx-16, #Stencil.Phone .Phone-Miwpx-16 {
+  min-width: 16px;
+}
+#Stencil .Miwpx-18, #Stencil.Tablet .Tablet-Miwpx-18, #Stencil.Phone .Phone-Miwpx-18 {
+  min-width: 18px;
+}
+#Stencil .Miwpx-20, #Stencil.Tablet .Tablet-Miwpx-20, #Stencil.Phone .Phone-Miwpx-20 {
+  min-width: 20px;
+}
+#Stencil .Miwpx-20, #Stencil.Tablet .Tablet-Miwpx-20, #Stencil.Phone .Phone-Miwpx-20 {
+  min-width: 20px;
+}
+#Stencil .Miwpx-30, #Stencil.Tablet .Tablet-Miwpx-30, #Stencil.Phone .Phone-Miwpx-30 {
+  min-width: 30px;
+}
+#Stencil .Miwpx-40, #Stencil.Tablet .Tablet-Miwpx-40, #Stencil.Phone .Phone-Miwpx-40 {
+  min-width: 40px;
+}
+#Stencil .Miwpx-50, #Stencil.Tablet .Tablet-Miwpx-50, #Stencil.Phone .Phone-Miwpx-50 {
+  min-width: 50px;
+}
+#Stencil .Miwpx-60, #Stencil.Tablet .Tablet-Miwpx-60, #Stencil.Phone .Phone-Miwpx-60 {
+  min-width: 60px;
+}
+#Stencil .Miwpx-70, #Stencil.Tablet .Tablet-Miwpx-70, #Stencil.Phone .Phone-Miwpx-70 {
+  min-width: 70px;
+}
+#Stencil .Miwpx-80, #Stencil.Tablet .Tablet-Miwpx-80, #Stencil.Phone .Phone-Miwpx-80 {
+  min-width: 80px;
+}
+#Stencil .Miwpx-90, #Stencil.Tablet .Tablet-Miwpx-90, #Stencil.Phone .Phone-Miwpx-90 {
+  min-width: 90px;
+}
+#Stencil .Miwpx-100, #Stencil.Tablet .Tablet-Miwpx-100, #Stencil.Phone .Phone-Miwpx-100 {
+  min-width: 100px;
+}
+#Stencil .Miwpx-125, #Stencil.Tablet .Tablet-Miwpx-125, #Stencil.Phone .Phone-Miwpx-125 {
+  min-width: 125px;
+}
+#Stencil .Miwpx-150, #Stencil.Tablet .Tablet-Miwpx-150, #Stencil.Phone .Phone-Miwpx-150 {
+  min-width: 150px;
+}
+#Stencil .Miwpx-175, #Stencil.Tablet .Tablet-Miwpx-175, #Stencil.Phone .Phone-Miwpx-175 {
+  min-width: 175px;
+}
+#Stencil .Miwpx-200, #Stencil.Tablet .Tablet-Miwpx-200, #Stencil.Phone .Phone-Miwpx-200 {
+  min-width: 200px;
+}
+#Stencil .Miwpx-225, #Stencil.Tablet .Tablet-Miwpx-225, #Stencil.Phone .Phone-Miwpx-225 {
+  min-width: 225px;
+}
+#Stencil .Miwpx-250, #Stencil.Tablet .Tablet-Miwpx-250, #Stencil.Phone .Phone-Miwpx-250 {
+  min-width: 250px;
+}
+#Stencil .Miwpx-275, #Stencil.Tablet .Tablet-Miwpx-275, #Stencil.Phone .Phone-Miwpx-275 {
+  min-width: 275px;
+}
+#Stencil .Miwpx-300, #Stencil.Tablet .Tablet-Miwpx-300, #Stencil.Phone .Phone-Miwpx-300 {
+  min-width: 300px;
+}
+#Stencil .Miwpx-325, #Stencil.Tablet .Tablet-Miwpx-325, #Stencil.Phone .Phone-Miwpx-325 {
+  min-width: 325px;
+}
+#Stencil .Miwpx-350, #Stencil.Tablet .Tablet-Miwpx-350, #Stencil.Phone .Phone-Miwpx-350 {
+  min-width: 350px;
+}
+#Stencil .Miwpx-375, #Stencil.Tablet .Tablet-Miwpx-375, #Stencil.Phone .Phone-Miwpx-375 {
+  min-width: 375px;
+}
+#Stencil .Miwpx-400, #Stencil.Tablet .Tablet-Miwpx-400, #Stencil.Phone .Phone-Miwpx-400 {
+  min-width: 400px;
+}
+#Stencil .Miwpx-425, #Stencil.Tablet .Tablet-Miwpx-425, #Stencil.Phone .Phone-Miwpx-425 {
+  min-width: 425px;
+}
+#Stencil .Miwpx-450, #Stencil.Tablet .Tablet-Miwpx-450, #Stencil.Phone .Phone-Miwpx-450 {
+  min-width: 450px;
+}
+#Stencil .Miwpx-475, #Stencil.Tablet .Tablet-Miwpx-475, #Stencil.Phone .Phone-Miwpx-475 {
+  min-width: 475px;
+}
+#Stencil .Miwpx-500, #Stencil.Tablet .Tablet-Miwpx-500, #Stencil.Phone .Phone-Miwpx-500 {
+  min-width: 500px;
+}
+#Stencil .H-0, #Stencil.Tablet .Tablet-h-0, #Stencil.Phone .Phone-h-0 {
+  height: 0;
+}
+#Stencil .H-50, #Stencil.Tablet .Tablet-h-50, #Stencil.Phone .Phone-h-50 {
+  height: 50%;
+}
+#Stencil .H-100, #Stencil.Tablet .Tablet-h-100, #Stencil.Phone .Phone-h-100 {
+  height: 100%;
+}
+#Stencil .H-a, #Stencil.Tablet .Tablet-h-a, #Stencil.Phone .Phone-h-a {
+  height: auto;
+}
+#Stencil .Miw-0, #Stencil.Tablet .Tablet-miw-0, #Stencil.Phone .Phone-miw-0 {
+  min-width: 0;
+}
+#Stencil .Miw-10, #Stencil.Tablet .Tablet-miw-10, #Stencil.Phone .Phone-miw-10 {
+  min-width: 10%;
+}
+#Stencil .Miw-15, #Stencil.Tablet .Tablet-miw-15, #Stencil.Phone .Phone-miw-15 {
+  min-width: 15%;
+}
+#Stencil .Miw-20, #Stencil.Tablet .Tablet-miw-20, #Stencil.Phone .Phone-miw-20 {
+  min-width: 20%;
+}
+#Stencil .Miw-25, #Stencil.Tablet .Tablet-miw-25, #Stencil.Phone .Phone-miw-25 {
+  min-width: 25%;
+}
+#Stencil .Miw-30, #Stencil.Tablet .Tablet-miw-30, #Stencil.Phone .Phone-miw-30 {
+  min-width: 30%;
+}
+#Stencil .Miw-35, #Stencil.Tablet .Tablet-miw-35, #Stencil.Phone .Phone-miw-35 {
+  min-width: 35%;
+}
+#Stencil .Miw-40, #Stencil.Tablet .Tablet-miw-40, #Stencil.Phone .Phone-miw-40 {
+  min-width: 40%;
+}
+#Stencil .Miw-45, #Stencil.Tablet .Tablet-miw-45, #Stencil.Phone .Phone-miw-45 {
+  min-width: 45%;
+}
+#Stencil .Miw-50, #Stencil.Tablet .Tablet-miw-50, #Stencil.Phone .Phone-miw-50 {
+  min-width: 50%;
+}
+#Stencil .Miw-60, #Stencil.Tablet .Tablet-miw-60, #Stencil.Phone .Phone-miw-60 {
+  min-width: 60%;
+}
+#Stencil .Miw-70, #Stencil.Tablet .Tablet-miw-70, #Stencil.Phone .Phone-miw-70 {
+  min-width: 70%;
+}
+#Stencil .Miw-80, #Stencil.Tablet .Tablet-miw-80, #Stencil.Phone .Phone-miw-80 {
+  min-width: 80%;
+}
+#Stencil .Miw-90, #Stencil.Tablet .Tablet-miw-90, #Stencil.Phone .Phone-miw-90 {
+  min-width: 90%;
+}
+#Stencil .Miw-100, #Stencil.Tablet .Tablet-miw-100, #Stencil.Phone .Phone-miw-100 {
+  min-width: 100%;
+}
+#Stencil .Maw-n, #Stencil.Tablet .Tablet-maw-n, #Stencil.Phone .Phone-maw-n {
+  max-width: none;
+}
+#Stencil .Maw-10, #Stencil.Tablet .Tablet-maw-10, #Stencil.Phone .Phone-maw-10 {
+  max-width: 10%;
+}
+#Stencil .Maw-15, #Stencil.Tablet .Tablet-maw-15, #Stencil.Phone .Phone-maw-15 {
+  max-width: 15%;
+}
+#Stencil .Maw-20, #Stencil.Tablet .Tablet-maw-20, #Stencil.Phone .Phone-maw-20 {
+  max-width: 20%;
+}
+#Stencil .Maw-25, #Stencil.Tablet .Tablet-maw-25, #Stencil.Phone .Phone-maw-25 {
+  max-width: 25%;
+}
+#Stencil .Maw-30, #Stencil.Tablet .Tablet-maw-30, #Stencil.Phone .Phone-maw-30 {
+  max-width: 30%;
+}
+#Stencil .Maw-35, #Stencil.Tablet .Tablet-maw-35, #Stencil.Phone .Phone-maw-35 {
+  max-width: 35%;
+}
+#Stencil .Maw-40, #Stencil.Tablet .Tablet-maw-40, #Stencil.Phone .Phone-maw-40 {
+  max-width: 40%;
+}
+#Stencil .Maw-45, #Stencil.Tablet .Tablet-maw-45, #Stencil.Phone .Phone-maw-45 {
+  max-width: 45%;
+}
+#Stencil .Maw-50, #Stencil.Tablet .Tablet-maw-50, #Stencil.Phone .Phone-maw-50 {
+  max-width: 50%;
+}
+#Stencil .Maw-60, #Stencil.Tablet .Tablet-maw-60, #Stencil.Phone .Phone-maw-60 {
+  max-width: 60%;
+}
+#Stencil .Maw-70, #Stencil.Tablet .Tablet-maw-70, #Stencil.Phone .Phone-maw-70 {
+  max-width: 70%;
+}
+#Stencil .Maw-80, #Stencil.Tablet .Tablet-maw-80, #Stencil.Phone .Phone-maw-80 {
+  max-width: 80%;
+}
+#Stencil .Maw-90, #Stencil.Tablet .Tablet-maw-90, #Stencil.Phone .Phone-maw-90 {
+  max-width: 90%;
+}
+#Stencil .Maw-99, #Stencil.Tablet .Tablet-maw-99, #Stencil.Phone .Phone-maw-99 {
+  max-width: 99%;
+}
+#Stencil .Maw-100, #Stencil.Tablet .Tablet-maw-100, #Stencil.Phone .Phone-maw-100 {
+  max-width: 100%;
+}
+#Stencil .W-a, #Stencil.Tablet .Tablet-w-a, #Stencil.Phone .Phone-w-a {
+  width: auto;
+}
+#Stencil .W-10, #Stencil.Tablet .Tablet-w-10, #Stencil.Phone .Phone-w-10 {
+  width: 10%;
+  *width: 9.6%;
+}
+#Stencil .W-15, #Stencil.Tablet .Tablet-w-15, #Stencil.Phone .Phone-w-15 {
+  width: 15%;
+  *width: 14.8%;
+}
+#Stencil .W-20, #Stencil.Tablet .Tablet-w-20, #Stencil.Phone .Phone-w-20 {
+  width: 20%;
+  *width: 19.5%;
+}
+#Stencil .W-25, #Stencil.Tablet .Tablet-w-25, #Stencil.Phone .Phone-w-25 {
+  width: 25%;
+  *width: 24.5%;
+}
+#Stencil .W-30, #Stencil.Tablet .Tablet-w-30, #Stencil.Phone .Phone-w-30 {
+  width: 30%;
+  *width: 29.6%;
+}
+#Stencil .W-33, #Stencil.Tablet .Tablet-w-33, #Stencil.Phone .Phone-w-33 {
+  width: 33.33%;
+  *width: 33%;
+}
+#Stencil .W-35, #Stencil.Tablet .Tablet-w-35, #Stencil.Phone .Phone-w-35 {
+  width: 35%;
+  *width: 34.9%;
+}
+#Stencil .W-40, #Stencil.Tablet .Tablet-w-40, #Stencil.Phone .Phone-w-40 {
+  width: 40%;
+  *width: 39.5%;
+}
+#Stencil .W-45, #Stencil.Tablet .Tablet-w-45, #Stencil.Phone .Phone-w-45 {
+  width: 45%;
+  *width: 44.9%;
+}
+#Stencil .W-50, #Stencil.Tablet .Tablet-w-50, #Stencil.Phone .Phone-w-50 {
+  width: 50%;
+  *width: 49.5%;
+}
+#Stencil .W-55, #Stencil.Tablet .Tablet-w-55, #Stencil.Phone .Phone-w-55 {
+  width: 55%;
+  *width: 54.8%;
+}
+#Stencil .W-66, #Stencil.Tablet .Tablet-w-66, #Stencil.Phone .Phone-w-66 {
+  width: 66.66%;
+}
+#Stencil .W-0, #Stencil.Tablet .Tablet-w-0, #Stencil.Phone .Phone-w-0 {
+  width: 0;
+}
+#Stencil .W-1, #Stencil.Tablet .Tablet-w-1, #Stencil.Phone .Phone-w-1 {
+  width: 1%;
+}
+#Stencil .W-60, #Stencil.Tablet .Tablet-w-60, #Stencil.Phone .Phone-w-60 {
+  width: 60%;
+}
+#Stencil .W-70, #Stencil.Tablet .Tablet-w-70, #Stencil.Phone .Phone-w-70 {
+  width: 70%;
+}
+#Stencil .W-75, #Stencil.Tablet .Tablet-w-75, #Stencil.Phone .Phone-w-75 {
+  width: 75%;
+}
+#Stencil .W-80, #Stencil.Tablet .Tablet-w-80, #Stencil.Phone .Phone-w-80 {
+  width: 80%;
+}
+#Stencil .W-90, #Stencil.Tablet .Tablet-w-90, #Stencil.Phone .Phone-w-90 {
+  width: 90%;
+}
+#Stencil .W-100, #Stencil.Tablet .Tablet-w-100, #Stencil.Phone .Phone-w-100 {
+  width: 100%;
+}
+#Stencil .W-avatar-xs, #Stencil.Phone .Phone-w-avatar-xs, #Stencil.Tablet .Tablet-w-avatar-xs {
+  width: 16px;
+}
+#Stencil .W-avatar-sm, #Stencil.Phone .Phone-w-avatar-sm, #Stencil.Tablet .Tablet-w-avatar-sm {
+  width: 20px;
+}
+#Stencil .W-avatar-med, #Stencil.Phone .Phone-w-avatar-med, #Stencil.Tablet .Tablet-w-avatar-med {
+  width: 40px;
+}
+#Stencil .W-avatar-lg, #Stencil.Phone .Phone-w-avatar-lg, #Stencil.Tablet .Tablet-w-avatar-med {
+  width: 80px;
+}
+#Stencil .W-stat, #Stencil.Phone .Phone-w-stat, #Stencil.Tablet .Tablet-w-stat {
+  width: 50px;
+}
+#Stencil .Va-top, #Stencil.Tablet .Tablet-va-top, #Stencil.Phone .Phone-va-top {
+  vertical-align: top;
+}
+#Stencil .Va-mid, #Stencil.Tablet .Tablet-va-mid, #Stencil.Phone .Phone-va-mid {
+  vertical-align: middle;
+}
+#Stencil .Va-bot, #Stencil.Tablet .Tablet-va-bot, #Stencil.Phone .Phone-va-bot {
+  vertical-align: bottom;
+}
+#Stencil .Va-base, #Stencil.Tablet .Tablet-va-base, #Stencil.Phone .Phone-va-base {
+  vertical-align: baseline;
+}
+#Stencil .Zm-1 {
+  zoom: 1;
+}
+
+#Stencil .Bdrstart {
+  border-left-style: solid;
+  border-left-width: 1px;
+}
+#Stencil .Bdrend {
+  border-right-style: solid;
+  border-right-width: 1px;
+}
+#Stencil .Fl-start, #Stencil.Phone .Phone-fl-start, #Stencil.Tablet .Tablet-fl-start {
+  float: left;
+}
+#Stencil .Fl-end, #Stencil.Phone .Phone-fl-end, #Stencil.Tablet .Tablet-fl-end {
+  float: right;
+}
+#Stencil .Cl-start, #Stencil.Phone .Phone-cl-start, #Stencil.Tablet .Tablet-cl-start {
+  clear: left;
+}
+#Stencil .Cl-end, #Stencil.Phone .Phone-cl-end, #Stencil.Tablet .Tablet-cl-end {
+  clear: right;
+}
+#Stencil .Cl-both, #Stencil.Phone .Phone-cl-both, #Stencil.Tablet .Tablet-cl-both {
+  clear: both;
+}
+#Stencil .Topstart {
+  top: 0 !important;
+  left: 0 !important;
+}
+#Stencil .Topend {
+  top: 0 !important;
+  right: 0 !important;
+}
+#Stencil .Botstart {
+  bottom: 0 !important;
+  left: 0 !important;
+}
+#Stencil .Botend {
+  bottom: 0 !important;
+  right: 0 !important;
+}
+#Stencil .Start {
+  left: 0 !important;
+}
+#Stencil .End {
+  right: 0 !important;
+}
+#Stencil .Mstart-xxs, #Stencil.Phone .Phone-mstart-xxs, #Stencil.Tablet .Tablet-mstart-xxs {
+  margin-left: 1px;
+}
+#Stencil .Mstart-xs, #Stencil.Phone .Phone-mstart-xs, #Stencil.Tablet .Tablet-mstart-xs {
+  margin-left: 2px;
+}
+#Stencil .Mstart-sm, #Stencil.Phone .Phone-mstart-sm, #Stencil.Tablet .Tablet-mstart-sm {
+  margin-left: 4px;
+}
+#Stencil .Mstart-med, #Stencil.Phone .Phone-mstart-med, #Stencil.Tablet .Tablet-mstart-med {
+  margin-left: 6px;
+}
+#Stencil .Mstart-lg, #Stencil.Phone .Phone-mstart-lg, #Stencil.Tablet .Tablet-mstart-lg {
+  margin-left: 10px;
+}
+#Stencil .Mstart-xl, #Stencil.Phone .Phone-mstart-xl, #Stencil.Tablet .Tablet-mstart-xl {
+  margin-left: 15px;
+}
+#Stencil .Mstart-xxl, #Stencil.Phone .Phone-mstart-xxl, #Stencil.Tablet .Tablet-mstart-xxl {
+  margin-left: 20px;
+}
+#Stencil .Mend-xxs, #Stencil.Phone .Phone-mend-xxs, #Stencil.Tablet .Tablet-mend-xxs {
+  margin-right: 1px;
+}
+#Stencil .Mend-xs, #Stencil.Phone .Phone-mend-xs, #Stencil.Tablet .Tablet-mend-xs {
+  margin-right: 2px;
+}
+#Stencil .Mend-sm, #Stencil.Phone .Phone-mend-sm, #Stencil.Tablet .Tablet-mend-sm {
+  margin-right: 4px;
+}
+#Stencil .Mend-med, #Stencil.Phone .Phone-mend-med, #Stencil.Tablet .Tablet-mend-med {
+  margin-right: 6px;
+}
+#Stencil .Mend-lg, #Stencil.Phone .Phone-mend-lg, #Stencil.Tablet .Tablet-mend-lg {
+  margin-right: 10px;
+}
+#Stencil .Mend-xl, #Stencil.Phone .Phone-mend-xl, #Stencil.Tablet .Tablet-mend-xl {
+  margin-right: 15px;
+}
+#Stencil .Mend-xxl, #Stencil.Phone .Phone-mend-xxl, #Stencil.Tablet .Tablet-mend-xxl {
+  margin-right: 20px;
+}
+#Stencil .Mstart-a, #Stencil.Tablet .Tablet-mstart-a, #Stencil.Phone .Phone-mstart-a {
+  margin-left: auto;
+}
+#Stencil .Mend-a, #Stencil.Tablet .Tablet-mend-a, #Stencil.Phone .Phone-mend-a {
+  margin-right: auto;
+}
+#Stencil .Pstart-xxs, #Stencil.Phone .Phone-pstart-xxs, #Stencil.Tablet .Tablet-pstart-xxs {
+  padding-left: 1px;
+}
+#Stencil .Pstart-xs, #Stencil.Phone .Phone-pstart-xs, #Stencil.Tablet .Tablet-pstart-xs {
+  padding-left: 2px;
+}
+#Stencil .Pstart-sm, #Stencil.Phone .Phone-pstart-sm, #Stencil.Tablet .Tablet-pstart-sm {
+  padding-left: 4px;
+}
+#Stencil .Pstart-med, #Stencil.Phone .Phone-pstart-med, #Stencil.Tablet .Tablet-pstart-med {
+  padding-left: 6px;
+}
+#Stencil .Pstart-lg, #Stencil.Phone .Phone-pstart-lg, #Stencil.Tablet .Tablet-pstart-lg {
+  padding-left: 10px;
+}
+#Stencil .Pstart-xl, #Stencil.Phone .Phone-pstart-xl, #Stencil.Tablet .Tablet-pstart-xl {
+  padding-left: 15px;
+}
+#Stencil .Pstart-xxl, #Stencil.Phone .Phone-pstart-xxl, #Stencil.Tablet .Tablet-pstart-xxl {
+  padding-left: 20px;
+}
+#Stencil .Pend-xxs, #Stencil.Phone .Phone-pend-xxs, #Stencil.Tablet .Tablet-pend-xxs {
+  padding-right: 1px;
+}
+#Stencil .Pend-xs, #Stencil.Phone .Phone-pend-xs, #Stencil.Tablet .Tablet-pend-xs {
+  padding-right: 2px;
+}
+#Stencil .Pend-sm, #Stencil.Phone .Phone-pend-sm, #Stencil.Tablet .Tablet-pend-sm {
+  padding-right: 4px;
+}
+#Stencil .Pend-med, #Stencil.Phone .Phone-pend-med, #Stencil.Tablet .Tablet-pend-med {
+  padding-right: 6px;
+}
+#Stencil .Pend-lg, #Stencil.Phone .Phone-pend-lg, #Stencil.Tablet .Tablet-pend-lg {
+  padding-right: 10px;
+}
+#Stencil .Pend-xl, #Stencil.Phone .Phone-pend-xl, #Stencil.Tablet .Tablet-pend-xl {
+  padding-right: 15px;
+}
+#Stencil .Pend-xxl, #Stencil.Phone .Phone-pend-xxl, #Stencil.Tablet .Tablet-pend-xxl {
+  padding-right: 20px;
+}
+#Stencil .Ta-start, #Stencil.Phone .Phone-ta-start, #Stencil.Tablet .Tablet-ta-start {
+  text-align: left;
+}
+#Stencil .Ta-end, #Stencil.Phone .Phone-ta-end, #Stencil.Tablet .Tablet-ta-end {
+  text-align: right;
+}
+
+#Stencil .No-bg, #Stencil.Tablet .Tablet-no-bg, #Stencil.Phone .Phone-no-bg {
+  background: none;
+}
+#Stencil .No-bdr, #Stencil.Tablet .Tablet-no-bdr, #Stencil.Phone .Phone-no-bdr {
+  border: none;
+}
+#Stencil .No-bdrstart, #Stencil.Tablet .Tablet-no-bdrstart, #Stencil.Phone .Phone-no-bdrstart {
+  border-left: none;
+}
+#Stencil .No-bdrend, #Stencil.Tablet .Tablet-no-bdrend, #Stencil.Phone .Phone-no-bdrend {
+  border-right: none;
+}
+#Stencil .No-bdrtop, #Stencil.Tablet .Tablet-no-bdrtop, #Stencil.Phone .Phone-no-bdrtop {
+  border-top: none;
+}
+#Stencil .No-bdrbot, #Stencil.Tablet .Tablet-no-bdrbot, #Stencil.Phone .Phone-no-bdrbot {
+  border-bottom: none;
+}
+#Stencil .No-bdrx, #Stencil.Tablet .Tablet-no-bdrx, #Stencil.Phone .Phone-no-bdrx {
+  border-left: none;
+  border-right: none;
+}
+#Stencil .No-bdry, #Stencil.Tablet .Tablet-no-bdry, #Stencil.Phone .Phone-no-bdry {
+  border-top: none;
+  border-bottom: none;
+}
+#Stencil .Submods,
+#Stencil .No-p, #Stencil.Tablet .Tablet-no-p, #Stencil.Phone .Phone-no-p {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+#Stencil .No-pbot, #Stencil.Tablet .Tablet-no-pbot, #Stencil.Phone .Phone-no-pbot {
+  padding-bottom: 0;
+}
+#Stencil .No-ptop, #Stencil.Tablet .Tablet-no-ptop, #Stencil.Phone .Phone-no-ptop {
+  padding-top: 0;
+}
+#Stencil .No-py, #Stencil.Tablet .Tablet-no-py, #Stencil.Phone .Phone-no-py {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#Stencil .No-px, #Stencil.Tablet .Tablet-no-px, #Stencil.Phone .Phone-no-px {
+  padding-left: 0;
+  padding-right: 0;
+}
+#Stencil .No-m, #Stencil.Tablet .Tablet-no-m, #Stencil.Phone .Phone-no-m {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+#Stencil .No-mbot, #Stencil.Tablet .Tablet-no-mbot, #Stencil.Phone .Phone-no-mbot {
+  margin-bottom: 0;
+}
+#Stencil .No-mtop, #Stencil.Tablet .Tablet-no-mtop, #Stencil.Phone .Phone-no-mtop {
+  margin-top: 0;
+}
+#Stencil .No-my, #Stencil.Tablet .Tablet-no-my, #Stencil.Phone .Phone-no-my {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#Stencil .No-mx, #Stencil.Tablet .Tablet-no-mx, #Stencil.Phone .Phone-no-mx {
+  margin-left: 0;
+  margin-right: 0;
+}
+#Stencil .W-a, #Stencil.Tablet .Tablet-w-a, #Stencil.Phone .Phone-w-a {
+  width: auto;
+}
+#Stencil .Maw-n, #Stencil.Tablet .Tablet-maw-n, #Stencil.Phone .Phone-maw-n {
+  max-width: none;
+}
+#Stencil .Miw-n, #Stencil.Tablet .Tablet-miw-n, #Stencil.Phone .Phone-miw-n {
+  min-width: 0;
+}
+#Stencil .No-fl, #Stencil.Tablet .Tablet-no-fl, #Stencil.Phone .Phone-no-fl {
+  float: none;
+}
+#Stencil.Desktop .Desktop-hidden-accessible, #Stencil.Tablet .Tablet-hidden-accessible, #Stencil.Phone .Phone-hidden-accessible {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+#Stencil.Desktop .Desktop-hidden, #Stencil.Tablet .Tablet-hidden, #Stencil.Phone .Phone-hidden {
+  display: none;
+}
+#Stencil .No-bdr-radius {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+#Stencil .No-bdr-radius-start {
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+#Stencil .No-bdr-radius-end {
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#Stencil .No-bdr-radius-top {
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+}
+#Stencil .No-bdr-radius-bot {
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#Stencil .No-bdr-radius-topstart {
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+}
+#Stencil .No-bdr-radius-topend {
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+}
+#Stencil .No-bdr-radius-botstart {
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+#Stencil .No-bdr-radius-botend {
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#Stencil .No-boxshadow {
+  box-shadow: none;
+}
+#Stencil .Mod-no-m .Mod {
+  margin: 0;
+}
+#Stencil .Mod-no-mx .Mod {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#Stencil .Mod-no-my .Mod {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#Stencil .No-bdr-start, #Stencil.Tablet .Tablet-no-bdr-start, #Stencil.Phone .Phone-no-bdr-start {
+  border-left: none;
+}
+#Stencil .No-bdr-end, #Stencil.Tablet .Tablet-no-bdr-end, #Stencil.Phone .Phone-no-bdr-end {
+  border-right: none;
+}
+#Stencil .No-mstart, #Stencil.Tablet .Tablet-no-mstart, #Stencil.Phone .Phone-no-mstart {
+  margin-left: 0;
+}
+#Stencil .No-mend, #Stencil.Tablet .Tablet-no-mend, #Stencil.Phone .Phone-no-mend {
+  margin-right: 0;
+}
+#Stencil .No-pstart, #Stencil.Tablet .Tablet-no-pstart, #Stencil.Phone .Phone-no-pstart {
+  padding-left: 0;
+}
+#Stencil .No-pend, #Stencil.Tablet .Tablet-no-pend, #Stencil.Phone .Phone-no-pend {
+  padding-right: 0;
+}
+#Stencil .No-bdr-end, #Stencil.Tablet .Tablet-no-bdr-end, #Stencil.Phone .Phone-no-bdr-end {
+  border-right: none;
+}
+#Stencil .No-bdr-start, #Stencil.Tablet .Tablet-no-bdr-start, #Stencil.Phone .Phone-no-bdr-start {
+  border-left: none;
+}
+#Stencil .No-bdr-end, #Stencil.Tablet .Tablet-no-bdr-end, #Stencil.Phone .Phone-no-bdr-end {
+  border-right: none;
+}
+#Stencil .First-no-mstart > .I:first-child {
+  margin-left: 0;
+}
+#Stencil .First-no-pstart > .I:first-child {
+  padding-left: 0;
+}
+#Stencil .First-no-mpstart > .I:first-child {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.RailSub .Ad {
+  max-width: 300px;
+  margin: 0 auto 10px;
+}
+.RailSub #yspadMREC,
+.RailSub #yspadLREC {
+  margin: 10px 0px;
+}
+
+.SelectBox .Icon {
+  display: inline-block;
+}
+
+#Stencil .Bgc-reset {
+  background: #fff;
+}
+#Stencil .Bgc-secondary {
+  background: #fff;
+}
+#Stencil .Bgc-tertiary {
+  background: #fff;
+}
+#Stencil .Bgc-inverse {
+  background: #333;
+  color: #fff;
+}
+#Stencil .Bgc-dimmed {
+  background: #fff;
+}
+#Stencil .Bgc-highlight {
+  background: #fff;
+}
+#Stencil .Bgc-positive {
+  background: green;
+}
+#Stencil .Bgc-negative {
+  background: red;
+}
+#Stencil .Bgc-neutral {
+  background: yellow;
+}
+#Stencil .Bgc-notify {
+  background: pink;
+}
+#Stencil .Bgc-firstplace {
+  background: gold;
+}
+#Stencil .Bgc-secondplace {
+  background: silver;
+}
+#Stencil .Bgc-thirdplace {
+  background: bronze;
+}
+#Stencil .Bdr-reset {
+  border-color: #eee;
+}
+#Stencil .Bdr-secondary {
+  border-color: #eee;
+}
+#Stencil .Bdr-tertiary {
+  border-color: #eee;
+}
+#Stencil .Bdr-inverse {
+  border-color: #000;
+}
+#Stencil .Bdr-dimmed {
+  border-color: #eee;
+}
+#Stencil .Bdr-highlight {
+  border-color: #eee;
+}
+#Stencil .Bdr-positive {
+  border-color: green;
+}
+#Stencil .Bdr-negative {
+  border-color: red;
+}
+#Stencil .Bdr-neutral {
+  border-color: yellow;
+}
+#Stencil .Bdr-notify {
+  border-color: pink;
+}
+#Stencil .Bdr-firstplace {
+  border-color: gold;
+}
+#Stencil .Bdr-secondplace {
+  border-color: silver;
+}
+#Stencil .Bdr-thirdplace {
+  border-color: bronze;
+}
+#Stencil .Bdr-light {
+  border-color: #e7e7e7;
+}
+#Stencil .C-reset {
+  color: #333;
+}
+#Stencil .C-secondary {
+  color: #333;
+}
+#Stencil .C-tertiary {
+  color: #333;
+}
+#Stencil .C-inverse {
+  color: #333;
+}
+#Stencil .C-dimmed {
+  color: #333;
+}
+#Stencil .C-highlight {
+  color: #333;
+}
+#Stencil .C-positive {
+  color: green;
+}
+#Stencil .C-negative {
+  color: red;
+}
+#Stencil .C-neutral {
+  color: yellow;
+}
+#Stencil .C-notify {
+  color: pink;
+}
+#Stencil .C-firstplace {
+  color: gold;
+}
+#Stencil .C-secondplace {
+  color: silver;
+}
+#Stencil .C-thirdplace {
+  color: silver;
+}
+
+#Stencil .Thm-dark {
+  background: #333;
+  color: #fff;
+}
+#Stencil .Thm-dark .Bgc-secondary {
+  background: #333;
+}
+#Stencil .Thm-dark .Bgc-tertiary {
+  background: #333;
+}
+#Stencil .Thm-dark .Bgc-inverse {
+  background-color: #fff;
+  color: #000;
+}
