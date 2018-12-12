@@ -90,7 +90,9 @@ team_id_to_seed <- Vectorize(function(id, team_df=team.df) {
   return(team_df[which(team_df$id == id), "seed"])
 })
 
-team_id_to_seedname <- function(id, team_df=team.df) {
+team_id_to_seedname <- Vectorize(function(id, team_df=team.df) {
+  if (is.na(id)) { return("") }
+  
   team_df <- team_df %>% 
     bind_rows(data.frame(name="--BYE--", id=0, seed=0, stringsAsFactors=FALSE))
   
@@ -98,6 +100,10 @@ team_id_to_seedname <- function(id, team_df=team.df) {
     str_replace("#0 ", "")
   
   return(out)
+})
+
+create_matchup_str <- function(team_vec, team_df=team.df) {
+  return(team_vec %>% team_id_to_seedname() %>% paste(collapse=" vs. "))
 }
 
 matchup_str_to_ids <- function(matchup_str, team_df=team.df) {
@@ -246,6 +252,177 @@ build_consolation_bracket <- function() {
   return(consolation)
 }
 
+draw_playoff_winners_brakcet <- function(playoffs=NULL) {
+  graphics::par(mar = c(0, 0, 0, 0))
+  graphics::plot(NA, xlim = c(-0.5, 4), ylim = c(-1, 1), xlab = "", ylab = "", axes = FALSE)
+  
+  # first the upper bracket
+  # x,y coordinates for centers of horizontal lines
+  x <- c(rep(0, 8), rep(1, 4), rep(2, 2), 3)
+  y <- c(seq(15/16, 1/16, -1/8), seq(7/8, 1/8, -1/4), seq(3/4, 1/4, -1/2), 1/2)
+  
+  # horizontal line segments
+  graphics::segments(x - 1/2, y, x + 1/2, y)
+  # vertical line segments
+  graphics::segments((x + 1/2)[seq(1, length(x) - 1, 2)],
+                     y[seq(1, length(y) - 1, 2)],
+                     (x + 1/2)[seq(2, length(x) - 1, 2)],
+                     y[seq(2, length(y) - 1, 2)])
+  
+  # add third place game
+  x2 <- c(rep(2, 2), 3)
+  y2 <- c(seq(3/4, 1/4, -1/2)-1, -1/2)
+  
+  graphics::segments(x2 - 1/2, y2, x2 + 1/2, y2)
+  graphics::segments((x2 + 1/2)[seq(1, length(x2) - 1, 2)],
+                     y2[seq(1, length(y2) - 1, 2)],
+                     (x2 + 1/2)[seq(2, length(x2) - 1, 2)],
+                     y2[seq(2, length(y2) - 1, 2)])
+  
+  # team names
+  graphics::text(c(x, x2) - 0.46, c(y, y2) + 0.025, 
+                 get_playoff_team_names(playoffs)[1:18], 
+                 adj=0)
+  
+  graphics::text(2, 0.5, "Final", font=4, cex=1.5)
+  graphics::text(2, -0.5, "3rd Place", font=4, cex=1.5)
+}
+
+draw_playoff_losers_bracket <- function(playoffs=NULL) {
+  graphics::par(mar = c(0, 0, 0, 0))
+  graphics::plot(NA, xlim = c(-0.5, 4), ylim = c(-1, 1), xlab = "", ylab = "", axes = FALSE)
+  
+  # first the upper bracket
+  # x,y coordinates for centers of horizontal lines
+  x <- c(rep(1, 4), rep(2, 2), 3)
+  y <- c(seq(7/8, 1/8, -1/4), seq(3/4, 1/4, -1/2), 1/2)
+  
+  # horizontal line segments
+  graphics::segments(x - 1/2, y, x + 1/2, y)
+  # vertical line segments
+  graphics::segments((x + 1/2)[seq(1, length(x) - 1, 2)],
+                     y[seq(1, length(y) - 1, 2)],
+                     (x + 1/2)[seq(2, length(x) - 1, 2)],
+                     y[seq(2, length(y) - 1, 2)])
+  
+  # add seventh place game
+  x2 <- c(rep(2, 2), 3)
+  y2 <- c(seq(3/4, 1/4, -1/2)-1, -1/2)
+  
+  graphics::segments(x2 - 1/2, y2, x2 + 1/2, y2)
+  graphics::segments((x2 + 1/2)[seq(1, length(x2) - 1, 2)],
+                     y2[seq(1, length(y2) - 1, 2)],
+                     (x2 + 1/2)[seq(2, length(x2) - 1, 2)],
+                     y2[seq(2, length(y2) - 1, 2)])
+  
+  # team names
+  graphics::text(c(x, x2) - 0.46, c(y, y2) + 0.025,
+                 get_playoff_team_names(playoffs)[19:28],
+                 adj=0)
+  
+  graphics::text(2, 0.5, "5th Place", font=4, cex=1.5)
+  graphics::text(2, -0.5, "7th Place", font=4, cex=1.5)
+}
+
+get_playoff_team_names <- function(playoffs=NULL) {
+  if (is.null(playoffs)) {
+    playoffs <- build_playoff_bracket()
+  }
+  
+  out <- c(
+    playoffs$quarter1,
+    playoffs$quarter2,
+    playoffs$quarter3,
+    playoffs$quarter4,
+    playoffs$semi1,
+    playoffs$semi2,
+    playoffs$final,
+    playoffs$standings[1],
+    playoffs$third,
+    playoffs$standings[3],
+    playoffs$cons1,
+    playoffs$cons2,
+    playoffs$fifth,
+    playoffs$standings[5],
+    playoffs$seventh,
+    playoffs$standings[7]
+  ) %>% 
+    team_id_to_seedname()
+  
+  return(out)
+}
+
+draw_consolation_bracket <- function(consolation=NULL) {
+  graphics::par(mar = c(0, 0, 0, 0))
+  graphics::plot(NA, xlim = c(-0.5, 4), ylim = c(-2, 1), xlab = "", ylab = "", axes = FALSE)
+  
+  # first the upper bracket
+  # x,y coordinates for centers of horizontal lines
+  x <- c(rep(0, 8), rep(1, 4), rep(2, 2), 3)
+  y <- c(seq(15/16, 1/16, -1/8), seq(7/8, 1/8, -1/4), seq(3/4, 1/4, -1/2), 1/2)
+  
+  # horizontal line segments
+  graphics::segments(x - 1/2, y, x + 1/2, y)
+  # vertical line segments
+  graphics::segments((x + 1/2)[seq(1, length(x) - 1, 2)],
+                     y[seq(1, length(y) - 1, 2)],
+                     (x + 1/2)[seq(2, length(x) - 1, 2)],
+                     y[seq(2, length(y) - 1, 2)])
+  
+  # add eleventh place game
+  x2 <- c(rep(2, 2), 3)
+  y2 <- c(seq(3/4, 1/4, -1/2)-1, -1/2)
+  
+  graphics::segments(x2 - 1/2, y2, x2 + 1/2, y2)
+  graphics::segments((x2 + 1/2)[seq(1, length(x2) - 1, 2)],
+                     y2[seq(1, length(y2) - 1, 2)],
+                     (x2 + 1/2)[seq(2, length(x2) - 1, 2)],
+                     y2[seq(2, length(y2) - 1, 2)])
+  
+  # add thirteenth place game
+  x3 <- c(1, 1, 2)
+  y3 <- c(seq(3/4, 1/4, -1/2)-2, -3/2)
+  
+  graphics::segments(x3 - 1/2, y3, x3 + 1/2, y3)
+  graphics::segments((x3 + 1/2)[seq(1, length(x3) - 1, 2)],
+                     y3[seq(1, length(y3) - 1, 2)],
+                     (x3 + 1/2)[seq(2, length(x3) - 1, 2)],
+                     y3[seq(2, length(y3) - 1, 2)])
+  
+  # team names
+  graphics::text(c(x, x2, x3) - 0.46, c(y, y2, y3) + 0.03, 
+                 get_consolation_team_names(consolation), 
+                 adj=0)
+  
+  graphics::text(2, 0.5, "9th Place", font=4, cex=1.5)
+  graphics::text(2, -0.5, "11th Place", font=4, cex=1.5)
+  graphics::text(1, -1.5, "13th Place", font=4, cex=1.5)
+}
+
+get_consolation_team_names <- function(consolation=NULL) {
+  if (is.null(consolation)) {
+    consolation <- build_consolation_bracket()
+  }
+  
+  out <- c(
+    consolation$quarter1,
+    consolation$quarter2,
+    consolation$quarter3,
+    consolation$quarter4,
+    consolation$semi1,
+    consolation$semi2,
+    consolation$ninth,
+    consolation$standings[1],
+    consolation$eleventh,
+    consolation$standings[3],
+    consolation$thirteenth,
+    consolation$standings[5]
+  ) %>% 
+    team_id_to_seedname()
+  
+  return(out)
+}
+
 format_directory_path <- function(path) {
   require(stringr, quietly=TRUE, warn.conflicts=FALSE)
   if (str_sub(path, -1) != "/") {
@@ -342,27 +519,27 @@ max.week <- get_max_completed_week()
 week.choices <- "14 - Quarterfinal"
 
 choices.14 <- c(
-  playoffs$quarter1 %>% team_id_to_seedname() %>% paste(collapse=" vs. "),
-  playoffs$quarter2 %>% team_id_to_seedname() %>% paste(collapse=" vs. "),
-  playoffs$quarter3 %>% team_id_to_seedname() %>% paste(collapse=" vs. "),
-  playoffs$quarter4 %>% team_id_to_seedname() %>% paste(collapse=" vs. "),
-  consolation$quarter1 %>% team_id_to_seedname() %>% paste(collapse=" vs. "),
-  consolation$quarter2 %>% team_id_to_seedname() %>% paste(collapse=" vs. "),
-  consolation$quarter3 %>% team_id_to_seedname() %>% paste(collapse=" vs. "),
-  consolation$quarter4 %>% team_id_to_seedname() %>% paste(collapse=" vs. ")
+  playoffs$quarter1 %>% create_matchup_str(),
+  playoffs$quarter2 %>% create_matchup_str(),
+  playoffs$quarter3 %>% create_matchup_str(),
+  playoffs$quarter4 %>% create_matchup_str(),
+  consolation$quarter1 %>% create_matchup_str(),
+  consolation$quarter2 %>% create_matchup_str(),
+  consolation$quarter3 %>% create_matchup_str(),
+  consolation$quarter4 %>% create_matchup_str()
 )
 default.choices <- choices.14
 
 if (max.week >= 14) {
   week.choices <- c("15 - Semifinal", week.choices)
   choices.15 <- c(
-    playoffs$semi1 %>% team_id_to_seedname() %>% paste(collapse=" vs. "),
-    playoffs$semi2 %>% team_id_to_seedname() %>% paste(collapse=" vs. "),
-    playoffs$cons1 %>% team_id_to_seedname() %>% paste(collapse=" vs. "),
-    playoffs$cons2 %>% team_id_to_seedname() %>% paste(collapse=" vs. "),
-    consolation$semi1 %>% team_id_to_seedname() %>% paste(collapse=" vs. "),
-    consolation$semi2 %>% team_id_to_seedname() %>% paste(collapse=" vs. "),
-    consolation$thirteenth %>% team_id_to_seedname() %>% paste(collapse=" vs. ")
+    playoffs$semi1 %>% create_matchup_str(),
+    playoffs$semi2 %>% create_matchup_str(),
+    playoffs$cons1 %>% create_matchup_str(),
+    playoffs$cons2 %>% create_matchup_str(),
+    consolation$semi1 %>% create_matchup_str(),
+    consolation$semi2 %>% create_matchup_str(),
+    consolation$thirteenth %>% create_matchup_str()
   )
   default.choices <- choices.15
 }
@@ -370,12 +547,12 @@ if (max.week >= 14) {
 if (max.week >= 15) {
   week.choices <- c("16 - Final", week.choices)
   choices.16 <- c(
-    playoffs$final %>% team_id_to_seedname() %>% paste(collapse=" vs. "),
-    playoffs$third %>% team_id_to_seedname() %>% paste(collapse=" vs. "),
-    playoffs$fifth %>% team_id_to_seedname() %>% paste(collapse=" vs. "),
-    playoffs$seventh %>% team_id_to_seedname() %>% paste(collapse=" vs. "),
-    consolation$ninth %>% team_id_to_seedname() %>% paste(collapse=" vs. "),
-    consolation$eleventh %>% team_id_to_seedname() %>% paste(collapse=" vs. ")
+    playoffs$final %>% create_matchup_str(),
+    playoffs$third %>% create_matchup_str(),
+    playoffs$fifth %>% create_matchup_str(),
+    playoffs$seventh %>% create_matchup_str(),
+    consolation$ninth %>% create_matchup_str(),
+    consolation$eleventh %>% create_matchup_str()
   )
   default.choices <- choices.16
 }
@@ -395,6 +572,8 @@ ui <- dashboardPage(skin="purple",
     sidebarMenu(
       id="tabs"
       ,menuItem("Matchups", tabName="matchup")
+      ,menuItem("Playoff Bracket", tabName="playoffs")
+      ,menuItem("Consolation Bracket", tabName="consolation")
       ,menuItem("Playoff Seeding", tabName="seeding")
     )
   )
@@ -420,6 +599,19 @@ ui <- dashboardPage(skin="purple",
         ,tags$html(id="Stencil", class="NoJs template-html5 Sticky-off Desktop")
         
         ,htmlOutput("htmlmatchup")
+      ) # end tabItem
+      
+      ,tabItem(
+        tabName="playoffs"
+        
+        ,selectInput("playoff.which", "", choices=c("Winners Bracket", "Losers Bracket"))
+        ,plotOutput("playoff.bracket", width="1000px", height="600px")
+      ) # end tabItem
+      
+      ,tabItem(
+        tabName="consolation"
+        
+        ,plotOutput("cons.bracket", width="1000px", height="800px")
       ) # end tabItem
       
       ,tabItem(
@@ -489,6 +681,18 @@ server <- function(input, output, session) {
     
     includeHTML(paste0(temp.dir, "/out.html"))
   }) # end HTML matchup
+  
+  output$playoff.bracket <- renderPlot({
+    if (input$playoff.which == "Winners Bracket") {
+      draw_playoff_winners_brakcet(playoffs)
+    } else {
+      draw_playoff_losers_bracket(playoffs)
+    }
+  }) # end playoff bracket
+  
+  output$cons.bracket <- renderPlot({
+    draw_consolation_bracket(consolation)
+  })
   
   # show teams and seeds
   output$team.df <- function() {
