@@ -143,11 +143,23 @@ get_team_score <- function(team, week) {
   url <- paste0("https://football.fantasysports.yahoo.com/f1/912438/", team, "/team?&week=", week)
   html <- read_html(url)
   
-  score <- html %>% 
+  # this worked at first but stopped working for consolation teams (always showed 0)
+  # score <- html %>% 
+  #   html_text() %>% 
+  #   str_extract(paste0("Week ", week, " Total: [0-9.]+")) %>% 
+  #   str_extract(paste0("Total Week ", week, " "))
+  #   str_extract_all("[0-9.]+") %>% 
+  #   map_chr(~ .x[2]) %>% 
+  #   as.numeric()
+  
+  # switching to this instead
+  nodes <- html %>% 
+    html_nodes("strong")
+  
+  which.node <- which(html_attr(nodes, "class") == "Pstart-lg")
+  
+  score <- nodes[which.node] %>% 
     html_text() %>% 
-    str_extract(paste0("Week ", week, " Total: [0-9.]+")) %>% 
-    str_extract_all("[0-9.]+") %>% 
-    map_chr(~ .x[2]) %>% 
     as.numeric()
   
   return(score)
