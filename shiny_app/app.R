@@ -445,32 +445,32 @@ generate_html <- function(week, team1, team2, output_dir=tempdir(), empty_flag=F
     html_nodes("div")
   which.div <- which(html_attr(divs, "id") == "matchup")
   
-  if (week == get_max_completed_week() & length(which.div) == 0 & week != 0) {
+  if ((week == get_max_completed_week() + 1) & length(which.div) == 0 & week != 0) {
     return(generate_html(week=0, team1=team1, team2=team2, output_dir=output_dir, empty_flag=empty_flag))
   }
   
   # write relevant parts of HTML to temporary files
   html %>%
     html_nodes("head") %>%
-    write_html(paste0(output_dir, "/head.html"))
+    write_html(paste0(output_dir, "head.html"))
   
   # if we don't have a matchup selected, just write the <head> section
   if (empty_flag) {
     '<html id="Stencil" class="NoJs template-html5 Sticky-off Desktop" lang="en-US" xmlns:fb="https://www.facebook.com/2008/fbml">' %>% 
-      paste(read_file(paste0(output_dir, "/head.html")), sep="\n") %>%
+      paste(read_file(paste0(output_dir, "head.html")), sep="\n") %>%
       paste("</html>", sep="\n") %>%
       str_replace('<link href="https://sp.yimg.com/ua/assets/css/icingv2.cGopRQV4VIw1I.css" type="text/css" rel="stylesheet">', "") %>% 
-      write_file(paste0(output_dir, "/out.html"))
+      write_file(paste0(output_dir, "out.html"))
   } else {
     sections <- html %>%
       html_nodes("section")
     which.section <- which(html_attr(sections, "id") == "matchup-header")
     
     divs[which.div] %>%
-      write_html(paste0(output_dir, "/div.html"))
+      write_html(paste0(output_dir, "div.html"))
     
     sections[which.section] %>%
-      write_html(paste0(output_dir, "/section.html"))
+      write_html(paste0(output_dir, "section.html"))
     
     '<html id="Stencil" class="NoJs template-html5 Sticky-off Desktop" lang="en-US" xmlns:fb="https://www.facebook.com/2008/fbml">' %>% 
       paste(read_file(paste0(output_dir, "/head.html")), sep="\n") %>%
@@ -501,7 +501,7 @@ generate_html <- function(week, team1, team2, output_dir=tempdir(), empty_flag=F
       str_replace_all('>[^[:ascii:]]<', '') %>% 
       
       # write the file
-      write_file(paste0(output_dir, "/out.html"))
+      write_file(paste0(output_dir, "out.html"))
   }
 }
 
